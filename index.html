@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Est - Production Activity Cost Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Production Activity Cost Dashboard</h1>
+            <nav>
+                <button class="nav-btn active" data-page="dashboard">Dashboard</button>
+                <button class="nav-btn" data-page="entry">Data Entry</button>
+                <button class="nav-btn" data-page="detail">Detail View</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- DASHBOARD PAGE -->
+    <main id="page-dashboard" class="page active">
+        <section class="filters">
+            <div class="filter-group">
+                <label for="filter-activity">Activity</label>
+                <select id="filter-activity"><option value="all">All Activities</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-product">Product Format</label>
+                <select id="filter-product"><option value="all">All Formats</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-supplier">Supplier</label>
+                <select id="filter-supplier"><option value="all">All Suppliers</option></select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-date-start">From</label>
+                <input type="date" id="filter-date-start">
+            </div>
+            <div class="filter-group">
+                <label for="filter-date-end">To</label>
+                <input type="date" id="filter-date-end">
+            </div>
+            <button id="btn-reset-filters" class="btn-secondary">Reset</button>
+        </section>
+
+        <section class="kpi-cards">
+            <div class="kpi-card">
+                <span class="kpi-label">Avg Cost / Finished Lb</span>
+                <span class="kpi-value" id="kpi-avg-cost">--</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">Cost Range</span>
+                <span class="kpi-value" id="kpi-cost-range">--</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">Avg Yield</span>
+                <span class="kpi-value" id="kpi-avg-yield">--</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">Total Finished Lbs</span>
+                <span class="kpi-value" id="kpi-total-lbs">--</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">Records</span>
+                <span class="kpi-value" id="kpi-count">--</span>
+            </div>
+        </section>
+
+        <section class="charts-row">
+            <div class="chart-container">
+                <h3>Daily Cost per Finished Lb</h3>
+                <canvas id="chart-daily-cost"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Daily Yield %</h3>
+                <canvas id="chart-daily-yield"></canvas>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <h3>Cost Range Summary by Activity &amp; Product</h3>
+            <div class="table-wrapper">
+                <table id="table-summary">
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Product</th>
+                            <th>Count</th>
+                            <th>Avg $/Lb</th>
+                            <th>Median $/Lb</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                            <th>P25</th>
+                            <th>P75</th>
+                            <th>Avg Yield</th>
+                            <th>Total Lbs</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="weekly-section">
+            <h3>Weekly Rollup</h3>
+            <div class="table-wrapper">
+                <table id="table-weekly">
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Activity</th>
+                            <th>Product</th>
+                            <th>Avg $/Lb</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                            <th>Avg Yield</th>
+                            <th>Total Lbs</th>
+                            <th>Records</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- DATA ENTRY PAGE -->
+    <main id="page-entry" class="page">
+        <section class="entry-container">
+            <h2>Production Data Entry</h2>
+            <p class="entry-subtitle">Enter production activity data. All fields marked * are required.</p>
+
+            <form id="entry-form" autocomplete="off">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="entry-activity">Activity *</label>
+                        <select id="entry-activity" required>
+                            <option value="">Select Activity</option>
+                            <option value="Skinner">Skinner</option>
+                            <option value="Slicer Skin-on">Slicer Skin-on</option>
+                            <option value="Slicer Skinless">Slicer Skinless</option>
+                            <option value="Stripping">Stripping</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="entry-date">Date *</label>
+                        <input type="date" id="entry-date" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="entry-supplier">Supplier</label>
+                        <select id="entry-supplier">
+                            <option value="">Select Supplier</option>
+                            <option value="AQUA">AQUA</option>
+                            <option value="CERMAQ">CERMAQ</option>
+                            <option value="MULTI X">MULTI X</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="entry-product">Product Format *</label>
+                        <select id="entry-product" required>
+                            <option value="">Select Format</option>
+                            <option value="Conventional">Conventional</option>
+                            <option value="ABF">ABF (Antibiotic Free)</option>
+                            <option value="Skin on 2-3">Skin on 2-3</option>
+                            <option value="Skin on 3-4">Skin on 3-4</option>
+                            <option value="Skin on (ungraded)">Skin on (ungraded)</option>
+                            <option value="From Skin-on (Conventional)">From Skin-on (Conventional)</option>
+                            <option value="From Skin-on (ABF)">From Skin-on (ABF)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="entry-lot">Lot #</label>
+                        <input type="text" id="entry-lot" placeholder="e.g. 6010559-1">
+                    </div>
+                    <div class="form-group">
+                        <label for="entry-pallet">Pallet #</label>
+                        <input type="text" id="entry-pallet" placeholder="e.g. 1">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="entry-incoming">Incoming Weight (lbs) *</label>
+                        <input type="number" id="entry-incoming" step="0.01" min="0" required placeholder="e.g. 1450.00">
+                    </div>
+                    <div class="form-group">
+                        <label for="entry-finished">Finished Weight (lbs) *</label>
+                        <input type="number" id="entry-finished" step="0.01" min="0" required placeholder="e.g. 1300.00">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="entry-people">Number of People *</label>
+                        <input type="number" id="entry-people" min="1" max="50" required placeholder="e.g. 5">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="entry-time-start">Start Time *</label>
+                        <input type="time" id="entry-time-start" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="entry-time-end">End Time *</label>
+                        <input type="time" id="entry-time-end" required>
+                    </div>
+                </div>
+
+                <div class="entry-preview" id="entry-preview" style="display:none;">
+                    <h4>Calculated Values</h4>
+                    <div class="preview-grid">
+                        <div><span class="preview-label">Yield:</span> <span id="preview-yield">--</span></div>
+                        <div><span class="preview-label">Hours:</span> <span id="preview-hours">--</span></div>
+                        <div><span class="preview-label">Labor Cost:</span> <span id="preview-labor-cost">--</span></div>
+                        <div><span class="preview-label">Cost/Finished Lb:</span> <span id="preview-cost-per-lb">--</span></div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary btn-large">Save Record</button>
+                    <button type="reset" class="btn-secondary btn-large">Clear</button>
+                </div>
+            </form>
+
+            <div id="entry-success" class="success-message" style="display:none;">
+                Record saved successfully!
+            </div>
+
+            <section class="recent-entries">
+                <h3>Recently Entered Records</h3>
+                <div class="table-wrapper">
+                    <table id="table-recent">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Activity</th>
+                                <th>Product</th>
+                                <th>Incoming</th>
+                                <th>Finished</th>
+                                <th>Yield</th>
+                                <th>Cost/Lb</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- DETAIL VIEW PAGE -->
+    <main id="page-detail" class="page">
+        <section class="detail-container">
+            <h2>Pallet-Level Detail</h2>
+            <div class="detail-controls">
+                <input type="text" id="detail-search" placeholder="Search by lot, supplier, format..." class="search-input">
+                <button id="btn-export-csv" class="btn-secondary">Export CSV</button>
+            </div>
+            <div class="table-wrapper">
+                <table id="table-detail">
+                    <thead>
+                        <tr>
+                            <th data-sort="date">Date</th>
+                            <th data-sort="activity">Activity</th>
+                            <th data-sort="supplier">Supplier</th>
+                            <th data-sort="lot">Lot #</th>
+                            <th data-sort="product_format">Product</th>
+                            <th data-sort="incoming_lbs">Incoming Lbs</th>
+                            <th data-sort="finished_lbs">Finished Lbs</th>
+                            <th data-sort="yield_pct">Yield %</th>
+                            <th data-sort="people">People</th>
+                            <th data-sort="hours_worked">Hours</th>
+                            <th data-sort="cost_per_finished_lb">$/Lb</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sea Est Activity Cost Tracker | Labor Rate: $22.00/hr | Data as of <span id="data-timestamp">--</span></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
