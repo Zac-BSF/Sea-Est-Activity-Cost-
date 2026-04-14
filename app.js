@@ -455,6 +455,28 @@ function renderDailyRows() {
         `;
         tbody.appendChild(tr);
     });
+
+    // Totals row (weighted averages)
+    const totalLbs = rows.reduce((s, r) => s + r.lbs, 0);
+    const totalExtSpread = rows.filter(r => r.ext_spread != null).reduce((s, r) => s + r.ext_spread, 0);
+    const weightedCost = totalLbs > 0 ? rows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / totalLbs : null;
+    const weightedSpread = totalLbs > 0 ? totalExtSpread / totalLbs : null;
+    const weightedYield = totalLbs > 0 ? rows.filter(r => r.yield != null).reduce((s, r) => s + r.yield * r.lbs, 0) / totalLbs : null;
+    const hasSpread = rows.some(r => r.ext_spread != null);
+
+    const tfoot = document.querySelector('#table-daily tfoot') || document.createElement('tfoot');
+    tfoot.innerHTML = `
+        <tr class="totals-row">
+            <td colspan="4" style="font-weight:700">TOTALS (Weighted Avg)</td>
+            <td class="text-right" style="font-weight:700">${weightedCost != null ? '$' + weightedCost.toFixed(4) : '--'}</td>
+            <td></td>
+            <td class="text-right ${hasSpread ? (weightedSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:700">${hasSpread ? '$' + weightedSpread.toFixed(4) : '--'}</td>
+            <td class="text-right" style="font-weight:700">${weightedYield != null ? weightedYield.toFixed(1) + '%' : '--'}</td>
+            <td class="text-right" style="font-weight:700">${numberFmt(totalLbs.toFixed(0))}</td>
+            <td class="text-right ${hasSpread ? (totalExtSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:700">${hasSpread ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
+        </tr>
+    `;
+    if (!tfoot.parentNode) document.getElementById('table-daily').appendChild(tfoot);
 }
 
 function setupDailySortHeaders() {
@@ -516,6 +538,7 @@ function updateWeeklyTable() {
     const tbody = document.querySelector('#table-weekly tbody');
     tbody.innerHTML = '';
 
+    const weeklyRows = [];
     Object.keys(groups).sort().forEach(key => {
         const [week, activity, product] = key.split('|');
         const recs = groups[key];
@@ -530,6 +553,10 @@ function updateWeeklyTable() {
 
         if (!totalCosts.length) return;
 
+        const avgTotalCost = avg(totalCosts);
+        const avgYield = yields.length ? avg(yields) : null;
+        weeklyRows.push({ lbs: totalLbs, avgTotal: avgTotalCost, yield: avgYield, ext_spread: extSpreads.length ? totalExtSpread : null });
+
         const spreadClass = spreads.length && avg(spreads) >= 0 ? 'cost-normal' : 'cost-high';
         const tr = document.createElement('tr');
         tr.innerHTML = `
@@ -537,15 +564,37 @@ function updateWeeklyTable() {
             <td>${activity}</td>
             <td>${product}</td>
             <td class="text-right">${inputCosts.length ? '$' + avg(inputCosts).toFixed(2) : '--'}</td>
-            <td class="text-right">${totalCosts.length ? '$' + avg(totalCosts).toFixed(4) : '--'}</td>
+            <td class="text-right">$${avgTotalCost.toFixed(4)}</td>
             <td class="text-right">${kpi ? '$' + kpi.toFixed(2) : '--'}</td>
             <td class="text-right ${spreadClass}">${spreads.length ? '$' + avg(spreads).toFixed(4) : '--'}</td>
-            <td class="text-right">${yields.length ? avg(yields).toFixed(1) + '%' : '--'}</td>
+            <td class="text-right">${avgYield != null ? avgYield.toFixed(1) + '%' : '--'}</td>
             <td class="text-right">${numberFmt(totalLbs.toFixed(0))}</td>
             <td class="text-right ${extSpreads.length ? (totalExtSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:600">${extSpreads.length ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
         `;
         tbody.appendChild(tr);
     });
+
+    // Totals row (weighted averages)
+    const wTotalLbs = weeklyRows.reduce((s, r) => s + r.lbs, 0);
+    const wTotalExtSpread = weeklyRows.filter(r => r.ext_spread != null).reduce((s, r) => s + r.ext_spread, 0);
+    const wWeightedCost = wTotalLbs > 0 ? weeklyRows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / wTotalLbs : null;
+    const wWeightedSpread = wTotalLbs > 0 ? wTotalExtSpread / wTotalLbs : null;
+    const wWeightedYield = wTotalLbs > 0 ? weeklyRows.filter(r => r.yield != null).reduce((s, r) => s + r.yield * r.lbs, 0) / wTotalLbs : null;
+    const wHasSpread = weeklyRows.some(r => r.ext_spread != null);
+
+    let tfoot = document.querySelector('#table-weekly tfoot');
+    if (!tfoot) { tfoot = document.createElement('tfoot'); document.getElementById('table-weekly').appendChild(tfoot); }
+    tfoot.innerHTML = `
+        <tr class="totals-row">
+            <td colspan="4" style="font-weight:700">TOTALS (Weighted Avg)</td>
+            <td class="text-right" style="font-weight:700">${wWeightedCost != null ? '$' + wWeightedCost.toFixed(4) : '--'}</td>
+            <td></td>
+            <td class="text-right ${wHasSpread ? (wWeightedSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:700">${wHasSpread ? '$' + wWeightedSpread.toFixed(4) : '--'}</td>
+            <td class="text-right" style="font-weight:700">${wWeightedYield != null ? wWeightedYield.toFixed(1) + '%' : '--'}</td>
+            <td class="text-right" style="font-weight:700">${numberFmt(wTotalLbs.toFixed(0))}</td>
+            <td class="text-right ${wHasSpread ? (wTotalExtSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:700">${wHasSpread ? '$' + numberFmt(wTotalExtSpread.toFixed(0)) : '--'}</td>
+        </tr>
+    `;
 }
 
 // ---- DETAIL TABLE ----

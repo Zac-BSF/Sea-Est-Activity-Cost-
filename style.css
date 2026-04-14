@@ -267,6 +267,7 @@ tbody td {
     white-space: nowrap;
 }
 tbody tr:hover { background: var(--gray-50); }
+.totals-row td { border-top: 2px solid var(--gray-800); background: var(--gray-50); }
 .text-right { text-align: right; }
 .cost-high { color: var(--danger); font-weight: 600; }
 .cost-normal { color: var(--success); font-weight: 600; }
