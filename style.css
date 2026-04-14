@@ -98,6 +98,9 @@ nav { display: flex; gap: 4px; }
     min-width: 150px;
 }
 .filter-group select:focus, .filter-group input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); }
+.filter-group select[multiple] { min-height: 90px; padding: 4px; font-size: 12px; }
+.filter-group select[multiple] option { padding: 4px 8px; border-radius: 3px; margin: 1px 0; }
+.filter-group select[multiple] option:checked { background: var(--primary); color: white; }
 
 /* BUTTONS */
 .btn-primary {

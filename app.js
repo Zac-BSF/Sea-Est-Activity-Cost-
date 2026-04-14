@@ -71,21 +71,29 @@ function populateFilters() {
 
 function fillSelect(id, values) {
     const sel = document.getElementById(id);
-    const current = sel.value;
-    while (sel.options.length > 1) sel.remove(1);
+    const isMulti = sel.multiple;
+    const current = isMulti
+        ? [...sel.selectedOptions].map(o => o.value)
+        : sel.value;
+    if (!isMulti) {
+        while (sel.options.length > 1) sel.remove(1);
+    } else {
+        sel.innerHTML = '';
+    }
     values.forEach(v => {
         const opt = document.createElement('option');
         opt.value = v;
         opt.textContent = v;
+        if (isMulti && current.includes(v)) opt.selected = true;
         sel.appendChild(opt);
     });
-    sel.value = current;
+    if (!isMulti) sel.value = current;
 }
 
 function resetFilters() {
     document.getElementById('filter-classification').value = 'all';
     document.getElementById('filter-activity').value = 'all';
-    document.getElementById('filter-product').value = 'all';
+    [...document.getElementById('filter-product').options].forEach(o => o.selected = false);
     document.getElementById('filter-supplier').value = 'all';
     const dates = allData.records.map(r => r.date).sort();
     if (dates.length) {
@@ -98,7 +106,7 @@ function resetFilters() {
 function applyFilters() {
     const classification = document.getElementById('filter-classification').value;
     const activity = document.getElementById('filter-activity').value;
-    const product = document.getElementById('filter-product').value;
+    const selectedProducts = [...document.getElementById('filter-product').selectedOptions].map(o => o.value);
     const supplier = document.getElementById('filter-supplier').value;
     const dateStart = document.getElementById('filter-date-start').value;
     const dateEnd = document.getElementById('filter-date-end').value;
@@ -106,7 +114,7 @@ function applyFilters() {
     filteredRecords = allData.records.filter(r => {
         if (classification !== 'all' && r.classification !== classification) return false;
         if (activity !== 'all' && r.activity !== activity) return false;
-        if (product !== 'all' && r.product_format !== product) return false;
+        if (selectedProducts.length > 0 && !selectedProducts.includes(r.product_format)) return false;
         if (supplier !== 'all' && r.supplier !== supplier) return false;
         if (dateStart && r.date < dateStart) return false;
         if (dateEnd && r.date > dateEnd) return false;
