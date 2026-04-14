@@ -451,7 +451,7 @@ function renderDailyRows() {
             <td class="text-right ${spreadClass}">${r.spread != null ? '$' + r.spread.toFixed(4) : '--'}</td>
             <td class="text-right">${r.yield != null ? r.yield.toFixed(1) + '%' : '--'}</td>
             <td class="text-right">${numberFmt(r.lbs.toFixed(0))}</td>
-            <td class="text-right" style="font-weight:600">${r.ext_spread != null ? '$' + numberFmt(r.ext_spread.toFixed(0)) : '--'}</td>
+            <td class="text-right ${r.ext_spread != null ? (r.ext_spread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:600">${r.ext_spread != null ? '$' + numberFmt(r.ext_spread.toFixed(0)) : '--'}</td>
         `;
         tbody.appendChild(tr);
     });
@@ -542,7 +542,7 @@ function updateWeeklyTable() {
             <td class="text-right ${spreadClass}">${spreads.length ? '$' + avg(spreads).toFixed(4) : '--'}</td>
             <td class="text-right">${yields.length ? avg(yields).toFixed(1) + '%' : '--'}</td>
             <td class="text-right">${numberFmt(totalLbs.toFixed(0))}</td>
-            <td class="text-right" style="font-weight:600">${extSpreads.length ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
+            <td class="text-right ${extSpreads.length ? (totalExtSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:600">${extSpreads.length ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
         `;
         tbody.appendChild(tr);
     });
