@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T07:25:05.373867",
+  "generated_at": "2026-04-14T07:30:45.584562",
   "labor_rate": 22.0,
   "protein_prices": {
     "2026-03-09": {
@@ -71,7 +71,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.55,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.2233,
       "extended_production_spread": 281.94
     },
@@ -98,7 +98,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.55,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.4138,
       "extended_production_spread": 535.22
     },
@@ -125,7 +125,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.55,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.3045,
       "extended_production_spread": 391.66
     },
@@ -150,7 +150,7 @@
       "yield_loss_cost_per_lb": 0.168,
       "total_cost_per_finished_lb": 6.5054,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -175,7 +175,7 @@
       "yield_loss_cost_per_lb": 0.034,
       "total_cost_per_finished_lb": 7.4208,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -200,7 +200,7 @@
       "yield_loss_cost_per_lb": 0.1397,
       "total_cost_per_finished_lb": 6.511,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -225,7 +225,7 @@
       "yield_loss_cost_per_lb": 0.4647,
       "total_cost_per_finished_lb": 6.8145,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -250,7 +250,7 @@
       "yield_loss_cost_per_lb": 0.1562,
       "total_cost_per_finished_lb": 6.4899,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -275,7 +275,7 @@
       "yield_loss_cost_per_lb": 0.048,
       "total_cost_per_finished_lb": 6.3789,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -301,7 +301,7 @@
       "total_cost_per_finished_lb": 7.6667,
       "classification": "Fresh",
       "input_cost_per_lb": 7.595,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.1733,
       "extended_production_spread": 218.14
     },
@@ -327,7 +327,7 @@
       "total_cost_per_finished_lb": 7.734,
       "classification": "Fresh",
       "input_cost_per_lb": 7.595,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.106,
       "extended_production_spread": 134.62
     },
@@ -353,7 +353,7 @@
       "total_cost_per_finished_lb": 7.4004,
       "classification": "Fresh",
       "input_cost_per_lb": 7.595,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.4396,
       "extended_production_spread": 566.51
     },
@@ -379,7 +379,7 @@
       "total_cost_per_finished_lb": 7.0018,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1233,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5182,
       "extended_production_spread": 690.46
     },
@@ -406,7 +406,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4821,
       "extended_production_spread": 626.73
     },
@@ -433,7 +433,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1796,
       "extended_production_spread": 225.51
     },
@@ -460,7 +460,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4325,
       "extended_production_spread": 579.92
     },
@@ -487,7 +487,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5862,
       "extended_production_spread": 793.87
     },
@@ -514,7 +514,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.55,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.6238,
       "extended_production_spread": 514.75
     },
@@ -541,7 +541,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5713,
       "extended_production_spread": 818.89
     },
@@ -568,7 +568,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2234,
       "extended_production_spread": -171.94
     },
@@ -595,7 +595,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0749,
       "extended_production_spread": -88.29
     },
@@ -622,7 +622,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3848,
       "extended_production_spread": 489.6
     },
@@ -649,7 +649,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.55,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": -0.3403,
       "extended_production_spread": -393.39
     },
@@ -674,7 +674,7 @@
       "yield_loss_cost_per_lb": 0.0296,
       "total_cost_per_finished_lb": 6.3452,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -699,7 +699,7 @@
       "yield_loss_cost_per_lb": 0.1378,
       "total_cost_per_finished_lb": 6.4542,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -724,7 +724,7 @@
       "yield_loss_cost_per_lb": 0.145,
       "total_cost_per_finished_lb": 6.4713,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -749,7 +749,7 @@
       "yield_loss_cost_per_lb": -0.0914,
       "total_cost_per_finished_lb": 6.2218,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -774,7 +774,7 @@
       "yield_loss_cost_per_lb": 0.1575,
       "total_cost_per_finished_lb": 6.4697,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -799,7 +799,7 @@
       "yield_loss_cost_per_lb": 0.1149,
       "total_cost_per_finished_lb": 6.4259,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -824,7 +824,7 @@
       "yield_loss_cost_per_lb": 0.1555,
       "total_cost_per_finished_lb": 6.5134,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -849,7 +849,7 @@
       "yield_loss_cost_per_lb": -0.1284,
       "total_cost_per_finished_lb": 6.1911,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -874,7 +874,7 @@
       "yield_loss_cost_per_lb": 0.041,
       "total_cost_per_finished_lb": 6.3592,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -899,7 +899,7 @@
       "yield_loss_cost_per_lb": 0.089,
       "total_cost_per_finished_lb": 6.39,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -924,7 +924,7 @@
       "yield_loss_cost_per_lb": 0.145,
       "total_cost_per_finished_lb": 6.477,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -949,7 +949,7 @@
       "yield_loss_cost_per_lb": 0.0512,
       "total_cost_per_finished_lb": 6.4119,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -974,7 +974,7 @@
       "yield_loss_cost_per_lb": 0.1826,
       "total_cost_per_finished_lb": 6.4988,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -999,7 +999,7 @@
       "yield_loss_cost_per_lb": 0.0525,
       "total_cost_per_finished_lb": 6.398,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1026,7 +1026,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4584,
       "extended_production_spread": 622.41
     },
@@ -1053,7 +1053,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4167,
       "extended_production_spread": 552.35
     },
@@ -1080,7 +1080,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5444,
       "extended_production_spread": 715.99
     },
@@ -1107,7 +1107,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4246,
       "extended_production_spread": 553.91
     },
@@ -1134,7 +1134,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6093,
       "extended_production_spread": 814.79
     },
@@ -1161,7 +1161,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2493,
       "extended_production_spread": 316.2
     },
@@ -1188,7 +1188,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.27,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.9093,
       "extended_production_spread": 1245.93
     },
@@ -1213,7 +1213,7 @@
       "yield_loss_cost_per_lb": 0.2633,
       "total_cost_per_finished_lb": 6.5888,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1238,7 +1238,7 @@
       "yield_loss_cost_per_lb": 0.0595,
       "total_cost_per_finished_lb": 6.3911,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1263,7 +1263,7 @@
       "yield_loss_cost_per_lb": 0.2797,
       "total_cost_per_finished_lb": 6.6139,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1288,7 +1288,7 @@
       "yield_loss_cost_per_lb": -0.1873,
       "total_cost_per_finished_lb": 6.1419,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1313,7 +1313,7 @@
       "yield_loss_cost_per_lb": 0.0366,
       "total_cost_per_finished_lb": 6.3996,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1338,7 +1338,7 @@
       "yield_loss_cost_per_lb": -0.1115,
       "total_cost_per_finished_lb": 6.206,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1364,7 +1364,7 @@
       "total_cost_per_finished_lb": 7.3764,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1233,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1436,
       "extended_production_spread": 192.05
     },
@@ -1390,7 +1390,7 @@
       "total_cost_per_finished_lb": 7.4746,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1233,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0454,
       "extended_production_spread": 57.5
     },
@@ -1417,7 +1417,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.6927,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.2509,
       "extended_production_spread": 244.23
     },
@@ -1444,7 +1444,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2756,
       "extended_production_spread": 381.26
     },
@@ -1471,7 +1471,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.6927,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.1803,
       "extended_production_spread": 222.8
     },
@@ -1498,7 +1498,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3985,
       "extended_production_spread": 501.45
     },
@@ -1525,7 +1525,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3081,
       "extended_production_spread": 436.92
     },
@@ -1550,7 +1550,7 @@
       "yield_loss_cost_per_lb": 0.0474,
       "total_cost_per_finished_lb": 6.3629,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1575,7 +1575,7 @@
       "yield_loss_cost_per_lb": 0.0094,
       "total_cost_per_finished_lb": 6.3534,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1600,7 +1600,7 @@
       "yield_loss_cost_per_lb": -0.0287,
       "total_cost_per_finished_lb": 6.2799,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1625,7 +1625,7 @@
       "yield_loss_cost_per_lb": -0.0479,
       "total_cost_per_finished_lb": 6.267,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1650,7 +1650,7 @@
       "yield_loss_cost_per_lb": 0.7029,
       "total_cost_per_finished_lb": 7.0687,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1675,7 +1675,7 @@
       "yield_loss_cost_per_lb": 0.2667,
       "total_cost_per_finished_lb": 6.6057,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1700,7 +1700,7 @@
       "yield_loss_cost_per_lb": -0.3178,
       "total_cost_per_finished_lb": 6.0082,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1725,7 +1725,7 @@
       "yield_loss_cost_per_lb": 0.2443,
       "total_cost_per_finished_lb": 6.5703,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1750,7 +1750,7 @@
       "yield_loss_cost_per_lb": 0.0576,
       "total_cost_per_finished_lb": 6.3961,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1775,7 +1775,7 @@
       "yield_loss_cost_per_lb": 0.0082,
       "total_cost_per_finished_lb": 6.3784,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1800,7 +1800,7 @@
       "yield_loss_cost_per_lb": 0.0621,
       "total_cost_per_finished_lb": 6.3793,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1825,7 +1825,7 @@
       "yield_loss_cost_per_lb": 0.1013,
       "total_cost_per_finished_lb": 6.4165,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1850,7 +1850,7 @@
       "yield_loss_cost_per_lb": 0.0385,
       "total_cost_per_finished_lb": 6.3878,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1875,7 +1875,7 @@
       "yield_loss_cost_per_lb": -0.0287,
       "total_cost_per_finished_lb": 6.2744,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1900,7 +1900,7 @@
       "yield_loss_cost_per_lb": 0.3279,
       "total_cost_per_finished_lb": 6.7702,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1925,7 +1925,7 @@
       "yield_loss_cost_per_lb": 0.2722,
       "total_cost_per_finished_lb": 6.6011,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1950,7 +1950,7 @@
       "yield_loss_cost_per_lb": 0.1397,
       "total_cost_per_finished_lb": 6.4588,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -1975,7 +1975,7 @@
       "yield_loss_cost_per_lb": 0.0762,
       "total_cost_per_finished_lb": 6.3866,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2000,7 +2000,7 @@
       "yield_loss_cost_per_lb": 0.0659,
       "total_cost_per_finished_lb": 6.3957,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2025,7 +2025,7 @@
       "yield_loss_cost_per_lb": 0.0391,
       "total_cost_per_finished_lb": 6.3317,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2051,7 +2051,7 @@
       "total_cost_per_finished_lb": 7.8979,
       "classification": "Fresh",
       "input_cost_per_lb": 7.6421,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": -0.0579,
       "extended_production_spread": -55.03
     },
@@ -2077,7 +2077,7 @@
       "total_cost_per_finished_lb": 7.5528,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0328,
       "extended_production_spread": -43.51
     },
@@ -2103,7 +2103,7 @@
       "total_cost_per_finished_lb": 8.2777,
       "classification": "Fresh",
       "input_cost_per_lb": 7.6421,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": -0.4377,
       "extended_production_spread": -503.88
     },
@@ -2129,7 +2129,7 @@
       "total_cost_per_finished_lb": 7.7204,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2004,
       "extended_production_spread": -236.69
     },
@@ -2156,7 +2156,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4455,
       "extended_production_spread": 622.29
     },
@@ -2183,7 +2183,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.7243,
       "extended_production_spread": 946.68
     },
@@ -2210,7 +2210,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.7636,
       "extended_production_spread": 535.49
     },
@@ -2237,7 +2237,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3581,
       "extended_production_spread": 444.59
     },
@@ -2264,7 +2264,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2481,
       "extended_production_spread": 335.65
     },
@@ -2291,7 +2291,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2748,
       "extended_production_spread": 375.18
     },
@@ -2318,7 +2318,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2723,
       "extended_production_spread": 369.46
     },
@@ -2345,7 +2345,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5878,
       "extended_production_spread": 417.68
     },
@@ -2372,7 +2372,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3845,
       "extended_production_spread": 532.5
     },
@@ -2399,7 +2399,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2629,
       "extended_production_spread": 357.21
     },
@@ -2424,7 +2424,7 @@
       "yield_loss_cost_per_lb": 0.0736,
       "total_cost_per_finished_lb": 6.4268,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2449,7 +2449,7 @@
       "yield_loss_cost_per_lb": 0.0493,
       "total_cost_per_finished_lb": 6.3555,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2474,7 +2474,7 @@
       "yield_loss_cost_per_lb": 0.0296,
       "total_cost_per_finished_lb": 6.3329,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2499,7 +2499,7 @@
       "yield_loss_cost_per_lb": 0.2362,
       "total_cost_per_finished_lb": 6.5435,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2524,7 +2524,7 @@
       "yield_loss_cost_per_lb": 0.0423,
       "total_cost_per_finished_lb": 6.3483,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2550,7 +2550,7 @@
       "total_cost_per_finished_lb": 7.4268,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0932,
       "extended_production_spread": 126.9
     },
@@ -2576,7 +2576,7 @@
       "total_cost_per_finished_lb": 8.1302,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.6102,
       "extended_production_spread": -710.73
     },
@@ -2602,7 +2602,7 @@
       "total_cost_per_finished_lb": 7.5341,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0141,
       "extended_production_spread": -9.49
     },
@@ -2628,7 +2628,7 @@
       "total_cost_per_finished_lb": 7.7675,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2475,
       "extended_production_spread": -286.13
     },
@@ -2654,7 +2654,7 @@
       "total_cost_per_finished_lb": 7.6042,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0842,
       "extended_production_spread": -108.82
     },
@@ -2680,7 +2680,7 @@
       "total_cost_per_finished_lb": 8.5448,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -1.0248,
       "extended_production_spread": -1184.38
     },
@@ -2706,7 +2706,7 @@
       "total_cost_per_finished_lb": 7.3685,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1515,
       "extended_production_spread": 202.28
     },
@@ -2732,7 +2732,7 @@
       "total_cost_per_finished_lb": 7.8553,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.3353,
       "extended_production_spread": -221.37
     },
@@ -2758,7 +2758,7 @@
       "total_cost_per_finished_lb": 7.4254,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0946,
       "extended_production_spread": 127.63
     },
@@ -2784,7 +2784,7 @@
       "total_cost_per_finished_lb": 7.4301,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0899,
       "extended_production_spread": 119.11
     },
@@ -2809,7 +2809,7 @@
       "yield_loss_cost_per_lb": null,
       "total_cost_per_finished_lb": null,
       "classification": "Previously Frozen",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2834,7 +2834,7 @@
       "yield_loss_cost_per_lb": null,
       "total_cost_per_finished_lb": null,
       "classification": "Previously Frozen",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -2861,7 +2861,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.373,
       "extended_production_spread": 566.39
     },
@@ -2888,7 +2888,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4705,
       "extended_production_spread": 566.64
     },
@@ -2915,7 +2915,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4299,
       "extended_production_spread": 559.99
     },
@@ -2942,7 +2942,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4981,
       "extended_production_spread": 679.82
     },
@@ -2969,7 +2969,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.28,
       "extended_production_spread": 370.63
     },
@@ -2996,7 +2996,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.1448,
       "extended_production_spread": -189.1
     },
@@ -3023,7 +3023,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3442,
       "extended_production_spread": 458.51
     },
@@ -3050,7 +3050,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0493,
       "extended_production_spread": 67.16
     },
@@ -3077,7 +3077,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2617,
       "extended_production_spread": 348.64
     },
@@ -3104,7 +3104,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3169,
       "extended_production_spread": 418.99
     },
@@ -3131,7 +3131,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3838,
       "extended_production_spread": 504.0
     },
@@ -3158,7 +3158,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3419,
       "extended_production_spread": 449.88
     },
@@ -3185,7 +3185,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4647,
       "extended_production_spread": 627.48
     },
@@ -3212,7 +3212,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.6927,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.4396,
       "extended_production_spread": 615.02
     },
@@ -3239,7 +3239,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.6927,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.012,
       "extended_production_spread": 6.46
     },
@@ -3266,7 +3266,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3328,
       "extended_production_spread": 447.16
     },
@@ -3293,7 +3293,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.6927,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.2648,
       "extended_production_spread": 331.9
     },
@@ -3320,7 +3320,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4036,
       "extended_production_spread": 495.54
     },
@@ -3347,7 +3347,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4054,
       "extended_production_spread": 477.18
     },
@@ -3374,7 +3374,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4154,
       "extended_production_spread": 553.53
     },
@@ -3401,7 +3401,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.6927,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.1103,
       "extended_production_spread": 133.31
     },
@@ -3428,7 +3428,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.6927,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.1485,
       "extended_production_spread": 189.09
     },
@@ -3455,7 +3455,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.6927,
-      "sell_kpi": 7.84,
+      "target_cost": 7.84,
       "production_spread_per_lb": 0.1768,
       "extended_production_spread": 142.22
     },
@@ -3480,7 +3480,7 @@
       "yield_loss_cost_per_lb": 0.0531,
       "total_cost_per_finished_lb": 6.3454,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3505,7 +3505,7 @@
       "yield_loss_cost_per_lb": -0.1,
       "total_cost_per_finished_lb": 6.2454,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3530,7 +3530,7 @@
       "yield_loss_cost_per_lb": -0.0522,
       "total_cost_per_finished_lb": 6.2509,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3555,7 +3555,7 @@
       "yield_loss_cost_per_lb": 0.3286,
       "total_cost_per_finished_lb": 6.6353,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3580,7 +3580,7 @@
       "yield_loss_cost_per_lb": 0.0069,
       "total_cost_per_finished_lb": 6.3162,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3605,7 +3605,7 @@
       "yield_loss_cost_per_lb": 0.0608,
       "total_cost_per_finished_lb": 7.4684,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3630,7 +3630,7 @@
       "yield_loss_cost_per_lb": 0.0163,
       "total_cost_per_finished_lb": 6.3174,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3655,7 +3655,7 @@
       "yield_loss_cost_per_lb": 0.2893,
       "total_cost_per_finished_lb": 6.596,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3681,7 +3681,7 @@
       "total_cost_per_finished_lb": 7.3941,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1259,
       "extended_production_spread": 186.83
     },
@@ -3707,7 +3707,7 @@
       "total_cost_per_finished_lb": 6.7633,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.7567,
       "extended_production_spread": 979.84
     },
@@ -3733,7 +3733,7 @@
       "total_cost_per_finished_lb": 8.3227,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.8027,
       "extended_production_spread": -909.05
     },
@@ -3759,7 +3759,7 @@
       "total_cost_per_finished_lb": 7.5879,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0679,
       "extended_production_spread": -89.64
     },
@@ -3785,7 +3785,7 @@
       "total_cost_per_finished_lb": 7.6101,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0901,
       "extended_production_spread": -113.31
     },
@@ -3810,7 +3810,7 @@
       "yield_loss_cost_per_lb": null,
       "total_cost_per_finished_lb": null,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3835,7 +3835,7 @@
       "yield_loss_cost_per_lb": null,
       "total_cost_per_finished_lb": null,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3860,7 +3860,7 @@
       "yield_loss_cost_per_lb": null,
       "total_cost_per_finished_lb": null,
       "classification": "Previously Frozen",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3885,7 +3885,7 @@
       "yield_loss_cost_per_lb": null,
       "total_cost_per_finished_lb": null,
       "classification": "Previously Frozen",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3910,7 +3910,7 @@
       "yield_loss_cost_per_lb": null,
       "total_cost_per_finished_lb": null,
       "classification": "Previously Frozen",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3935,7 +3935,7 @@
       "yield_loss_cost_per_lb": 0.0968,
       "total_cost_per_finished_lb": 6.3991,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3960,7 +3960,7 @@
       "yield_loss_cost_per_lb": 0.3217,
       "total_cost_per_finished_lb": 6.6361,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -3985,7 +3985,7 @@
       "yield_loss_cost_per_lb": 0.1621,
       "total_cost_per_finished_lb": 6.4704,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4010,7 +4010,7 @@
       "yield_loss_cost_per_lb": 0.1117,
       "total_cost_per_finished_lb": 6.4268,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4035,7 +4035,7 @@
       "yield_loss_cost_per_lb": 0.0264,
       "total_cost_per_finished_lb": 6.3354,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4060,7 +4060,7 @@
       "yield_loss_cost_per_lb": 0.2294,
       "total_cost_per_finished_lb": 6.5489,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4085,7 +4085,7 @@
       "yield_loss_cost_per_lb": 0.0852,
       "total_cost_per_finished_lb": 7.5189,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4110,7 +4110,7 @@
       "yield_loss_cost_per_lb": 0.1859,
       "total_cost_per_finished_lb": 6.4956,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4135,7 +4135,7 @@
       "yield_loss_cost_per_lb": 0.1542,
       "total_cost_per_finished_lb": 6.4775,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4160,7 +4160,7 @@
       "yield_loss_cost_per_lb": 0.0621,
       "total_cost_per_finished_lb": 6.3695,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4185,7 +4185,7 @@
       "yield_loss_cost_per_lb": 0.0182,
       "total_cost_per_finished_lb": 6.3508,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4210,7 +4210,7 @@
       "yield_loss_cost_per_lb": -0.6922,
       "total_cost_per_finished_lb": 5.6437,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4235,7 +4235,7 @@
       "yield_loss_cost_per_lb": 0.3586,
       "total_cost_per_finished_lb": 6.6873,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4260,7 +4260,7 @@
       "yield_loss_cost_per_lb": -0.0491,
       "total_cost_per_finished_lb": 6.2991,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4285,7 +4285,7 @@
       "yield_loss_cost_per_lb": 0.1273,
       "total_cost_per_finished_lb": 6.4438,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4310,7 +4310,7 @@
       "yield_loss_cost_per_lb": -0.0343,
       "total_cost_per_finished_lb": 6.2778,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4335,7 +4335,7 @@
       "yield_loss_cost_per_lb": 0.1384,
       "total_cost_per_finished_lb": 6.4697,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4360,7 +4360,7 @@
       "yield_loss_cost_per_lb": -0.02,
       "total_cost_per_finished_lb": 6.2933,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4385,7 +4385,7 @@
       "yield_loss_cost_per_lb": -0.2068,
       "total_cost_per_finished_lb": 6.0938,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4410,7 +4410,7 @@
       "yield_loss_cost_per_lb": 0.0646,
       "total_cost_per_finished_lb": 6.3908,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4435,7 +4435,7 @@
       "yield_loss_cost_per_lb": -0.0719,
       "total_cost_per_finished_lb": 6.238,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4460,7 +4460,7 @@
       "yield_loss_cost_per_lb": -0.0225,
       "total_cost_per_finished_lb": 6.3877,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4485,7 +4485,7 @@
       "yield_loss_cost_per_lb": 0.0404,
       "total_cost_per_finished_lb": 6.3439,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4510,7 +4510,7 @@
       "yield_loss_cost_per_lb": 0.111,
       "total_cost_per_finished_lb": 6.4189,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4535,7 +4535,7 @@
       "yield_loss_cost_per_lb": -0.144,
       "total_cost_per_finished_lb": 6.1765,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4560,7 +4560,7 @@
       "yield_loss_cost_per_lb": 0.0107,
       "total_cost_per_finished_lb": 6.3267,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4585,7 +4585,7 @@
       "yield_loss_cost_per_lb": 0.0227,
       "total_cost_per_finished_lb": 6.3774,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4610,7 +4610,7 @@
       "yield_loss_cost_per_lb": 0.022,
       "total_cost_per_finished_lb": 6.3436,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4635,7 +4635,7 @@
       "yield_loss_cost_per_lb": 0.0487,
       "total_cost_per_finished_lb": 6.3692,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4660,7 +4660,7 @@
       "yield_loss_cost_per_lb": 0.0296,
       "total_cost_per_finished_lb": 6.3388,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4685,7 +4685,7 @@
       "yield_loss_cost_per_lb": 0.0884,
       "total_cost_per_finished_lb": 6.424,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4710,7 +4710,7 @@
       "yield_loss_cost_per_lb": -0.0025,
       "total_cost_per_finished_lb": 6.3391,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4735,7 +4735,7 @@
       "yield_loss_cost_per_lb": 0.21,
       "total_cost_per_finished_lb": 6.5429,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4760,7 +4760,7 @@
       "yield_loss_cost_per_lb": -0.1048,
       "total_cost_per_finished_lb": 6.3129,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4785,7 +4785,7 @@
       "yield_loss_cost_per_lb": -0.215,
       "total_cost_per_finished_lb": 6.113,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4810,7 +4810,7 @@
       "yield_loss_cost_per_lb": 0.0082,
       "total_cost_per_finished_lb": 6.3228,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4835,7 +4835,7 @@
       "yield_loss_cost_per_lb": -0.1386,
       "total_cost_per_finished_lb": 6.1782,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4860,7 +4860,7 @@
       "yield_loss_cost_per_lb": 0.0119,
       "total_cost_per_finished_lb": 6.3323,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -4886,7 +4886,7 @@
       "total_cost_per_finished_lb": 6.8221,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6979,
       "extended_production_spread": 969.04
     },
@@ -4912,7 +4912,7 @@
       "total_cost_per_finished_lb": 7.747,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.227,
       "extended_production_spread": -282.17
     },
@@ -4938,7 +4938,7 @@
       "total_cost_per_finished_lb": 7.3878,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1322,
       "extended_production_spread": 175.6
     },
@@ -4964,7 +4964,7 @@
       "total_cost_per_finished_lb": 7.6676,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.1476,
       "extended_production_spread": -189.6
     },
@@ -4990,7 +4990,7 @@
       "total_cost_per_finished_lb": 6.9769,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5431,
       "extended_production_spread": 751.88
     },
@@ -5016,7 +5016,7 @@
       "total_cost_per_finished_lb": 7.3143,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2057,
       "extended_production_spread": 269.81
     },
@@ -5042,7 +5042,7 @@
       "total_cost_per_finished_lb": 7.2835,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2365,
       "extended_production_spread": 308.25
     },
@@ -5068,7 +5068,7 @@
       "total_cost_per_finished_lb": 7.2592,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2608,
       "extended_production_spread": 343.11
     },
@@ -5094,7 +5094,7 @@
       "total_cost_per_finished_lb": 7.4216,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0984,
       "extended_production_spread": 130.98
     },
@@ -5120,7 +5120,7 @@
       "total_cost_per_finished_lb": 7.5116,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0084,
       "extended_production_spread": 11.33
     },
@@ -5146,7 +5146,7 @@
       "total_cost_per_finished_lb": 7.4274,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0926,
       "extended_production_spread": 48.52
     },
@@ -5172,7 +5172,7 @@
       "total_cost_per_finished_lb": 7.3562,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1638,
       "extended_production_spread": 216.45
     },
@@ -5198,7 +5198,7 @@
       "total_cost_per_finished_lb": 7.3274,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1926,
       "extended_production_spread": 238.34
     },
@@ -5224,7 +5224,7 @@
       "total_cost_per_finished_lb": 7.5801,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0601,
       "extended_production_spread": -71.09
     },
@@ -5250,7 +5250,7 @@
       "total_cost_per_finished_lb": 7.5012,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0188,
       "extended_production_spread": 21.3
     },
@@ -5276,7 +5276,7 @@
       "total_cost_per_finished_lb": 7.4253,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0947,
       "extended_production_spread": 123.09
     },
@@ -5302,7 +5302,7 @@
       "total_cost_per_finished_lb": 8.1216,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.6016,
       "extended_production_spread": -649.18
     },
@@ -5328,7 +5328,7 @@
       "total_cost_per_finished_lb": 7.1753,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3447,
       "extended_production_spread": 444.35
     },
@@ -5354,7 +5354,7 @@
       "total_cost_per_finished_lb": 7.2946,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2254,
       "extended_production_spread": 179.99
     },
@@ -5379,7 +5379,7 @@
       "yield_loss_cost_per_lb": null,
       "total_cost_per_finished_lb": null,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -5406,7 +5406,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2421,
       "extended_production_spread": 320.32
     },
@@ -5433,7 +5433,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3831,
       "extended_production_spread": 583.48
     },
@@ -5460,7 +5460,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4593,
       "extended_production_spread": 688.38
     },
@@ -5487,7 +5487,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3485,
       "extended_production_spread": 458.3
     },
@@ -5514,7 +5514,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4217,
       "extended_production_spread": 560.03
     },
@@ -5541,7 +5541,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2917,
       "extended_production_spread": 386.63
     },
@@ -5568,7 +5568,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0947,
       "extended_production_spread": 127.35
     },
@@ -5595,7 +5595,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0547,
       "extended_production_spread": 79.33
     },
@@ -5622,7 +5622,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2483,
       "extended_production_spread": 320.42
     },
@@ -5649,7 +5649,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2274,
       "extended_production_spread": 182.21
     },
@@ -5676,7 +5676,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0.1427,
       "input_cost_per_lb": 6.4127,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2716,
       "extended_production_spread": 229.67
     },
@@ -5702,7 +5702,7 @@
       "total_cost_per_finished_lb": 8.2262,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.7062,
       "extended_production_spread": -956.21
     },
@@ -5728,7 +5728,7 @@
       "total_cost_per_finished_lb": 6.7806,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.7394,
       "extended_production_spread": 1200.07
     },
@@ -5754,7 +5754,7 @@
       "total_cost_per_finished_lb": 6.5157,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 1.0043,
       "extended_production_spread": 1668.83
     },
@@ -5780,7 +5780,7 @@
       "total_cost_per_finished_lb": 6.5675,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.9525,
       "extended_production_spread": 1382.83
     },
@@ -5806,7 +5806,7 @@
       "total_cost_per_finished_lb": 6.8124,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.7076,
       "extended_production_spread": 994.84
     },
@@ -5832,7 +5832,7 @@
       "total_cost_per_finished_lb": 6.6436,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.8764,
       "extended_production_spread": 1263.11
     },
@@ -5858,7 +5858,7 @@
       "total_cost_per_finished_lb": 6.5278,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.9922,
       "extended_production_spread": 1476.66
     },
@@ -5884,7 +5884,7 @@
       "total_cost_per_finished_lb": 6.6092,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.9108,
       "extended_production_spread": 1443.35
     },
@@ -5910,7 +5910,7 @@
       "total_cost_per_finished_lb": 7.7227,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2027,
       "extended_production_spread": -244.78
     },
@@ -5936,7 +5936,7 @@
       "total_cost_per_finished_lb": 7.0767,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4433,
       "extended_production_spread": 656.35
     },
@@ -5962,7 +5962,7 @@
       "total_cost_per_finished_lb": 7.3755,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1445,
       "extended_production_spread": 113.78
     },
@@ -5988,7 +5988,7 @@
       "total_cost_per_finished_lb": 7.1248,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1792,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3952,
       "extended_production_spread": 339.32
     },
@@ -6015,7 +6015,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3418,
       "extended_production_spread": 427.11
     },
@@ -6042,7 +6042,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3106,
       "extended_production_spread": 473.84
     },
@@ -6069,7 +6069,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 1.4304,
       "extended_production_spread": 2280.62
     },
@@ -6096,7 +6096,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.6629,
       "extended_production_spread": -856.81
     },
@@ -6123,7 +6123,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4632,
       "extended_production_spread": 601.73
     },
@@ -6150,7 +6150,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.7406,
       "extended_production_spread": 391.06
     },
@@ -6177,7 +6177,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.388,
       "extended_production_spread": 532.1
     },
@@ -6204,7 +6204,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4698,
       "extended_production_spread": 653.21
     },
@@ -6231,7 +6231,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3668,
       "extended_production_spread": 506.8
     },
@@ -6258,7 +6258,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5447,
       "extended_production_spread": 722.44
     },
@@ -6285,7 +6285,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1797,
       "extended_production_spread": 180.45
     },
@@ -6312,7 +6312,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3678,
       "extended_production_spread": 473.66
     },
@@ -6339,7 +6339,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3169,
       "extended_production_spread": 447.1
     },
@@ -6366,7 +6366,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2303,
       "extended_production_spread": 292.39
     },
@@ -6391,7 +6391,7 @@
       "yield_loss_cost_per_lb": 0.0166,
       "total_cost_per_finished_lb": 6.4461,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -6416,7 +6416,7 @@
       "yield_loss_cost_per_lb": 0.014,
       "total_cost_per_finished_lb": 6.4331,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -6442,7 +6442,7 @@
       "total_cost_per_finished_lb": 7.1667,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3533,
       "extended_production_spread": 441.04
     },
@@ -6468,7 +6468,7 @@
       "total_cost_per_finished_lb": 7.1286,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3914,
       "extended_production_spread": 600.73
     },
@@ -6494,7 +6494,7 @@
       "total_cost_per_finished_lb": 8.3752,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.8552,
       "extended_production_spread": -1169.38
     },
@@ -6520,7 +6520,7 @@
       "total_cost_per_finished_lb": 6.9286,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5914,
       "extended_production_spread": 417.48
     },
@@ -6546,7 +6546,7 @@
       "total_cost_per_finished_lb": 7.1867,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3333,
       "extended_production_spread": 430.11
     },
@@ -6572,7 +6572,7 @@
       "total_cost_per_finished_lb": 7.3994,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1206,
       "extended_production_spread": 151.39
     },
@@ -6598,7 +6598,7 @@
       "total_cost_per_finished_lb": 7.3106,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2094,
       "extended_production_spread": 111.31
     },
@@ -6624,7 +6624,7 @@
       "total_cost_per_finished_lb": 7.1991,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3209,
       "extended_production_spread": 437.49
     },
@@ -6650,7 +6650,7 @@
       "total_cost_per_finished_lb": 7.3457,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1743,
       "extended_production_spread": 236.11
     },
@@ -6676,7 +6676,7 @@
       "total_cost_per_finished_lb": 7.2774,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2426,
       "extended_production_spread": 329.32
     },
@@ -6703,7 +6703,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2929,
       "extended_production_spread": 397.28
     },
@@ -6730,7 +6730,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3775,
       "extended_production_spread": 459.63
     },
@@ -6757,7 +6757,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 1.0755,
       "extended_production_spread": 1358.7
     },
@@ -6784,7 +6784,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.7545,
       "extended_production_spread": 975.15
     },
@@ -6811,7 +6811,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2799,
       "extended_production_spread": 377.96
     },
@@ -6838,7 +6838,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3707,
       "extended_production_spread": 498.66
     },
@@ -6865,7 +6865,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3534,
       "extended_production_spread": 493.07
     },
@@ -6892,7 +6892,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.8993,
       "extended_production_spread": 1333.88
     },
@@ -6919,7 +6919,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4086,
       "extended_production_spread": 605.97
     },
@@ -6946,7 +6946,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6158,
       "extended_production_spread": 900.49
     },
@@ -6973,7 +6973,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5273,
       "extended_production_spread": 746.04
     },
@@ -7000,7 +7000,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2855,
       "extended_production_spread": 413.95
     },
@@ -7027,7 +7027,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1632,
       "extended_production_spread": 102.31
     },
@@ -7054,7 +7054,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0221,
       "extended_production_spread": 26.41
     },
@@ -7081,7 +7081,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0429,
       "extended_production_spread": -52.4
     },
@@ -7108,7 +7108,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4103,
       "extended_production_spread": 621.27
     },
@@ -7135,7 +7135,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.496,
       "extended_production_spread": 643.65
     },
@@ -7162,7 +7162,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1325,
       "extended_production_spread": 168.4
     },
@@ -7187,7 +7187,7 @@
       "yield_loss_cost_per_lb": -0.1096,
       "total_cost_per_finished_lb": 6.3391,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7212,7 +7212,7 @@
       "yield_loss_cost_per_lb": -0.1347,
       "total_cost_per_finished_lb": 6.3031,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7237,7 +7237,7 @@
       "yield_loss_cost_per_lb": 0.0147,
       "total_cost_per_finished_lb": 6.5195,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7262,7 +7262,7 @@
       "yield_loss_cost_per_lb": 0.0352,
       "total_cost_per_finished_lb": 6.4546,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7287,7 +7287,7 @@
       "yield_loss_cost_per_lb": 0.1513,
       "total_cost_per_finished_lb": 6.5623,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7312,7 +7312,7 @@
       "yield_loss_cost_per_lb": 0.063,
       "total_cost_per_finished_lb": 6.4743,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7337,7 +7337,7 @@
       "yield_loss_cost_per_lb": 0.0301,
       "total_cost_per_finished_lb": 6.4401,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7362,7 +7362,7 @@
       "yield_loss_cost_per_lb": -0.0593,
       "total_cost_per_finished_lb": 6.3868,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7387,7 +7387,7 @@
       "yield_loss_cost_per_lb": -0.0228,
       "total_cost_per_finished_lb": 6.391,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7412,7 +7412,7 @@
       "yield_loss_cost_per_lb": 0.3779,
       "total_cost_per_finished_lb": 6.8008,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7437,7 +7437,7 @@
       "yield_loss_cost_per_lb": 0.2351,
       "total_cost_per_finished_lb": 6.6762,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7462,7 +7462,7 @@
       "yield_loss_cost_per_lb": 0.0449,
       "total_cost_per_finished_lb": 6.4593,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7487,7 +7487,7 @@
       "yield_loss_cost_per_lb": 0.0025,
       "total_cost_per_finished_lb": 6.4464,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7512,7 +7512,7 @@
       "yield_loss_cost_per_lb": 0.1721,
       "total_cost_per_finished_lb": 6.5858,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7537,7 +7537,7 @@
       "yield_loss_cost_per_lb": -0.0235,
       "total_cost_per_finished_lb": 6.4072,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7562,7 +7562,7 @@
       "yield_loss_cost_per_lb": 0.0,
       "total_cost_per_finished_lb": 6.4661,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7587,7 +7587,7 @@
       "yield_loss_cost_per_lb": 0.4066,
       "total_cost_per_finished_lb": 6.8271,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7613,7 +7613,7 @@
       "total_cost_per_finished_lb": 7.2803,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2397,
       "extended_production_spread": 313.1
     },
@@ -7639,7 +7639,7 @@
       "total_cost_per_finished_lb": 7.19,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.33,
       "extended_production_spread": 330.4
     },
@@ -7665,7 +7665,7 @@
       "total_cost_per_finished_lb": 7.3032,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2168,
       "extended_production_spread": 274.48
     },
@@ -7691,7 +7691,7 @@
       "total_cost_per_finished_lb": 7.3148,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2052,
       "extended_production_spread": 283.97
     },
@@ -7717,7 +7717,7 @@
       "total_cost_per_finished_lb": 7.2753,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2447,
       "extended_production_spread": 311.19
     },
@@ -7743,7 +7743,7 @@
       "total_cost_per_finished_lb": 7.3029,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2171,
       "extended_production_spread": 289.15
     },
@@ -7769,7 +7769,7 @@
       "total_cost_per_finished_lb": 7.1637,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3563,
       "extended_production_spread": 434.76
     },
@@ -7795,7 +7795,7 @@
       "total_cost_per_finished_lb": 7.2147,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3053,
       "extended_production_spread": 386.67
     },
@@ -7821,7 +7821,7 @@
       "total_cost_per_finished_lb": 7.5283,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0083,
       "extended_production_spread": -10.75
     },
@@ -7847,7 +7847,7 @@
       "total_cost_per_finished_lb": 7.1909,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3291,
       "extended_production_spread": 443.35
     },
@@ -7872,7 +7872,7 @@
       "yield_loss_cost_per_lb": 0.0064,
       "total_cost_per_finished_lb": 6.4621,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7897,7 +7897,7 @@
       "yield_loss_cost_per_lb": -0.2871,
       "total_cost_per_finished_lb": 6.1434,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7922,7 +7922,7 @@
       "yield_loss_cost_per_lb": 0.1115,
       "total_cost_per_finished_lb": 6.5484,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7947,7 +7947,7 @@
       "yield_loss_cost_per_lb": -0.0418,
       "total_cost_per_finished_lb": 6.3939,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7972,7 +7972,7 @@
       "yield_loss_cost_per_lb": 0.5509,
       "total_cost_per_finished_lb": 6.9743,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -7997,7 +7997,7 @@
       "yield_loss_cost_per_lb": 0.1373,
       "total_cost_per_finished_lb": 6.5543,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8022,7 +8022,7 @@
       "yield_loss_cost_per_lb": -0.2912,
       "total_cost_per_finished_lb": 6.1626,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8047,7 +8047,7 @@
       "yield_loss_cost_per_lb": 0.078,
       "total_cost_per_finished_lb": 6.5012,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8072,7 +8072,7 @@
       "yield_loss_cost_per_lb": -0.6193,
       "total_cost_per_finished_lb": 5.8212,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8097,7 +8097,7 @@
       "yield_loss_cost_per_lb": -0.4301,
       "total_cost_per_finished_lb": 6.0092,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8122,7 +8122,7 @@
       "yield_loss_cost_per_lb": 0.1042,
       "total_cost_per_finished_lb": 6.5339,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8147,7 +8147,7 @@
       "yield_loss_cost_per_lb": -0.0997,
       "total_cost_per_finished_lb": 6.3348,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8172,7 +8172,7 @@
       "yield_loss_cost_per_lb": 0.2544,
       "total_cost_per_finished_lb": 6.6864,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8197,7 +8197,7 @@
       "yield_loss_cost_per_lb": 0.8686,
       "total_cost_per_finished_lb": 7.3091,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8222,7 +8222,7 @@
       "yield_loss_cost_per_lb": 0.2765,
       "total_cost_per_finished_lb": 6.6958,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8247,7 +8247,7 @@
       "yield_loss_cost_per_lb": -0.0386,
       "total_cost_per_finished_lb": 6.3672,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8272,7 +8272,7 @@
       "yield_loss_cost_per_lb": 0.1741,
       "total_cost_per_finished_lb": 6.572,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8297,7 +8297,7 @@
       "yield_loss_cost_per_lb": 0.2187,
       "total_cost_per_finished_lb": 6.6179,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8322,7 +8322,7 @@
       "yield_loss_cost_per_lb": 0.2058,
       "total_cost_per_finished_lb": 6.6216,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8347,7 +8347,7 @@
       "yield_loss_cost_per_lb": 0.4861,
       "total_cost_per_finished_lb": 6.8993,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8372,7 +8372,7 @@
       "yield_loss_cost_per_lb": 0.5652,
       "total_cost_per_finished_lb": 6.9914,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8397,7 +8397,7 @@
       "yield_loss_cost_per_lb": 0.1707,
       "total_cost_per_finished_lb": 6.5834,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8423,7 +8423,7 @@
       "total_cost_per_finished_lb": 7.509,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.011,
       "extended_production_spread": 14.19
     },
@@ -8449,7 +8449,7 @@
       "total_cost_per_finished_lb": 7.3657,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1543,
       "extended_production_spread": 209.44
     },
@@ -8475,7 +8475,7 @@
       "total_cost_per_finished_lb": 7.3412,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1788,
       "extended_production_spread": 259.76
     },
@@ -8501,7 +8501,7 @@
       "total_cost_per_finished_lb": 7.2679,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2521,
       "extended_production_spread": 368.3
     },
@@ -8527,7 +8527,7 @@
       "total_cost_per_finished_lb": 7.1515,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3685,
       "extended_production_spread": 541.61
     },
@@ -8553,7 +8553,7 @@
       "total_cost_per_finished_lb": 7.277,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.243,
       "extended_production_spread": 338.6
     },
@@ -8579,7 +8579,7 @@
       "total_cost_per_finished_lb": 7.3571,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1629,
       "extended_production_spread": 230.74
     },
@@ -8605,7 +8605,7 @@
       "total_cost_per_finished_lb": 7.3768,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1432,
       "extended_production_spread": 88.22
     },
@@ -8631,7 +8631,7 @@
       "total_cost_per_finished_lb": 8.3506,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.8306,
       "extended_production_spread": -853.98
     },
@@ -8657,7 +8657,7 @@
       "total_cost_per_finished_lb": 7.476,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.044,
       "extended_production_spread": 51.59
     },
@@ -8683,7 +8683,7 @@
       "total_cost_per_finished_lb": 7.3834,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1366,
       "extended_production_spread": 201.51
     },
@@ -8709,7 +8709,7 @@
       "total_cost_per_finished_lb": 7.4099,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1101,
       "extended_production_spread": 137.73
     },
@@ -8735,7 +8735,7 @@
       "total_cost_per_finished_lb": 7.3564,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1166,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1636,
       "extended_production_spread": 202.97
     },
@@ -8760,7 +8760,7 @@
       "yield_loss_cost_per_lb": 0.0885,
       "total_cost_per_finished_lb": 6.5071,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8785,7 +8785,7 @@
       "yield_loss_cost_per_lb": 0.5857,
       "total_cost_per_finished_lb": 7.0148,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8810,7 +8810,7 @@
       "yield_loss_cost_per_lb": 0.043,
       "total_cost_per_finished_lb": 6.4676,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -8837,7 +8837,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5798,
       "extended_production_spread": 791.76
     },
@@ -8864,7 +8864,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4264,
       "extended_production_spread": 590.72
     },
@@ -8891,7 +8891,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4724,
       "extended_production_spread": 639.97
     },
@@ -8918,7 +8918,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2116,
       "extended_production_spread": 284.06
     },
@@ -8945,7 +8945,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1946,
       "extended_production_spread": 260.13
     },
@@ -8972,7 +8972,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4598,
       "extended_production_spread": 616.46
     },
@@ -8999,7 +8999,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6376,
       "extended_production_spread": 871.67
     },
@@ -9026,7 +9026,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5484,
       "extended_production_spread": 744.41
     },
@@ -9053,7 +9053,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5121,
       "extended_production_spread": 687.39
     },
@@ -9080,7 +9080,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.7194,
       "extended_production_spread": 987.28
     },
@@ -9107,7 +9107,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5238,
       "extended_production_spread": 709.14
     },
@@ -9132,7 +9132,7 @@
       "yield_loss_cost_per_lb": 0.014,
       "total_cost_per_finished_lb": 6.4303,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9157,7 +9157,7 @@
       "yield_loss_cost_per_lb": -0.2112,
       "total_cost_per_finished_lb": 6.2155,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9182,7 +9182,7 @@
       "yield_loss_cost_per_lb": 0.0656,
       "total_cost_per_finished_lb": 6.5012,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9207,7 +9207,7 @@
       "yield_loss_cost_per_lb": -0.0317,
       "total_cost_per_finished_lb": 6.4997,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9232,7 +9232,7 @@
       "yield_loss_cost_per_lb": -0.0724,
       "total_cost_per_finished_lb": 6.3514,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9257,7 +9257,7 @@
       "yield_loss_cost_per_lb": 0.4633,
       "total_cost_per_finished_lb": 6.8927,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9282,7 +9282,7 @@
       "yield_loss_cost_per_lb": -0.1819,
       "total_cost_per_finished_lb": 6.2444,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9307,7 +9307,7 @@
       "yield_loss_cost_per_lb": 0.0591,
       "total_cost_per_finished_lb": 6.4609,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9332,7 +9332,7 @@
       "yield_loss_cost_per_lb": 0.0462,
       "total_cost_per_finished_lb": 6.4585,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9357,7 +9357,7 @@
       "yield_loss_cost_per_lb": 0.0624,
       "total_cost_per_finished_lb": 6.4877,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9382,7 +9382,7 @@
       "yield_loss_cost_per_lb": 0.5524,
       "total_cost_per_finished_lb": 7.0231,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9407,7 +9407,7 @@
       "yield_loss_cost_per_lb": -0.4061,
       "total_cost_per_finished_lb": 6.0085,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9432,7 +9432,7 @@
       "yield_loss_cost_per_lb": -0.0612,
       "total_cost_per_finished_lb": 6.3546,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9457,7 +9457,7 @@
       "yield_loss_cost_per_lb": -0.0449,
       "total_cost_per_finished_lb": 6.3689,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9482,7 +9482,7 @@
       "yield_loss_cost_per_lb": 0.0385,
       "total_cost_per_finished_lb": 6.4637,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9507,7 +9507,7 @@
       "yield_loss_cost_per_lb": -0.0184,
       "total_cost_per_finished_lb": 6.4085,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9532,7 +9532,7 @@
       "yield_loss_cost_per_lb": 0.0256,
       "total_cost_per_finished_lb": 6.4418,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9557,7 +9557,7 @@
       "yield_loss_cost_per_lb": 0.0108,
       "total_cost_per_finished_lb": 6.4091,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9582,7 +9582,7 @@
       "yield_loss_cost_per_lb": 0.0327,
       "total_cost_per_finished_lb": 6.4319,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -9608,7 +9608,7 @@
       "total_cost_per_finished_lb": 7.3238,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1962,
       "extended_production_spread": 263.52
     },
@@ -9634,7 +9634,7 @@
       "total_cost_per_finished_lb": 7.3711,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1489,
       "extended_production_spread": 202.42
     },
@@ -9660,7 +9660,7 @@
       "total_cost_per_finished_lb": 7.3648,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1552,
       "extended_production_spread": 205.93
     },
@@ -9686,7 +9686,7 @@
       "total_cost_per_finished_lb": 7.4065,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1135,
       "extended_production_spread": 148.47
     },
@@ -9712,7 +9712,7 @@
       "total_cost_per_finished_lb": 7.3893,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1307,
       "extended_production_spread": 171.07
     },
@@ -9738,7 +9738,7 @@
       "total_cost_per_finished_lb": 7.3811,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1389,
       "extended_production_spread": 185.15
     },
@@ -9764,7 +9764,7 @@
       "total_cost_per_finished_lb": 7.3486,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1714,
       "extended_production_spread": 228.84
     },
@@ -9790,7 +9790,7 @@
       "total_cost_per_finished_lb": 7.3117,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2083,
       "extended_production_spread": 275.91
     },
@@ -9816,7 +9816,7 @@
       "total_cost_per_finished_lb": 7.3644,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1556,
       "extended_production_spread": 209.48
     },
@@ -9842,7 +9842,7 @@
       "total_cost_per_finished_lb": 7.3519,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1681,
       "extended_production_spread": 222.99
     },
@@ -9869,7 +9869,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5515,
       "extended_production_spread": 748.1
     },
@@ -9896,7 +9896,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6957,
       "extended_production_spread": 717.22
     },
@@ -9923,7 +9923,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4395,
       "extended_production_spread": 563.55
     },
@@ -9950,7 +9950,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4851,
       "extended_production_spread": 337.02
     },
@@ -9977,7 +9977,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6287,
       "extended_production_spread": 874.46
     },
@@ -10004,7 +10004,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6587,
       "extended_production_spread": 898.48
     },
@@ -10029,7 +10029,7 @@
       "yield_loss_cost_per_lb": 0.6695,
       "total_cost_per_finished_lb": 7.1718,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10054,7 +10054,7 @@
       "yield_loss_cost_per_lb": 0.1553,
       "total_cost_per_finished_lb": 6.5978,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10079,7 +10079,7 @@
       "yield_loss_cost_per_lb": -0.0108,
       "total_cost_per_finished_lb": 6.4407,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10104,7 +10104,7 @@
       "yield_loss_cost_per_lb": 0.1828,
       "total_cost_per_finished_lb": 6.6821,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10129,7 +10129,7 @@
       "yield_loss_cost_per_lb": 0.1108,
       "total_cost_per_finished_lb": 6.6277,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10154,7 +10154,7 @@
       "yield_loss_cost_per_lb": -0.1584,
       "total_cost_per_finished_lb": 6.2897,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10179,7 +10179,7 @@
       "yield_loss_cost_per_lb": 0.1254,
       "total_cost_per_finished_lb": 6.5432,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10204,7 +10204,7 @@
       "yield_loss_cost_per_lb": 0.1148,
       "total_cost_per_finished_lb": 6.5247,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10229,7 +10229,7 @@
       "yield_loss_cost_per_lb": 0.0931,
       "total_cost_per_finished_lb": 6.6081,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10254,7 +10254,7 @@
       "yield_loss_cost_per_lb": 0.3879,
       "total_cost_per_finished_lb": 6.8645,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10279,7 +10279,7 @@
       "yield_loss_cost_per_lb": 0.2393,
       "total_cost_per_finished_lb": 6.6645,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10305,7 +10305,7 @@
       "total_cost_per_finished_lb": 7.3434,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1766,
       "extended_production_spread": 235.21
     },
@@ -10331,7 +10331,7 @@
       "total_cost_per_finished_lb": 7.3968,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1232,
       "extended_production_spread": 123.81
     },
@@ -10357,7 +10357,7 @@
       "total_cost_per_finished_lb": 7.3498,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1702,
       "extended_production_spread": 217.25
     },
@@ -10383,7 +10383,7 @@
       "total_cost_per_finished_lb": 7.4091,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1109,
       "extended_production_spread": 138.39
     },
@@ -10409,7 +10409,7 @@
       "total_cost_per_finished_lb": 7.4257,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0943,
       "extended_production_spread": 63.7
     },
@@ -10435,7 +10435,7 @@
       "total_cost_per_finished_lb": 7.3338,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1862,
       "extended_production_spread": 254.46
     },
@@ -10461,7 +10461,7 @@
       "total_cost_per_finished_lb": 7.1647,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3553,
       "extended_production_spread": 487.49
     },
@@ -10488,7 +10488,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2623,
       "extended_production_spread": 32.99
     },
@@ -10515,7 +10515,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2869,
       "extended_production_spread": 359.63
     },
@@ -10542,7 +10542,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.64,
       "extended_production_spread": 513.27
     },
@@ -10569,7 +10569,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6221,
       "extended_production_spread": 835.28
     },
@@ -10596,7 +10596,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3222,
       "extended_production_spread": 426.9
     },
@@ -10623,7 +10623,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3966,
       "extended_production_spread": 513.73
     },
@@ -10650,7 +10650,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4354,
       "extended_production_spread": 567.94
     },
@@ -10677,7 +10677,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4005,
       "extended_production_spread": 518.56
     },
@@ -10704,7 +10704,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3351,
       "extended_production_spread": 430.99
     },
@@ -10731,7 +10731,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3486,
       "extended_production_spread": 451.22
     },
@@ -10758,7 +10758,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5035,
       "extended_production_spread": 662.36
     },
@@ -10785,7 +10785,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.378,
       "extended_production_spread": -434.61
     },
@@ -10812,7 +10812,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.3846,
       "extended_production_spread": -452.13
     },
@@ -10837,7 +10837,7 @@
       "yield_loss_cost_per_lb": 0.195,
       "total_cost_per_finished_lb": 6.6136,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10862,7 +10862,7 @@
       "yield_loss_cost_per_lb": 0.6024,
       "total_cost_per_finished_lb": 7.0339,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10887,7 +10887,7 @@
       "yield_loss_cost_per_lb": 0.0682,
       "total_cost_per_finished_lb": 6.4805,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10912,7 +10912,7 @@
       "yield_loss_cost_per_lb": 0.3016,
       "total_cost_per_finished_lb": 6.7234,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10937,7 +10937,7 @@
       "yield_loss_cost_per_lb": 0.128,
       "total_cost_per_finished_lb": 6.5324,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10962,7 +10962,7 @@
       "yield_loss_cost_per_lb": -0.0562,
       "total_cost_per_finished_lb": 6.363,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -10987,7 +10987,7 @@
       "yield_loss_cost_per_lb": 0.0852,
       "total_cost_per_finished_lb": 6.4936,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11012,7 +11012,7 @@
       "yield_loss_cost_per_lb": -0.0279,
       "total_cost_per_finished_lb": 6.392,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11037,7 +11037,7 @@
       "yield_loss_cost_per_lb": -0.0706,
       "total_cost_per_finished_lb": 6.3852,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11062,7 +11062,7 @@
       "yield_loss_cost_per_lb": 0.3522,
       "total_cost_per_finished_lb": 6.7886,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11087,7 +11087,7 @@
       "yield_loss_cost_per_lb": -0.0165,
       "total_cost_per_finished_lb": 6.4037,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11112,7 +11112,7 @@
       "yield_loss_cost_per_lb": 0.0339,
       "total_cost_per_finished_lb": 6.4587,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11137,7 +11137,7 @@
       "yield_loss_cost_per_lb": -0.0089,
       "total_cost_per_finished_lb": 6.4081,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11162,7 +11162,7 @@
       "yield_loss_cost_per_lb": -0.0038,
       "total_cost_per_finished_lb": 6.4061,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11187,7 +11187,7 @@
       "yield_loss_cost_per_lb": 0.0147,
       "total_cost_per_finished_lb": 6.4265,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11212,7 +11212,7 @@
       "yield_loss_cost_per_lb": 0.0045,
       "total_cost_per_finished_lb": 6.4205,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11237,7 +11237,7 @@
       "yield_loss_cost_per_lb": 0.2208,
       "total_cost_per_finished_lb": 6.6352,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11262,7 +11262,7 @@
       "yield_loss_cost_per_lb": 0.0924,
       "total_cost_per_finished_lb": 6.5017,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11287,7 +11287,7 @@
       "yield_loss_cost_per_lb": -0.0618,
       "total_cost_per_finished_lb": 6.5364,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11312,7 +11312,7 @@
       "yield_loss_cost_per_lb": 0.0462,
       "total_cost_per_finished_lb": 6.4504,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11337,7 +11337,7 @@
       "yield_loss_cost_per_lb": 0.1227,
       "total_cost_per_finished_lb": 6.5418,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11362,7 +11362,7 @@
       "yield_loss_cost_per_lb": -0.0904,
       "total_cost_per_finished_lb": 6.3203,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -11388,7 +11388,7 @@
       "total_cost_per_finished_lb": 7.9037,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.3837,
       "extended_production_spread": -46.44
     },
@@ -11414,7 +11414,7 @@
       "total_cost_per_finished_lb": 7.7768,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2568,
       "extended_production_spread": -298.23
     },
@@ -11440,7 +11440,7 @@
       "total_cost_per_finished_lb": 7.4031,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1169,
       "extended_production_spread": 91.47
     },
@@ -11466,7 +11466,7 @@
       "total_cost_per_finished_lb": 7.694,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.174,
       "extended_production_spread": -218.94
     },
@@ -11492,7 +11492,7 @@
       "total_cost_per_finished_lb": 7.377,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.143,
       "extended_production_spread": 185.11
     },
@@ -11518,7 +11518,7 @@
       "total_cost_per_finished_lb": 7.4759,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0441,
       "extended_production_spread": 55.32
     },
@@ -11544,7 +11544,7 @@
       "total_cost_per_finished_lb": 7.3246,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1954,
       "extended_production_spread": 251.25
     },
@@ -11570,7 +11570,7 @@
       "total_cost_per_finished_lb": 7.3728,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1472,
       "extended_production_spread": 186.77
     },
@@ -11596,7 +11596,7 @@
       "total_cost_per_finished_lb": 7.3845,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1355,
       "extended_production_spread": 170.07
     },
@@ -11622,7 +11622,7 @@
       "total_cost_per_finished_lb": 7.4769,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0431,
       "extended_production_spread": 53.86
     },
@@ -11648,7 +11648,7 @@
       "total_cost_per_finished_lb": 7.4208,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0992,
       "extended_production_spread": 127.17
     },
@@ -11674,7 +11674,7 @@
       "total_cost_per_finished_lb": 7.2037,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3163,
       "extended_production_spread": 365.0
     },
@@ -11701,7 +11701,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0536,
       "extended_production_spread": -66.77
     },
@@ -11728,7 +11728,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2573,
       "extended_production_spread": 343.61
     },
@@ -11755,7 +11755,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3277,
       "extended_production_spread": 448.39
     },
@@ -11782,7 +11782,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5688,
       "extended_production_spread": 798.59
     },
@@ -11809,7 +11809,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1187,
       "extended_production_spread": 147.54
     },
@@ -11836,7 +11836,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4862,
       "extended_production_spread": 626.24
     },
@@ -11863,7 +11863,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2512,
       "extended_production_spread": 340.91
     },
@@ -11890,7 +11890,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.226,
       "extended_production_spread": 304.39
     },
@@ -11917,7 +11917,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2099,
       "extended_production_spread": -253.0
     },
@@ -11944,7 +11944,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.8239,
       "extended_production_spread": 1226.9
     },
@@ -11971,7 +11971,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4124,
       "extended_production_spread": 567.04
     },
@@ -11998,7 +11998,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1281,
       "extended_production_spread": 169.72
     },
@@ -12023,7 +12023,7 @@
       "yield_loss_cost_per_lb": -0.0929,
       "total_cost_per_finished_lb": 6.3005,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12048,7 +12048,7 @@
       "yield_loss_cost_per_lb": -0.1915,
       "total_cost_per_finished_lb": 6.2222,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12073,7 +12073,7 @@
       "yield_loss_cost_per_lb": -0.0133,
       "total_cost_per_finished_lb": 6.4015,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12098,7 +12098,7 @@
       "yield_loss_cost_per_lb": -0.0153,
       "total_cost_per_finished_lb": 6.451,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12123,7 +12123,7 @@
       "yield_loss_cost_per_lb": -0.4969,
       "total_cost_per_finished_lb": 5.9555,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12148,7 +12148,7 @@
       "yield_loss_cost_per_lb": 0.052,
       "total_cost_per_finished_lb": 6.5034,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12173,7 +12173,7 @@
       "yield_loss_cost_per_lb": 0.1003,
       "total_cost_per_finished_lb": 6.5125,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12198,7 +12198,7 @@
       "yield_loss_cost_per_lb": 4.2662,
       "total_cost_per_finished_lb": 10.6757,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12223,7 +12223,7 @@
       "yield_loss_cost_per_lb": 0.1075,
       "total_cost_per_finished_lb": 6.5235,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12248,7 +12248,7 @@
       "yield_loss_cost_per_lb": 0.126,
       "total_cost_per_finished_lb": 6.5405,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12273,7 +12273,7 @@
       "yield_loss_cost_per_lb": 0.0598,
       "total_cost_per_finished_lb": 6.458,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12298,7 +12298,7 @@
       "yield_loss_cost_per_lb": 0.1586,
       "total_cost_per_finished_lb": 6.5698,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12323,7 +12323,7 @@
       "yield_loss_cost_per_lb": 0.8091,
       "total_cost_per_finished_lb": 7.2189,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12348,7 +12348,7 @@
       "yield_loss_cost_per_lb": 0.1573,
       "total_cost_per_finished_lb": 6.5724,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12374,7 +12374,7 @@
       "total_cost_per_finished_lb": 7.3453,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1747,
       "extended_production_spread": 213.43
     },
@@ -12400,7 +12400,7 @@
       "total_cost_per_finished_lb": 7.2577,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2623,
       "extended_production_spread": 348.32
     },
@@ -12426,7 +12426,7 @@
       "total_cost_per_finished_lb": 7.5255,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0055,
       "extended_production_spread": -7.3
     },
@@ -12452,7 +12452,7 @@
       "total_cost_per_finished_lb": 7.3474,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1726,
       "extended_production_spread": 239.11
     },
@@ -12478,7 +12478,7 @@
       "total_cost_per_finished_lb": 7.4297,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0903,
       "extended_production_spread": 109.32
     },
@@ -12504,7 +12504,7 @@
       "total_cost_per_finished_lb": 7.3157,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2043,
       "extended_production_spread": 259.44
     },
@@ -12530,7 +12530,7 @@
       "total_cost_per_finished_lb": 7.4525,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0675,
       "extended_production_spread": 88.75
     },
@@ -12556,7 +12556,7 @@
       "total_cost_per_finished_lb": 7.4546,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0654,
       "extended_production_spread": 85.33
     },
@@ -12582,7 +12582,7 @@
       "total_cost_per_finished_lb": 6.8925,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6275,
       "extended_production_spread": 790.77
     },
@@ -12608,7 +12608,7 @@
       "total_cost_per_finished_lb": 7.8669,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.3469,
       "extended_production_spread": -474.76
     },
@@ -12634,7 +12634,7 @@
       "total_cost_per_finished_lb": 7.8228,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.3028,
       "extended_production_spread": -386.37
     },
@@ -12660,7 +12660,7 @@
       "total_cost_per_finished_lb": 7.4521,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0679,
       "extended_production_spread": 87.64
     },
@@ -12687,7 +12687,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2165,
       "extended_production_spread": 289.2
     },
@@ -12714,7 +12714,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4728,
       "extended_production_spread": 619.29
     },
@@ -12741,7 +12741,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.3498,
       "extended_production_spread": -426.82
     },
@@ -12768,7 +12768,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1097,
       "extended_production_spread": 98.06
     },
@@ -12795,7 +12795,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1699,
       "extended_production_spread": 234.42
     },
@@ -12820,7 +12820,7 @@
       "yield_loss_cost_per_lb": 0.2153,
       "total_cost_per_finished_lb": 6.7303,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12845,7 +12845,7 @@
       "yield_loss_cost_per_lb": 0.065,
       "total_cost_per_finished_lb": 6.5072,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12870,7 +12870,7 @@
       "yield_loss_cost_per_lb": -0.1359,
       "total_cost_per_finished_lb": 6.2688,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12895,7 +12895,7 @@
       "yield_loss_cost_per_lb": 0.5187,
       "total_cost_per_finished_lb": 6.9383,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12920,7 +12920,7 @@
       "yield_loss_cost_per_lb": 0.3836,
       "total_cost_per_finished_lb": 6.8125,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -12946,7 +12946,7 @@
       "total_cost_per_finished_lb": 7.6534,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.1334,
       "extended_production_spread": -167.88
     },
@@ -12972,7 +12972,7 @@
       "total_cost_per_finished_lb": 7.4327,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0873,
       "extended_production_spread": 111.09
     },
@@ -12998,7 +12998,7 @@
       "total_cost_per_finished_lb": 7.3454,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1746,
       "extended_production_spread": 209.63
     },
@@ -13024,7 +13024,7 @@
       "total_cost_per_finished_lb": 7.3133,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2067,
       "extended_production_spread": 182.13
     },
@@ -13050,7 +13050,7 @@
       "total_cost_per_finished_lb": 7.4313,
       "classification": "Fresh",
       "input_cost_per_lb": 7.1691,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0887,
       "extended_production_spread": 118.84
     },
@@ -13077,7 +13077,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6511,
       "extended_production_spread": 980.91
     },
@@ -13104,7 +13104,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3333,
       "extended_production_spread": 431.66
     },
@@ -13131,7 +13131,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.5081,
       "extended_production_spread": -587.22
     },
@@ -13158,7 +13158,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1231,
       "extended_production_spread": 86.7
     },
@@ -13185,7 +13185,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3093,
       "extended_production_spread": 423.43
     },
@@ -13212,7 +13212,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6799,
       "extended_production_spread": 918.64
     },
@@ -13237,7 +13237,7 @@
       "yield_loss_cost_per_lb": -0.0367,
       "total_cost_per_finished_lb": 6.3978,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13262,7 +13262,7 @@
       "yield_loss_cost_per_lb": 0.0417,
       "total_cost_per_finished_lb": 6.4707,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13287,7 +13287,7 @@
       "yield_loss_cost_per_lb": 0.3057,
       "total_cost_per_finished_lb": 6.7431,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13312,7 +13312,7 @@
       "yield_loss_cost_per_lb": 0.0365,
       "total_cost_per_finished_lb": 6.4691,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13337,7 +13337,7 @@
       "yield_loss_cost_per_lb": -0.0556,
       "total_cost_per_finished_lb": 6.3662,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13362,7 +13362,7 @@
       "yield_loss_cost_per_lb": 0.0,
       "total_cost_per_finished_lb": 6.43,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13387,7 +13387,7 @@
       "yield_loss_cost_per_lb": -0.1789,
       "total_cost_per_finished_lb": 6.253,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13412,7 +13412,7 @@
       "yield_loss_cost_per_lb": 0.0682,
       "total_cost_per_finished_lb": 6.4895,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13437,7 +13437,7 @@
       "yield_loss_cost_per_lb": 0.0057,
       "total_cost_per_finished_lb": 6.5557,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13462,7 +13462,7 @@
       "yield_loss_cost_per_lb": -0.0203,
       "total_cost_per_finished_lb": 6.4068,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13487,7 +13487,7 @@
       "yield_loss_cost_per_lb": 0.0397,
       "total_cost_per_finished_lb": 6.459,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13512,7 +13512,7 @@
       "yield_loss_cost_per_lb": 0.0237,
       "total_cost_per_finished_lb": 6.436,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13537,7 +13537,7 @@
       "yield_loss_cost_per_lb": 0.016,
       "total_cost_per_finished_lb": 6.4329,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13562,7 +13562,7 @@
       "yield_loss_cost_per_lb": -0.1765,
       "total_cost_per_finished_lb": 6.2271,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13587,7 +13587,7 @@
       "yield_loss_cost_per_lb": 0.0443,
       "total_cost_per_finished_lb": 6.4579,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13612,7 +13612,7 @@
       "yield_loss_cost_per_lb": 0.0494,
       "total_cost_per_finished_lb": 6.4833,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13637,7 +13637,7 @@
       "yield_loss_cost_per_lb": -0.2148,
       "total_cost_per_finished_lb": 6.2337,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13662,7 +13662,7 @@
       "yield_loss_cost_per_lb": 0.5735,
       "total_cost_per_finished_lb": 7.0311,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13687,7 +13687,7 @@
       "yield_loss_cost_per_lb": -0.0045,
       "total_cost_per_finished_lb": 6.4263,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -13713,7 +13713,7 @@
       "total_cost_per_finished_lb": 7.6943,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.1743,
       "extended_production_spread": -248.67
     },
@@ -13739,7 +13739,7 @@
       "total_cost_per_finished_lb": 7.4885,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0315,
       "extended_production_spread": 39.6
     },
@@ -13765,7 +13765,7 @@
       "total_cost_per_finished_lb": 6.9892,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5308,
       "extended_production_spread": 639.74
     },
@@ -13791,7 +13791,7 @@
       "total_cost_per_finished_lb": 7.566,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.046,
       "extended_production_spread": -31.23
     },
@@ -13817,7 +13817,7 @@
       "total_cost_per_finished_lb": 7.4743,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0457,
       "extended_production_spread": 60.99
     },
@@ -13843,7 +13843,7 @@
       "total_cost_per_finished_lb": 7.7754,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2554,
       "extended_production_spread": -323.54
     },
@@ -13870,7 +13870,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.664,
       "extended_production_spread": 1035.32
     },
@@ -13897,7 +13897,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2914,
       "extended_production_spread": 211.74
     },
@@ -13924,7 +13924,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1656,
       "extended_production_spread": 239.83
     },
@@ -13951,7 +13951,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.393,
       "extended_production_spread": 560.4
     },
@@ -13978,7 +13978,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.558,
       "extended_production_spread": 812.14
     },
@@ -14005,7 +14005,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.1445,
       "extended_production_spread": -171.7
     },
@@ -14032,7 +14032,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1653,
       "extended_production_spread": 246.21
     },
@@ -14059,7 +14059,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1132,
       "extended_production_spread": 152.9
     },
@@ -14086,7 +14086,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.344,
       "extended_production_spread": 449.66
     },
@@ -14113,7 +14113,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4167,
       "extended_production_spread": 611.48
     },
@@ -14140,7 +14140,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.6313,
       "extended_production_spread": 916.71
     },
@@ -14167,7 +14167,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1917,
       "extended_production_spread": 108.1
     },
@@ -14194,7 +14194,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1498,
       "extended_production_spread": 197.35
     },
@@ -14221,7 +14221,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.1516,
       "extended_production_spread": -186.28
     },
@@ -14248,7 +14248,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0156,
       "extended_production_spread": -14.89
     },
@@ -14275,7 +14275,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5791,
       "extended_production_spread": 791.34
     },
@@ -14300,7 +14300,7 @@
       "yield_loss_cost_per_lb": 0.1386,
       "total_cost_per_finished_lb": 6.5555,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -14325,7 +14325,7 @@
       "yield_loss_cost_per_lb": 0.4319,
       "total_cost_per_finished_lb": 6.8892,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -14350,7 +14350,7 @@
       "yield_loss_cost_per_lb": -0.0929,
       "total_cost_per_finished_lb": 6.3181,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -14375,7 +14375,7 @@
       "yield_loss_cost_per_lb": -0.2023,
       "total_cost_per_finished_lb": 6.2042,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -14400,7 +14400,7 @@
       "yield_loss_cost_per_lb": -0.3893,
       "total_cost_per_finished_lb": 6.0419,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -14425,7 +14425,7 @@
       "yield_loss_cost_per_lb": -0.1188,
       "total_cost_per_finished_lb": 6.2872,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -14451,7 +14451,7 @@
       "total_cost_per_finished_lb": 7.5831,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0631,
       "extended_production_spread": -94.68
     },
@@ -14477,7 +14477,7 @@
       "total_cost_per_finished_lb": 7.311,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.209,
       "extended_production_spread": 151.3
     },
@@ -14503,7 +14503,7 @@
       "total_cost_per_finished_lb": 10.0109,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -2.4909,
       "extended_production_spread": -2619.07
     },
@@ -14529,7 +14529,7 @@
       "total_cost_per_finished_lb": 7.394,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.126,
       "extended_production_spread": 176.86
     },
@@ -14555,7 +14555,7 @@
       "total_cost_per_finished_lb": 7.4728,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0472,
       "extended_production_spread": 66.87
     },
@@ -14581,7 +14581,7 @@
       "total_cost_per_finished_lb": 7.4333,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0867,
       "extended_production_spread": 101.19
     },
@@ -14607,7 +14607,7 @@
       "total_cost_per_finished_lb": 7.3943,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1257,
       "extended_production_spread": 184.24
     },
@@ -14633,7 +14633,7 @@
       "total_cost_per_finished_lb": 7.3611,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1589,
       "extended_production_spread": 230.06
     },
@@ -14659,7 +14659,7 @@
       "total_cost_per_finished_lb": 7.3789,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1411,
       "extended_production_spread": 201.96
     },
@@ -14685,7 +14685,7 @@
       "total_cost_per_finished_lb": 7.3758,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1442,
       "extended_production_spread": 80.38
     },
@@ -14711,7 +14711,7 @@
       "total_cost_per_finished_lb": 7.3727,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1473,
       "extended_production_spread": 191.8
     },
@@ -14737,7 +14737,7 @@
       "total_cost_per_finished_lb": 7.3437,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1763,
       "extended_production_spread": 214.98
     },
@@ -14763,7 +14763,7 @@
       "total_cost_per_finished_lb": 7.3279,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1921,
       "extended_production_spread": 182.47
     },
@@ -14789,7 +14789,7 @@
       "total_cost_per_finished_lb": 7.6151,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0951,
       "extended_production_spread": -127.47
     },
@@ -14815,7 +14815,7 @@
       "total_cost_per_finished_lb": 7.4261,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0939,
       "extended_production_spread": 120.42
     },
@@ -14842,7 +14842,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3256,
       "extended_production_spread": 425.5
     },
@@ -14869,7 +14869,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4511,
       "extended_production_spread": 586.01
     },
@@ -14896,7 +14896,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 1.0288,
       "extended_production_spread": 1533.43
     },
@@ -14923,7 +14923,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3253,
       "extended_production_spread": 400.97
     },
@@ -14950,7 +14950,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3373,
       "extended_production_spread": 509.9
     },
@@ -14977,7 +14977,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1732,
       "extended_production_spread": 241.25
     },
@@ -15004,7 +15004,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3011,
       "extended_production_spread": 400.83
     },
@@ -15031,7 +15031,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3109,
       "extended_production_spread": 446.8
     },
@@ -15058,7 +15058,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5745,
       "extended_production_spread": 827.29
     },
@@ -15085,7 +15085,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1629,
       "extended_production_spread": 215.17
     },
@@ -15112,7 +15112,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2923,
       "extended_production_spread": 369.24
     },
@@ -15139,7 +15139,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3469,
       "extended_production_spread": 445.72
     },
@@ -15166,7 +15166,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2489,
       "extended_production_spread": 307.48
     },
@@ -15191,7 +15191,7 @@
       "yield_loss_cost_per_lb": -0.0165,
       "total_cost_per_finished_lb": 6.3957,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15216,7 +15216,7 @@
       "yield_loss_cost_per_lb": 0.0372,
       "total_cost_per_finished_lb": 6.4852,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15241,7 +15241,7 @@
       "yield_loss_cost_per_lb": -0.2053,
       "total_cost_per_finished_lb": 6.2125,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15266,7 +15266,7 @@
       "yield_loss_cost_per_lb": -0.2332,
       "total_cost_per_finished_lb": 6.1845,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15291,7 +15291,7 @@
       "yield_loss_cost_per_lb": 0.063,
       "total_cost_per_finished_lb": 6.4721,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15316,7 +15316,7 @@
       "yield_loss_cost_per_lb": 0.168,
       "total_cost_per_finished_lb": 6.6028,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15341,7 +15341,7 @@
       "yield_loss_cost_per_lb": -0.0013,
       "total_cost_per_finished_lb": 6.4149,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15366,7 +15366,7 @@
       "yield_loss_cost_per_lb": 0.0134,
       "total_cost_per_finished_lb": 6.4297,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15391,7 +15391,7 @@
       "yield_loss_cost_per_lb": -0.0556,
       "total_cost_per_finished_lb": 6.3691,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15416,7 +15416,7 @@
       "yield_loss_cost_per_lb": 0.0198,
       "total_cost_per_finished_lb": 6.4546,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15441,7 +15441,7 @@
       "yield_loss_cost_per_lb": 0.1254,
       "total_cost_per_finished_lb": 6.5471,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15466,7 +15466,7 @@
       "yield_loss_cost_per_lb": -0.1003,
       "total_cost_per_finished_lb": 6.4169,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15491,7 +15491,7 @@
       "yield_loss_cost_per_lb": 0.1506,
       "total_cost_per_finished_lb": 6.5541,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15516,7 +15516,7 @@
       "yield_loss_cost_per_lb": 0.0872,
       "total_cost_per_finished_lb": 6.4962,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -15542,7 +15542,7 @@
       "total_cost_per_finished_lb": 7.3867,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1333,
       "extended_production_spread": 171.68
     },
@@ -15568,7 +15568,7 @@
       "total_cost_per_finished_lb": 7.3033,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2167,
       "extended_production_spread": 280.42
     },
@@ -15594,7 +15594,7 @@
       "total_cost_per_finished_lb": 7.6963,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.1763,
       "extended_production_spread": -248.99
     },
@@ -15620,7 +15620,7 @@
       "total_cost_per_finished_lb": 7.4242,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0958,
       "extended_production_spread": 115.68
     },
@@ -15646,7 +15646,7 @@
       "total_cost_per_finished_lb": 7.464,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.056,
       "extended_production_spread": 82.57
     },
@@ -15672,7 +15672,7 @@
       "total_cost_per_finished_lb": 7.3294,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1906,
       "extended_production_spread": 263.5
     },
@@ -15698,7 +15698,7 @@
       "total_cost_per_finished_lb": 7.3294,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1906,
       "extended_production_spread": 252.0
     },
@@ -15724,7 +15724,7 @@
       "total_cost_per_finished_lb": 7.296,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.224,
       "extended_production_spread": 320.56
     },
@@ -15750,7 +15750,7 @@
       "total_cost_per_finished_lb": 8.3327,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.8127,
       "extended_production_spread": -1019.05
     },
@@ -15776,7 +15776,7 @@
       "total_cost_per_finished_lb": 7.3828,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1372,
       "extended_production_spread": 179.1
     },
@@ -15802,7 +15802,7 @@
       "total_cost_per_finished_lb": 7.3761,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1439,
       "extended_production_spread": 179.33
     },
@@ -15828,7 +15828,7 @@
       "total_cost_per_finished_lb": 7.3074,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2126,
       "extended_production_spread": 272.13
     },
@@ -15854,7 +15854,7 @@
       "total_cost_per_finished_lb": 7.3509,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1691,
       "extended_production_spread": 207.07
     },
@@ -15881,7 +15881,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4294,
       "extended_production_spread": 606.64
     },
@@ -15908,7 +15908,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2266,
       "extended_production_spread": 276.99
     },
@@ -15935,7 +15935,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3814,
       "extended_production_spread": 470.39
     },
@@ -15962,7 +15962,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5741,
       "extended_production_spread": 401.38
     },
@@ -15989,7 +15989,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4747,
       "extended_production_spread": 692.7
     },
@@ -16016,7 +16016,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4517,
       "extended_production_spread": 560.03
     },
@@ -16043,7 +16043,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4767,
       "extended_production_spread": 672.62
     },
@@ -16070,7 +16070,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.303,
       "extended_production_spread": 389.35
     },
@@ -16097,7 +16097,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1653,
       "extended_production_spread": 204.35
     },
@@ -16124,7 +16124,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1028,
       "extended_production_spread": 123.68
     },
@@ -16151,7 +16151,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.4316,
       "extended_production_spread": 544.2
     },
@@ -16178,7 +16178,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1803,
       "extended_production_spread": 166.52
     },
@@ -16205,7 +16205,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.5363,
       "extended_production_spread": 535.39
     },
@@ -16232,7 +16232,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.004,
       "extended_production_spread": 5.04
     },
@@ -16259,7 +16259,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2735,
       "extended_production_spread": -381.19
     },
@@ -16284,7 +16284,7 @@
       "yield_loss_cost_per_lb": 0.1821,
       "total_cost_per_finished_lb": 6.6104,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16309,7 +16309,7 @@
       "yield_loss_cost_per_lb": 0.3929,
       "total_cost_per_finished_lb": 6.8199,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16334,7 +16334,7 @@
       "yield_loss_cost_per_lb": 0.08,
       "total_cost_per_finished_lb": 6.4925,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16359,7 +16359,7 @@
       "yield_loss_cost_per_lb": 0.1069,
       "total_cost_per_finished_lb": 6.5161,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16384,7 +16384,7 @@
       "yield_loss_cost_per_lb": -0.0524,
       "total_cost_per_finished_lb": 6.363,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16409,7 +16409,7 @@
       "yield_loss_cost_per_lb": 0.0224,
       "total_cost_per_finished_lb": 6.4906,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16434,7 +16434,7 @@
       "yield_loss_cost_per_lb": 0.1049,
       "total_cost_per_finished_lb": 6.5451,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16459,7 +16459,7 @@
       "yield_loss_cost_per_lb": -0.0064,
       "total_cost_per_finished_lb": 6.4004,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16484,7 +16484,7 @@
       "yield_loss_cost_per_lb": -0.2462,
       "total_cost_per_finished_lb": 6.1649,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16509,7 +16509,7 @@
       "yield_loss_cost_per_lb": 0.0702,
       "total_cost_per_finished_lb": 6.5077,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16534,7 +16534,7 @@
       "yield_loss_cost_per_lb": -0.0127,
       "total_cost_per_finished_lb": 6.4079,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16559,7 +16559,7 @@
       "yield_loss_cost_per_lb": 0.0365,
       "total_cost_per_finished_lb": 6.4679,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16584,7 +16584,7 @@
       "yield_loss_cost_per_lb": -0.0228,
       "total_cost_per_finished_lb": 6.4125,
       "classification": "Fresh",
-      "sell_kpi": null,
+      "target_cost": null,
       "production_spread_per_lb": null,
       "extended_production_spread": null
     },
@@ -16610,7 +16610,7 @@
       "total_cost_per_finished_lb": 7.4423,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0777,
       "extended_production_spread": 93.82
     },
@@ -16636,7 +16636,7 @@
       "total_cost_per_finished_lb": 7.3995,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1205,
       "extended_production_spread": 144.88
     },
@@ -16662,7 +16662,7 @@
       "total_cost_per_finished_lb": 7.3888,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1312,
       "extended_production_spread": 182.34
     },
@@ -16688,7 +16688,7 @@
       "total_cost_per_finished_lb": 7.5717,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0517,
       "extended_production_spread": -34.79
     },
@@ -16714,7 +16714,7 @@
       "total_cost_per_finished_lb": 7.4621,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0579,
       "extended_production_spread": 82.5
     },
@@ -16740,7 +16740,7 @@
       "total_cost_per_finished_lb": 7.4878,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0322,
       "extended_production_spread": 38.82
     },
@@ -16766,7 +16766,7 @@
       "total_cost_per_finished_lb": 7.7031,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.1831,
       "extended_production_spread": -244.45
     },
@@ -16792,7 +16792,7 @@
       "total_cost_per_finished_lb": 7.332,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.188,
       "extended_production_spread": 239.68
     },
@@ -16818,7 +16818,7 @@
       "total_cost_per_finished_lb": 7.5642,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0442,
       "extended_production_spread": -52.4
     },
@@ -16844,7 +16844,7 @@
       "total_cost_per_finished_lb": 7.5733,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.0533,
       "extended_production_spread": -62.18
     },
@@ -16870,7 +16870,7 @@
       "total_cost_per_finished_lb": 7.3335,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1865,
       "extended_production_spread": 232.92
     },
@@ -16896,7 +16896,7 @@
       "total_cost_per_finished_lb": 7.1664,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3536,
       "extended_production_spread": 331.9
     },
@@ -16922,7 +16922,7 @@
       "total_cost_per_finished_lb": 7.456,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.064,
       "extended_production_spread": 62.44
     },
@@ -16948,7 +16948,7 @@
       "total_cost_per_finished_lb": 7.2013,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.3187,
       "extended_production_spread": 408.92
     },
@@ -16974,7 +16974,7 @@
       "total_cost_per_finished_lb": 7.3607,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.1593,
       "extended_production_spread": 219.87
     },
@@ -17001,7 +17001,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.2296,
       "extended_production_spread": 294.8
     },
@@ -17028,7 +17028,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0018,
       "extended_production_spread": 2.3
     },
@@ -17055,7 +17055,7 @@
       "classification": "Fresh",
       "upstream_strip_labor": 0,
       "input_cost_per_lb": 6.37,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.2751,
       "extended_production_spread": -330.73
     },
@@ -17081,7 +17081,7 @@
       "total_cost_per_finished_lb": 7.4357,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": 0.0843,
       "extended_production_spread": 99.6
     },
@@ -17107,7 +17107,7 @@
       "total_cost_per_finished_lb": 8.8752,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -1.3552,
       "extended_production_spread": -1417.16
     },
@@ -17133,7 +17133,7 @@
       "total_cost_per_finished_lb": 8.0513,
       "classification": "Fresh",
       "input_cost_per_lb": 7.2325,
-      "sell_kpi": 7.52,
+      "target_cost": 7.52,
       "production_spread_per_lb": -0.5313,
       "extended_production_spread": -615.14
     }

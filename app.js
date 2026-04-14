@@ -337,7 +337,7 @@ function updateSummaryTable() {
 
         const spreads = recs.map(r => r.production_spread_per_lb).filter(s => s != null);
         const extSpreads = recs.map(r => r.extended_production_spread).filter(s => s != null);
-        const kpi = recs.find(r => r.sell_kpi)?.sell_kpi;
+        const kpi = recs.find(r => r.target_cost)?.target_cost;
         const totalExtSpread = extSpreads.reduce((s, v) => s + v, 0);
 
         const n = laborCosts.length;
@@ -377,7 +377,7 @@ function updateWeeklyTable() {
         const inputCosts = recs.map(r => r.input_cost_per_lb || r.raw_protein_cost_per_lb).filter(Boolean);
         const spreads = recs.map(r => r.production_spread_per_lb).filter(s => s != null);
         const extSpreads = recs.map(r => r.extended_production_spread).filter(s => s != null);
-        const kpi = recs.find(r => r.sell_kpi)?.sell_kpi;
+        const kpi = recs.find(r => r.target_cost)?.target_cost;
         const yields = recs.map(r => r.yield_pct).filter(y => y && y > 0);
         const totalLbs = recs.reduce((s, r) => s + (r.finished_lbs || 0), 0);
         const totalExtSpread = extSpreads.reduce((s, v) => s + v, 0);

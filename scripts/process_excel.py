@@ -156,9 +156,9 @@ def enrich_with_protein_cost(record):
     return record
 
 
-SELL_KPIS = {
-    "2-4 lb Skin-On Atlantic Salmon Fillets": 7.52,       # Skinless conventional
-    "2-4 lb Skin-On ABF Atlantic Salmon Fillets": 7.84,   # Skinless ABF
+TARGET_COSTS = {
+    "2-4 lb Skin-On Atlantic Salmon Fillets": 7.52,       # Cost threshold for skinless conventional
+    "2-4 lb Skin-On ABF Atlantic Salmon Fillets": 7.84,   # Cost threshold for skinless ABF
 }
 
 
@@ -207,14 +207,14 @@ def compute_chained_costs(records):
         r["protein_cost_per_finished_lb"] = round(yielded_input_cost, 4)
 
         # KPI and Production Spread
-        kpi = SELL_KPIS.get(r["product_format"])
+        kpi = TARGET_COSTS.get(r["product_format"])
         if kpi:
             spread = kpi - output_cost
-            r["sell_kpi"] = kpi
+            r["target_cost"] = kpi
             r["production_spread_per_lb"] = round(spread, 4)
             r["extended_production_spread"] = round(spread * r["finished_lbs"], 2)
         else:
-            r["sell_kpi"] = None
+            r["target_cost"] = None
             r["production_spread_per_lb"] = None
             r["extended_production_spread"] = None
 
@@ -260,22 +260,22 @@ def compute_chained_costs(records):
         r["protein_cost_per_finished_lb"] = round(yielded_input_cost, 4)
         r["raw_protein_cost_per_lb"] = round(upstream_cost, 4)  # Override: input is skinner output
 
-        kpi = SELL_KPIS.get(r["product_format"])
+        kpi = TARGET_COSTS.get(r["product_format"])
         if kpi:
             spread = kpi - output_cost
-            r["sell_kpi"] = kpi
+            r["target_cost"] = kpi
             r["production_spread_per_lb"] = round(spread, 4)
             r["extended_production_spread"] = round(spread * r["finished_lbs"], 2)
 
     # --- Step 4: Add KPI/spread to Slicer Skin-on records too (no upstream recompute needed) ---
     for r in records:
         if r["activity"] == "Slicer Skin-on":
-            if not r.get("sell_kpi"):
-                r["sell_kpi"] = None
+            if not r.get("target_cost"):
+                r["target_cost"] = None
                 r["production_spread_per_lb"] = None
                 r["extended_production_spread"] = None
         if r["activity"] == "Stripping":
-            r["sell_kpi"] = None
+            r["target_cost"] = None
             r["production_spread_per_lb"] = None
             r["extended_production_spread"] = None
 
