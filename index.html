@@ -9,6 +9,19 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js"></script>
 </head>
 <body>
+    <!-- LOGIN GATE -->
+    <div id="login-gate" class="login-gate">
+        <div class="login-box">
+            <h2>Sea Est Activity Cost</h2>
+            <p>Enter password to access the dashboard</p>
+            <form id="login-form" autocomplete="off">
+                <input type="password" id="login-password" placeholder="Password" autofocus>
+                <button type="submit" class="btn-primary btn-large" style="width:100%">Sign In</button>
+            </form>
+            <p id="login-error" style="color:#dc2626;display:none;margin-top:8px;font-size:13px">Incorrect password</p>
+        </div>
+    </div>
+
     <header>
         <div class="header-content">
             <h1>Production Activity Cost Dashboard</h1>

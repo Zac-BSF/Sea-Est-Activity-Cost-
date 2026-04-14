@@ -10,13 +10,56 @@ let currentSort = { field: 'date', dir: 'desc' };
 let dailySort = { field: null, dir: 'asc' };
 let dailyRowData = [];
 
-// ---- INITIALIZATION ----
-document.addEventListener('DOMContentLoaded', async () => {
+// ---- AUTH ----
+const AUTH_KEY = 'sea_est_auth';
+const PW_HASH = '98205a8aac8f3d48440aafaaabe6dd8c35137679ac09974acbdfa4ddcd401225';
+
+async function sha256(msg) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
+    return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function checkAuth() {
+    return sessionStorage.getItem(AUTH_KEY) === 'true';
+}
+
+function showApp() {
+    document.getElementById('login-gate').classList.add('hidden');
+    document.body.classList.remove('locked');
+}
+
+function setupLogin() {
+    if (checkAuth()) { showApp(); return true; }
+    document.body.classList.add('locked');
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const pw = document.getElementById('login-password').value;
+        const hash = await sha256(pw);
+        if (hash === PW_HASH) {
+            sessionStorage.setItem(AUTH_KEY, 'true');
+            showApp();
+            initApp();
+        } else {
+            document.getElementById('login-error').style.display = 'block';
+            document.getElementById('login-password').value = '';
+            document.getElementById('login-password').focus();
+        }
+    });
+    return false;
+}
+
+async function initApp() {
     setupNavigation();
     setupEntryForm();
     setupDetailControls();
     await loadData();
     applyFilters();
+}
+
+// ---- INITIALIZATION ----
+document.addEventListener('DOMContentLoaded', async () => {
+    const authed = setupLogin();
+    if (authed) await initApp();
 });
 
 async function loadData() {
