@@ -681,7 +681,22 @@ function setupEntryForm() {
     });
 
     document.getElementById('entry-date').value = new Date().toISOString().slice(0, 10);
+
+    document.getElementById('btn-now-start').addEventListener('click', () => {
+        document.getElementById('entry-time-start').value = getEasternTimeNow();
+        updateEntryPreview();
+    });
+    document.getElementById('btn-now-end').addEventListener('click', () => {
+        document.getElementById('entry-time-end').value = getEasternTimeNow();
+        updateEntryPreview();
+    });
+
     renderRecentEntries();
+}
+
+function getEasternTimeNow() {
+    const now = new Date().toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false, hour: '2-digit', minute: '2-digit' });
+    return now;
 }
 
 function updateEntryPreview() {

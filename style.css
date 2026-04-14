@@ -318,6 +318,22 @@ tbody tr:hover { background: var(--gray-50); }
 .preview-label { font-weight: 600; color: var(--gray-600); }
 .preview-grid span:not(.preview-label) { font-size: 18px; font-weight: 700; color: var(--primary-dark); }
 
+.time-input-row { display: flex; gap: 8px; align-items: center; }
+.time-input-row input { flex: 1; }
+.btn-now {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+}
+.btn-now:hover { background: var(--primary-dark); }
+.btn-now:active { transform: scale(0.97); }
 .form-actions { display: flex; gap: 12px; margin-top: 24px; }
 .success-message {
     background: var(--success-light);
