@@ -31,8 +31,11 @@
                 <select id="filter-activity"><option value="all">All Activities</option></select>
             </div>
             <div class="filter-group">
-                <label for="filter-product">Product Format</label>
-                <select id="filter-product" multiple size="4"></select>
+                <label>Product Format</label>
+                <div class="multi-select" id="filter-product-wrapper">
+                    <div class="multi-select-display" id="filter-product-display">All Formats</div>
+                    <div class="multi-select-dropdown" id="filter-product-dropdown"></div>
+                </div>
             </div>
             <div class="filter-group">
                 <label for="filter-supplier">Supplier</label>
@@ -95,20 +98,30 @@
         </section>
 
         <section class="summary-section">
-            <h3>Cost Range Summary by Activity &amp; Product</h3>
+            <h3>Daily Activity Cost Breakdown</h3>
+            <div class="inline-filters">
+                <select id="daily-filter-activity"><option value="all">All Activities</option></select>
+                <select id="daily-filter-product"><option value="all">All Products</option></select>
+                <select id="daily-filter-supplier"><option value="all">All Suppliers</option></select>
+                <input type="date" id="daily-filter-date-start">
+                <span>to</span>
+                <input type="date" id="daily-filter-date-end">
+                <button id="btn-reset-daily" class="btn-secondary" style="padding:6px 12px;font-size:12px">Reset</button>
+            </div>
             <div class="table-wrapper">
-                <table id="table-summary">
+                <table id="table-daily">
                     <thead>
                         <tr>
+                            <th>Date</th>
                             <th>Activity</th>
                             <th>Product</th>
-                            <th>Count</th>
+                            <th>Supplier</th>
                             <th>Avg Total $/Lb</th>
                             <th>Target Cost</th>
-                            <th>Avg Spread $/Lb</th>
+                            <th>Avg Spread</th>
                             <th>Avg Yield</th>
                             <th>Total Lbs</th>
-                            <th>Ext. Production Spread</th>
+                            <th>Ext. Spread</th>
                         </tr>
                     </thead>
                     <tbody></tbody>

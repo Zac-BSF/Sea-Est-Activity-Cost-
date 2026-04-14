@@ -55,7 +55,7 @@ function populateFilters() {
 
     fillSelect('filter-classification', classifications);
     fillSelect('filter-activity', activities);
-    fillSelect('filter-product', products);
+    buildProductMultiSelect(products);
     fillSelect('filter-supplier', suppliers);
 
     if (dates.length) {
@@ -63,37 +63,76 @@ function populateFilters() {
         document.getElementById('filter-date-end').value = dates[dates.length - 1];
     }
 
-    ['filter-classification', 'filter-activity', 'filter-product', 'filter-supplier', 'filter-date-start', 'filter-date-end'].forEach(id => {
+    ['filter-classification', 'filter-activity', 'filter-supplier', 'filter-date-start', 'filter-date-end'].forEach(id => {
         document.getElementById(id).addEventListener('change', applyFilters);
     });
     document.getElementById('btn-reset-filters').addEventListener('click', resetFilters);
 }
 
+function buildProductMultiSelect(products) {
+    const wrapper = document.getElementById('filter-product-wrapper');
+    const display = document.getElementById('filter-product-display');
+    const dropdown = document.getElementById('filter-product-dropdown');
+
+    dropdown.innerHTML = '';
+    products.forEach(p => {
+        const lbl = document.createElement('label');
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.value = p;
+        cb.addEventListener('change', () => {
+            updateProductDisplay();
+            applyFilters();
+        });
+        lbl.appendChild(cb);
+        lbl.appendChild(document.createTextNode(p));
+        dropdown.appendChild(lbl);
+    });
+
+    display.addEventListener('click', (e) => {
+        e.stopPropagation();
+        wrapper.classList.toggle('open');
+    });
+    document.addEventListener('click', (e) => {
+        if (!wrapper.contains(e.target)) wrapper.classList.remove('open');
+    });
+}
+
+function updateProductDisplay() {
+    const checked = getSelectedProducts();
+    const display = document.getElementById('filter-product-display');
+    if (checked.length === 0) {
+        display.textContent = 'All Formats';
+    } else if (checked.length === 1) {
+        display.textContent = checked[0];
+    } else {
+        display.textContent = checked.length + ' formats selected';
+    }
+}
+
+function getSelectedProducts() {
+    const checkboxes = document.querySelectorAll('#filter-product-dropdown input[type="checkbox"]');
+    return [...checkboxes].filter(cb => cb.checked).map(cb => cb.value);
+}
+
 function fillSelect(id, values) {
     const sel = document.getElementById(id);
-    const isMulti = sel.multiple;
-    const current = isMulti
-        ? [...sel.selectedOptions].map(o => o.value)
-        : sel.value;
-    if (!isMulti) {
-        while (sel.options.length > 1) sel.remove(1);
-    } else {
-        sel.innerHTML = '';
-    }
+    const current = sel.value;
+    while (sel.options.length > 1) sel.remove(1);
     values.forEach(v => {
         const opt = document.createElement('option');
         opt.value = v;
         opt.textContent = v;
-        if (isMulti && current.includes(v)) opt.selected = true;
         sel.appendChild(opt);
     });
-    if (!isMulti) sel.value = current;
+    sel.value = current;
 }
 
 function resetFilters() {
     document.getElementById('filter-classification').value = 'all';
     document.getElementById('filter-activity').value = 'all';
-    [...document.getElementById('filter-product').options].forEach(o => o.selected = false);
+    document.querySelectorAll('#filter-product-dropdown input[type="checkbox"]').forEach(cb => cb.checked = false);
+    updateProductDisplay();
     document.getElementById('filter-supplier').value = 'all';
     const dates = allData.records.map(r => r.date).sort();
     if (dates.length) {
@@ -106,7 +145,7 @@ function resetFilters() {
 function applyFilters() {
     const classification = document.getElementById('filter-classification').value;
     const activity = document.getElementById('filter-activity').value;
-    const selectedProducts = [...document.getElementById('filter-product').selectedOptions].map(o => o.value);
+    const selectedProducts = getSelectedProducts();
     const supplier = document.getElementById('filter-supplier').value;
     const dateStart = document.getElementById('filter-date-start').value;
     const dateEnd = document.getElementById('filter-date-end').value;
@@ -125,7 +164,8 @@ function applyFilters() {
     updateTotalCostChart();
     updateDailyCostChart();
     updateDailyYieldChart();
-    updateSummaryTable();
+    populateDailyFilters();
+    updateDailyBreakdownTable();
     updateWeeklyTable();
     updateDetailTable();
 }
@@ -320,42 +360,90 @@ function updateDailyYieldChart() {
     });
 }
 
-// ---- SUMMARY TABLE ----
-function updateSummaryTable() {
+// ---- DAILY BREAKDOWN TABLE (with own filters) ----
+function populateDailyFilters() {
+    const activities = [...new Set(filteredRecords.map(r => r.activity))].sort();
+    const products = [...new Set(filteredRecords.map(r => r.product_format))].sort();
+    const suppliers = [...new Set(filteredRecords.map(r => r.supplier).filter(Boolean))].sort();
+    const dates = filteredRecords.map(r => r.date).sort();
+
+    fillSelect('daily-filter-activity', activities);
+    fillSelect('daily-filter-product', products);
+    fillSelect('daily-filter-supplier', suppliers);
+
+    const startEl = document.getElementById('daily-filter-date-start');
+    const endEl = document.getElementById('daily-filter-date-end');
+    if (dates.length && !startEl.value) startEl.value = dates[0];
+    if (dates.length && !endEl.value) endEl.value = dates[dates.length - 1];
+
+    // Only bind listeners once
+    if (!startEl.dataset.bound) {
+        ['daily-filter-activity', 'daily-filter-product', 'daily-filter-supplier', 'daily-filter-date-start', 'daily-filter-date-end'].forEach(id => {
+            document.getElementById(id).addEventListener('change', updateDailyBreakdownTable);
+        });
+        document.getElementById('btn-reset-daily').addEventListener('click', () => {
+            document.getElementById('daily-filter-activity').value = 'all';
+            document.getElementById('daily-filter-product').value = 'all';
+            document.getElementById('daily-filter-supplier').value = 'all';
+            const d = filteredRecords.map(r => r.date).sort();
+            if (d.length) {
+                document.getElementById('daily-filter-date-start').value = d[0];
+                document.getElementById('daily-filter-date-end').value = d[d.length - 1];
+            }
+            updateDailyBreakdownTable();
+        });
+        startEl.dataset.bound = '1';
+    }
+}
+
+function updateDailyBreakdownTable() {
+    const dActivity = document.getElementById('daily-filter-activity').value;
+    const dProduct = document.getElementById('daily-filter-product').value;
+    const dSupplier = document.getElementById('daily-filter-supplier').value;
+    const dStart = document.getElementById('daily-filter-date-start').value;
+    const dEnd = document.getElementById('daily-filter-date-end').value;
+
+    const recs = filteredRecords.filter(r => {
+        if (dActivity !== 'all' && r.activity !== dActivity) return false;
+        if (dProduct !== 'all' && r.product_format !== dProduct) return false;
+        if (dSupplier !== 'all' && r.supplier !== dSupplier) return false;
+        if (dStart && r.date < dStart) return false;
+        if (dEnd && r.date > dEnd) return false;
+        return true;
+    });
+
+    // Group by date + activity + product + supplier
     const groups = {};
-    filteredRecords.forEach(r => {
-        const key = r.activity + '|' + r.product_format;
+    recs.forEach(r => {
+        const key = r.date + '|' + r.activity + '|' + r.product_format + '|' + (r.supplier || '--');
         if (!groups[key]) groups[key] = [];
         groups[key].push(r);
     });
 
-    const tbody = document.querySelector('#table-summary tbody');
+    const tbody = document.querySelector('#table-daily tbody');
     tbody.innerHTML = '';
 
     Object.keys(groups).sort().forEach(key => {
-        const [activity, product] = key.split('|');
-        const recs = groups[key];
-        const laborCosts = recs.map(r => r.cost_per_finished_lb).filter(c => c && c > 0).sort((a, b) => a - b);
-        const totalCosts = recs.map(r => r.total_cost_per_finished_lb).filter(c => c && c > 0);
-        const yieldLossCosts = recs.map(r => r.yield_loss_cost_per_lb).filter(c => c && c > 0);
-        const yields = recs.map(r => r.yield_pct).filter(y => y && y > 0);
-        const totalLbs = recs.reduce((s, r) => s + (r.finished_lbs || 0), 0);
-
-        if (!laborCosts.length) return;
-
-        const spreads = recs.map(r => r.production_spread_per_lb).filter(s => s != null);
-        const extSpreads = recs.map(r => r.extended_production_spread).filter(s => s != null);
-        const kpi = recs.find(r => r.target_cost)?.target_cost;
+        const [date, activity, product, supplier] = key.split('|');
+        const grp = groups[key];
+        const totalCosts = grp.map(r => r.total_cost_per_finished_lb).filter(c => c && c > 0);
+        const spreads = grp.map(r => r.production_spread_per_lb).filter(s => s != null);
+        const extSpreads = grp.map(r => r.extended_production_spread).filter(s => s != null);
+        const kpi = grp.find(r => r.target_cost)?.target_cost;
+        const yields = grp.map(r => r.yield_pct).filter(y => y && y > 0);
+        const totalLbs = grp.reduce((s, r) => s + (r.finished_lbs || 0), 0);
         const totalExtSpread = extSpreads.reduce((s, v) => s + v, 0);
 
-        const n = laborCosts.length;
+        if (!totalCosts.length) return;
+
         const spreadClass = spreads.length && avg(spreads) >= 0 ? 'cost-normal' : 'cost-high';
         const tr = document.createElement('tr');
         tr.innerHTML = `
+            <td>${formatDate(date)}</td>
             <td>${activity}</td>
             <td>${product}</td>
-            <td>${n}</td>
-            <td class="text-right">${totalCosts.length ? '$' + avg(totalCosts).toFixed(4) : '--'}</td>
+            <td>${supplier}</td>
+            <td class="text-right">$${avg(totalCosts).toFixed(4)}</td>
             <td class="text-right">${kpi ? '$' + kpi.toFixed(2) : '--'}</td>
             <td class="text-right ${spreadClass}">${spreads.length ? '$' + avg(spreads).toFixed(4) : '--'}</td>
             <td class="text-right">${yields.length ? avg(yields).toFixed(1) + '%' : '--'}</td>
