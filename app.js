@@ -8,6 +8,8 @@ let dailyCostChart = null;
 let dailyYieldChart = null;
 let totalCostChart = null;
 let currentSort = { field: 'date', dir: 'desc' };
+let dailySort = { field: null, dir: 'asc' };
+let dailyRowData = [];
 
 // ---- INITIALIZATION ----
 document.addEventListener('DOMContentLoaded', async () => {
@@ -412,7 +414,6 @@ function updateDailyBreakdownTable() {
         return true;
     });
 
-    // Group by date + activity + product + supplier
     const groups = {};
     recs.forEach(r => {
         const key = r.date + '|' + r.activity + '|' + r.product_format + '|' + (r.supplier || '--');
@@ -420,9 +421,7 @@ function updateDailyBreakdownTable() {
         groups[key].push(r);
     });
 
-    const tbody = document.querySelector('#table-daily tbody');
-    tbody.innerHTML = '';
-
+    dailyRowData = [];
     Object.keys(groups).sort().forEach(key => {
         const [date, activity, product, supplier] = key.split('|');
         const grp = groups[key];
@@ -436,21 +435,71 @@ function updateDailyBreakdownTable() {
 
         if (!totalCosts.length) return;
 
-        const spreadClass = spreads.length && avg(spreads) >= 0 ? 'cost-normal' : 'cost-high';
+        dailyRowData.push({
+            date, activity, product, supplier,
+            avgTotal: avg(totalCosts),
+            kpi,
+            spread: spreads.length ? avg(spreads) : null,
+            yield: yields.length ? avg(yields) : null,
+            lbs: totalLbs,
+            ext_spread: extSpreads.length ? totalExtSpread : null
+        });
+    });
+
+    renderDailyRows();
+    setupDailySortHeaders();
+}
+
+function renderDailyRows() {
+    let rows = [...dailyRowData];
+    if (dailySort.field) {
+        rows.sort((a, b) => {
+            let va = a[dailySort.field], vb = b[dailySort.field];
+            if (va == null) va = dailySort.dir === 'asc' ? Infinity : -Infinity;
+            if (vb == null) vb = dailySort.dir === 'asc' ? Infinity : -Infinity;
+            if (typeof va === 'string') return dailySort.dir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+            return dailySort.dir === 'asc' ? va - vb : vb - va;
+        });
+    }
+
+    const tbody = document.querySelector('#table-daily tbody');
+    tbody.innerHTML = '';
+    rows.forEach(r => {
+        const spreadClass = r.spread != null && r.spread >= 0 ? 'cost-normal' : r.spread != null ? 'cost-high' : '';
         const tr = document.createElement('tr');
         tr.innerHTML = `
-            <td>${formatDate(date)}</td>
-            <td>${activity}</td>
-            <td>${product}</td>
-            <td>${supplier}</td>
-            <td class="text-right">$${avg(totalCosts).toFixed(4)}</td>
-            <td class="text-right">${kpi ? '$' + kpi.toFixed(2) : '--'}</td>
-            <td class="text-right ${spreadClass}">${spreads.length ? '$' + avg(spreads).toFixed(4) : '--'}</td>
-            <td class="text-right">${yields.length ? avg(yields).toFixed(1) + '%' : '--'}</td>
-            <td class="text-right">${numberFmt(totalLbs.toFixed(0))}</td>
-            <td class="text-right" style="font-weight:600">${extSpreads.length ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
+            <td>${formatDate(r.date)}</td>
+            <td>${r.activity}</td>
+            <td>${r.product}</td>
+            <td>${r.supplier}</td>
+            <td class="text-right">$${r.avgTotal.toFixed(4)}</td>
+            <td class="text-right">${r.kpi ? '$' + r.kpi.toFixed(2) : '--'}</td>
+            <td class="text-right ${spreadClass}">${r.spread != null ? '$' + r.spread.toFixed(4) : '--'}</td>
+            <td class="text-right">${r.yield != null ? r.yield.toFixed(1) + '%' : '--'}</td>
+            <td class="text-right">${numberFmt(r.lbs.toFixed(0))}</td>
+            <td class="text-right" style="font-weight:600">${r.ext_spread != null ? '$' + numberFmt(r.ext_spread.toFixed(0)) : '--'}</td>
         `;
         tbody.appendChild(tr);
+    });
+}
+
+function setupDailySortHeaders() {
+    document.querySelectorAll('#table-daily th[data-sort-daily]').forEach(th => {
+        if (th.dataset.sortBound) return;
+        th.dataset.sortBound = '1';
+        th.addEventListener('click', () => {
+            const field = th.dataset.sortDaily;
+            if (dailySort.field === field) {
+                dailySort.dir = dailySort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+                dailySort = { field, dir: 'asc' };
+            }
+            document.querySelectorAll('#table-daily th[data-sort-daily]').forEach(h => {
+                h.classList.remove('sort-asc', 'sort-desc');
+            });
+            th.classList.add(dailySort.dir === 'asc' ? 'sort-asc' : 'sort-desc');
+            renderDailyRows();
+        });
     });
 }
 

@@ -257,6 +257,10 @@ thead th {
     user-select: none;
 }
 thead th:hover { color: var(--gray-800); }
+thead th.sortable { cursor: pointer; position: relative; padding-right: 20px; }
+thead th.sortable::after { content: '\u2195'; position: absolute; right: 4px; opacity: 0.4; font-size: 10px; }
+thead th.sortable.sort-asc::after { content: '\u25B2'; opacity: 0.8; }
+thead th.sortable.sort-desc::after { content: '\u25BC'; opacity: 0.8; }
 tbody td {
     padding: 10px 12px;
     border-bottom: 1px solid var(--gray-100);
