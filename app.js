@@ -56,12 +56,7 @@ function populateFilters() {
 
     fillSelect('filter-classification', classifications);
     fillSelect('filter-activity', activities);
-    buildProductMultiSelect([
-        { value: 'stripped', label: 'Stripped Product' },
-        { value: 'skinless', label: 'Skinless Salmon' },
-        { value: 'skinon', label: 'Skin-On Salmon' },
-        { value: 'abf_skinless', label: 'ABF Skinless Salmon' }
-    ]);
+    // filter-product is hardcoded in HTML with 4 output bins
     fillSelect('filter-supplier', suppliers);
 
     if (dates.length) {
@@ -69,53 +64,10 @@ function populateFilters() {
         document.getElementById('filter-date-end').value = dates[dates.length - 1];
     }
 
-    ['filter-classification', 'filter-activity', 'filter-supplier', 'filter-date-start', 'filter-date-end'].forEach(id => {
+    ['filter-classification', 'filter-activity', 'filter-product', 'filter-supplier', 'filter-date-start', 'filter-date-end'].forEach(id => {
         document.getElementById(id).addEventListener('change', applyFilters);
     });
     document.getElementById('btn-reset-filters').addEventListener('click', resetFilters);
-}
-
-function buildProductMultiSelect(products) {
-    const wrapper = document.getElementById('filter-product-wrapper');
-    const display = document.getElementById('filter-product-display');
-    const dropdown = document.getElementById('filter-product-dropdown');
-
-    dropdown.innerHTML = '';
-    products.forEach(p => {
-        const lbl = document.createElement('label');
-        const cb = document.createElement('input');
-        cb.type = 'checkbox';
-        cb.value = p.value;
-        cb.addEventListener('change', () => {
-            updateProductDisplay();
-            applyFilters();
-        });
-        lbl.appendChild(cb);
-        lbl.appendChild(document.createTextNode(p.label));
-        dropdown.appendChild(lbl);
-    });
-
-    display.addEventListener('click', (e) => {
-        e.stopPropagation();
-        wrapper.classList.toggle('open');
-    });
-    document.addEventListener('click', (e) => {
-        if (!wrapper.contains(e.target)) wrapper.classList.remove('open');
-    });
-}
-
-function updateProductDisplay() {
-    const checked = getSelectedProducts();
-    const checkedLabels = [...document.querySelectorAll('#filter-product-dropdown input[type="checkbox"]:checked')]
-        .map(cb => cb.parentElement.textContent.trim());
-    const display = document.getElementById('filter-product-display');
-    if (checked.length === 0) {
-        display.textContent = 'All Formats';
-    } else if (checked.length === 1) {
-        display.textContent = checkedLabels[0];
-    } else {
-        display.textContent = checked.length + ' formats selected';
-    }
 }
 
 function matchProductBin(productFormat, bin, activity) {
@@ -139,10 +91,6 @@ function matchProductBin(productFormat, bin, activity) {
     return false;
 }
 
-function getSelectedProducts() {
-    const checkboxes = document.querySelectorAll('#filter-product-dropdown input[type="checkbox"]');
-    return [...checkboxes].filter(cb => cb.checked).map(cb => cb.value);
-}
 
 function fillSelect(id, values) {
     const sel = document.getElementById(id);
@@ -160,8 +108,7 @@ function fillSelect(id, values) {
 function resetFilters() {
     document.getElementById('filter-classification').value = 'all';
     document.getElementById('filter-activity').value = 'all';
-    document.querySelectorAll('#filter-product-dropdown input[type="checkbox"]').forEach(cb => cb.checked = false);
-    updateProductDisplay();
+    document.getElementById('filter-product').value = 'all';
     document.getElementById('filter-supplier').value = 'all';
     const dates = allData.records.map(r => r.date).sort();
     if (dates.length) {
@@ -174,7 +121,7 @@ function resetFilters() {
 function applyFilters() {
     const classification = document.getElementById('filter-classification').value;
     const activity = document.getElementById('filter-activity').value;
-    const selectedProducts = getSelectedProducts();
+    const selectedProduct = document.getElementById('filter-product').value;
     const supplier = document.getElementById('filter-supplier').value;
     const dateStart = document.getElementById('filter-date-start').value;
     const dateEnd = document.getElementById('filter-date-end').value;
@@ -182,7 +129,7 @@ function applyFilters() {
     filteredRecords = allData.records.filter(r => {
         if (classification !== 'all' && r.classification !== classification) return false;
         if (activity !== 'all' && r.activity !== activity) return false;
-        if (selectedProducts.length > 0 && !selectedProducts.some(bin => matchProductBin(r.product_format, bin, r.activity))) return false;
+        if (selectedProduct !== 'all' && !matchProductBin(r.product_format, selectedProduct, r.activity)) return false;
         if (supplier !== 'all' && r.supplier !== supplier) return false;
         if (dateStart && r.date < dateStart) return false;
         if (dateEnd && r.date > dateEnd) return false;
@@ -234,13 +181,13 @@ function updateTotalCostChart() {
 
     // Determine if we should show target cost line
     const selectedActivity = document.getElementById('filter-activity').value;
-    const selProducts = getSelectedProducts();
+    const selProduct = document.getElementById('filter-product').value;
     let targetLine = null;
 
-    if (selectedActivity === 'Skinning' && selProducts.length === 1) {
-        if (selProducts[0].includes('ABF')) {
+    if (selectedActivity === 'Skinning') {
+        if (selProduct === 'abf_skinless') {
             targetLine = { value: 7.84, label: 'Target Cost (ABF): $7.84' };
-        } else if (selProducts[0].includes('Atlantic') && !selProducts[0].includes('ABF')) {
+        } else if (selProduct === 'skinless') {
             targetLine = { value: 7.52, label: 'Target Cost: $7.52' };
         }
     }
