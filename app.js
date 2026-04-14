@@ -111,6 +111,22 @@ function updateProductDisplay() {
     }
 }
 
+function matchProductBin(productFormat, bin) {
+    const fmt = (productFormat || '');
+    if (bin === 'skinless') {
+        // 2-4 lb conventional (non-ABF) - the main skinless product
+        return fmt === '2-4 lb Skin-On Atlantic Salmon Fillets';
+    }
+    if (bin === 'skinon') {
+        // Graded skin-on sliced products + any other non-ABF, non-2-4 formats
+        return (fmt.includes('2-3 lb') || fmt.includes('3-4 lb') || fmt.includes('Skin on'));
+    }
+    if (bin === 'abf_skinless') {
+        return fmt.includes('ABF');
+    }
+    return false;
+}
+
 function getSelectedProducts() {
     const checkboxes = document.querySelectorAll('#filter-product-dropdown input[type="checkbox"]');
     return [...checkboxes].filter(cb => cb.checked).map(cb => cb.value);
@@ -343,7 +359,7 @@ function populateDailyFilters() {
     const dates = filteredRecords.map(r => r.date).sort();
 
     fillSelect('daily-filter-activity', activities);
-    fillSelect('daily-filter-product', products);
+    // daily-filter-product is hardcoded with 3 bins (Skinless, Skin-On, ABF Skinless)
     fillSelect('daily-filter-supplier', suppliers);
 
     const startEl = document.getElementById('daily-filter-date-start');
@@ -380,7 +396,7 @@ function updateDailyBreakdownTable() {
 
     const recs = filteredRecords.filter(r => {
         if (dActivity !== 'all' && r.activity !== dActivity) return false;
-        if (dProduct !== 'all' && r.product_format !== dProduct) return false;
+        if (dProduct !== 'all' && !matchProductBin(r.product_format, dProduct)) return false;
         if (dSupplier !== 'all' && r.supplier !== dSupplier) return false;
         if (dStart && r.date < dStart) return false;
         if (dEnd && r.date > dEnd) return false;
@@ -521,7 +537,7 @@ function updateWeeklyTable() {
 
     const weeklyRecs = filteredRecords.filter(r => {
         if (dActivity !== 'all' && r.activity !== dActivity) return false;
-        if (dProduct !== 'all' && r.product_format !== dProduct) return false;
+        if (dProduct !== 'all' && !matchProductBin(r.product_format, dProduct)) return false;
         if (dSupplier !== 'all' && r.supplier !== dSupplier) return false;
         if (dStart && r.date < dStart) return false;
         if (dEnd && r.date > dEnd) return false;
