@@ -47,11 +47,13 @@ function setupNavigation() {
 
 // ---- FILTERS ----
 function populateFilters() {
+    const classifications = [...new Set(allData.records.map(r => r.classification).filter(Boolean))].sort();
     const activities = [...new Set(allData.records.map(r => r.activity))].sort();
     const products = [...new Set(allData.records.map(r => r.product_format))].sort();
     const suppliers = [...new Set(allData.records.map(r => r.supplier).filter(Boolean))].sort();
     const dates = allData.records.map(r => r.date).sort();
 
+    fillSelect('filter-classification', classifications);
     fillSelect('filter-activity', activities);
     fillSelect('filter-product', products);
     fillSelect('filter-supplier', suppliers);
@@ -61,7 +63,7 @@ function populateFilters() {
         document.getElementById('filter-date-end').value = dates[dates.length - 1];
     }
 
-    ['filter-activity', 'filter-product', 'filter-supplier', 'filter-date-start', 'filter-date-end'].forEach(id => {
+    ['filter-classification', 'filter-activity', 'filter-product', 'filter-supplier', 'filter-date-start', 'filter-date-end'].forEach(id => {
         document.getElementById(id).addEventListener('change', applyFilters);
     });
     document.getElementById('btn-reset-filters').addEventListener('click', resetFilters);
@@ -81,6 +83,7 @@ function fillSelect(id, values) {
 }
 
 function resetFilters() {
+    document.getElementById('filter-classification').value = 'all';
     document.getElementById('filter-activity').value = 'all';
     document.getElementById('filter-product').value = 'all';
     document.getElementById('filter-supplier').value = 'all';
@@ -93,6 +96,7 @@ function resetFilters() {
 }
 
 function applyFilters() {
+    const classification = document.getElementById('filter-classification').value;
     const activity = document.getElementById('filter-activity').value;
     const product = document.getElementById('filter-product').value;
     const supplier = document.getElementById('filter-supplier').value;
@@ -100,6 +104,7 @@ function applyFilters() {
     const dateEnd = document.getElementById('filter-date-end').value;
 
     filteredRecords = allData.records.filter(r => {
+        if (classification !== 'all' && r.classification !== classification) return false;
         if (activity !== 'all' && r.activity !== activity) return false;
         if (product !== 'all' && r.product_format !== product) return false;
         if (supplier !== 'all' && r.supplier !== supplier) return false;

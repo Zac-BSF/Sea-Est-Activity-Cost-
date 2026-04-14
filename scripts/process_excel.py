@@ -82,6 +82,55 @@ def get_protein_price(dt, activity, product_format):
     return None
 
 
+def classify_record(record):
+    """Add classification (Fresh/Previously Frozen) and standardize product format."""
+    activity = record["activity"]
+    fmt = record["product_format"]
+
+    # --- Classification: Fresh vs Previously Frozen ---
+    # Fresh = Atlantic salmon (skinned, sliced, stripped skin-on salmon)
+    # Previously Frozen = Grouper, Snapper, Steelhead, Coho, Sockeye
+    previously_frozen_species = ("grouper", "snapper", "steelhead", "coho", "sockeye")
+    fmt_lower = fmt.lower() if fmt else ""
+
+    if activity == "Stripping" and any(sp in fmt_lower for sp in previously_frozen_species):
+        record["classification"] = "Previously Frozen"
+    else:
+        record["classification"] = "Fresh"
+
+    # --- Standardize product format names ---
+    if activity == "Skinner":
+        if fmt == "ABF":
+            record["product_format"] = "2-4 lb Skin-On ABF Atlantic Salmon Fillets"
+        else:  # Conventional
+            record["product_format"] = "2-4 lb Skin-On Atlantic Salmon Fillets"
+
+    elif activity == "Slicer Skin-on":
+        if "3-4" in fmt:
+            record["product_format"] = "3-4 lb Skin-On Atlantic Salmon Fillets"
+        elif "2-3" in fmt:
+            record["product_format"] = "2-3 lb Skin-On Atlantic Salmon Fillets"
+        else:  # ungraded
+            record["product_format"] = "2-4 lb Skin-On Atlantic Salmon Fillets"
+
+    elif activity == "Slicer Skinless":
+        if "ABF" in fmt or fmt == "ABF":
+            record["product_format"] = "2-4 lb Skin-On ABF Atlantic Salmon Fillets"
+        elif "From Skin-on (ABF)" in fmt:
+            record["product_format"] = "2-4 lb Skin-On ABF Atlantic Salmon Fillets"
+        elif "From Skin-on (Conventional)" in fmt:
+            record["product_format"] = "2-4 lb Skin-On Atlantic Salmon Fillets"
+        else:  # Conventional
+            record["product_format"] = "2-4 lb Skin-On Atlantic Salmon Fillets"
+
+    elif activity == "Stripping":
+        if "skin on" in fmt_lower and "salmon" in fmt_lower:
+            record["product_format"] = "2-4 lb Skin-On Atlantic Salmon Fillets"
+        # Leave species names (Coho, Sockeye, Steelhead, Snapper, Grouper) as-is
+
+    return record
+
+
 def enrich_with_protein_cost(record):
     """Add protein cost, yield loss cost, and total cost fields to a record."""
     dt = datetime.strptime(record["date"], '%Y-%m-%d')
@@ -175,11 +224,15 @@ def normalize_supplier(s):
     s = re.sub(r'\s+', ' ', s)
     s = s.replace('`', '').replace("'", '')
     if s in ('MULTIX', 'MULTI X', 'MULTI  X'):
-        return 'MULTI X'
+        return 'Multi-X'
     if s in ('AQUA', 'AQUA`'):
-        return 'AQUA'
+        return 'AquaChile'
     if s == 'CERMAQ':
-        return 'CERMAQ'
+        return 'Cermaq'
+    if s == 'BLUGLACIER':
+        return 'BluGlacier'
+    if s == 'TRAPANANDA':
+        return 'Trapananda'
     return s
 
 
@@ -569,7 +622,9 @@ def main():
     wb.close()
 
     # Enrich all records with protein cost data
+    # Enrich with protein cost first (needs original format names), then classify/rename
     all_records = [enrich_with_protein_cost(r) for r in all_records]
+    all_records = [classify_record(r) for r in all_records]
 
     if append_mode and os.path.exists(OUTPUT_PATH):
         with open(OUTPUT_PATH, 'r') as f:

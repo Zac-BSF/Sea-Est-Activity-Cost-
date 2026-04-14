@@ -23,6 +23,10 @@
     <main id="page-dashboard" class="page active">
         <section class="filters">
             <div class="filter-group">
+                <label for="filter-classification">Classification</label>
+                <select id="filter-classification"><option value="all">All</option></select>
+            </div>
+            <div class="filter-group">
                 <label for="filter-activity">Activity</label>
                 <select id="filter-activity"><option value="all">All Activities</option></select>
             </div>
@@ -166,22 +170,21 @@
                         <label for="entry-supplier">Supplier</label>
                         <select id="entry-supplier">
                             <option value="">Select Supplier</option>
-                            <option value="AQUA">AQUA</option>
-                            <option value="CERMAQ">CERMAQ</option>
-                            <option value="MULTI X">MULTI X</option>
+                            <option value="AquaChile">AquaChile</option>
+                            <option value="BluGlacier">BluGlacier</option>
+                            <option value="Cermaq">Cermaq</option>
+                            <option value="Multi-X">Multi-X</option>
+                            <option value="Trapananda">Trapananda</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="entry-product">Product Format *</label>
                         <select id="entry-product" required>
                             <option value="">Select Format</option>
-                            <option value="Conventional">Conventional</option>
-                            <option value="ABF">ABF (Antibiotic Free)</option>
-                            <option value="Skin on 2-3">Skin on 2-3</option>
-                            <option value="Skin on 3-4">Skin on 3-4</option>
-                            <option value="Skin on (ungraded)">Skin on (ungraded)</option>
-                            <option value="From Skin-on (Conventional)">From Skin-on (Conventional)</option>
-                            <option value="From Skin-on (ABF)">From Skin-on (ABF)</option>
+                            <option value="2-4 lb Skin-On Atlantic Salmon Fillets">2-4 lb Skin-On Atlantic Salmon Fillets</option>
+                            <option value="2-4 lb Skin-On ABF Atlantic Salmon Fillets">2-4 lb Skin-On ABF Atlantic Salmon Fillets</option>
+                            <option value="2-3 lb Skin-On Atlantic Salmon Fillets">2-3 lb Skin-On Atlantic Salmon Fillets</option>
+                            <option value="3-4 lb Skin-On Atlantic Salmon Fillets">3-4 lb Skin-On Atlantic Salmon Fillets</option>
                         </select>
                     </div>
                 </div>
