@@ -168,7 +168,6 @@ function applyFilters() {
     updateDailyYieldChart();
     populateDailyFilters();
     updateDailyBreakdownTable();
-    updateWeeklyTable();
     updateDetailTable();
 }
 
@@ -483,6 +482,7 @@ function updateDailyBreakdownTable() {
 
     renderDailyRows();
     setupDailySortHeaders();
+    updateWeeklyTable();
 }
 
 function renderDailyRows() {
@@ -551,8 +551,24 @@ function setupDailySortHeaders() {
 
 // ---- WEEKLY TABLE ----
 function updateWeeklyTable() {
+    // Apply same filters as daily breakdown
+    const dActivity = document.getElementById('daily-filter-activity')?.value || 'all';
+    const dProduct = document.getElementById('daily-filter-product')?.value || 'all';
+    const dSupplier = document.getElementById('daily-filter-supplier')?.value || 'all';
+    const dStart = document.getElementById('daily-filter-date-start')?.value || '';
+    const dEnd = document.getElementById('daily-filter-date-end')?.value || '';
+
+    const weeklyRecs = filteredRecords.filter(r => {
+        if (dActivity !== 'all' && r.activity !== dActivity) return false;
+        if (dProduct !== 'all' && r.product_format !== dProduct) return false;
+        if (dSupplier !== 'all' && r.supplier !== dSupplier) return false;
+        if (dStart && r.date < dStart) return false;
+        if (dEnd && r.date > dEnd) return false;
+        return true;
+    });
+
     const groups = {};
-    filteredRecords.forEach(r => {
+    weeklyRecs.forEach(r => {
         const key = r.week + '|' + r.activity + '|' + r.product_format;
         if (!groups[key]) groups[key] = [];
         groups[key].push(r);
