@@ -207,6 +207,40 @@ function updateTotalCostChart() {
         return vals.length ? avg(vals) : 0;
     });
 
+    // Determine if we should show target cost line
+    const selectedActivity = document.getElementById('filter-activity').value;
+    const selProducts = getSelectedProducts();
+    let targetLine = null;
+
+    if (selectedActivity === 'Skinning' && selProducts.length === 1) {
+        if (selProducts[0].includes('ABF')) {
+            targetLine = { value: 7.84, label: 'Target Cost (ABF): $7.84' };
+        } else if (selProducts[0].includes('Atlantic') && !selProducts[0].includes('ABF')) {
+            targetLine = { value: 7.52, label: 'Target Cost: $7.52' };
+        }
+    }
+
+    const annotations = {};
+    if (targetLine) {
+        annotations.targetCostLine = {
+            type: 'line',
+            yMin: targetLine.value,
+            yMax: targetLine.value,
+            borderColor: '#dc2626',
+            borderWidth: 2,
+            borderDash: [8, 4],
+            label: {
+                display: true,
+                content: targetLine.label,
+                position: 'start',
+                backgroundColor: 'rgba(220, 38, 38, 0.85)',
+                color: '#fff',
+                font: { size: 12, weight: 'bold' },
+                padding: 4
+            }
+        };
+    }
+
     if (totalCostChart) totalCostChart.destroy();
     totalCostChart = new Chart(document.getElementById('chart-total-cost'), {
         type: 'bar',
@@ -232,6 +266,7 @@ function updateTotalCostChart() {
                 x: { stacked: true, ticks: { maxRotation: 45 } }
             },
             plugins: {
+                annotation: { annotations },
                 tooltip: {
                     callbacks: {
                         label: ctx => ctx.dataset.label + ': $' + (ctx.parsed.y?.toFixed(4) || '0'),
