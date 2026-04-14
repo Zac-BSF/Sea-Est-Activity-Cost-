@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadData() {
     try {
-        const resp = await fetch('data/production_data.json');
+        const resp = await fetch('data/production_data.json?v=' + Date.now());
         allData = await resp.json();
     } catch (e) {
         allData = { records: [], summary: {}, labor_rate: LABOR_RATE };

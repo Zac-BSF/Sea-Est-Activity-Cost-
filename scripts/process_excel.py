@@ -137,20 +137,30 @@ def enrich_with_protein_cost(record):
     price = get_protein_price(dt, record["activity"], record["product_format"])
     record["raw_protein_cost_per_lb"] = price
 
-    if price and record["yield_pct"] and record["yield_pct"] > 0:
+    if record["activity"] == "Stripping":
+        # Stripping has no yield loss (lbs in = lbs out), just labor
+        record["protein_cost_per_finished_lb"] = price
+        record["yield_loss_cost_per_lb"] = 0
+        if price and record.get("cost_per_finished_lb"):
+            record["total_cost_per_finished_lb"] = round(price + record["cost_per_finished_lb"], 4)
+        elif record.get("cost_per_finished_lb"):
+            record["total_cost_per_finished_lb"] = record["cost_per_finished_lb"]
+        else:
+            record["total_cost_per_finished_lb"] = None
+    elif price and record["yield_pct"] and record["yield_pct"] > 0:
         protein_cost_per_finished = price / (record["yield_pct"] / 100.0)
         yield_loss_cost = protein_cost_per_finished - price
         record["protein_cost_per_finished_lb"] = round(protein_cost_per_finished, 4)
         record["yield_loss_cost_per_lb"] = round(yield_loss_cost, 4)
+        if record.get("cost_per_finished_lb"):
+            record["total_cost_per_finished_lb"] = round(
+                protein_cost_per_finished + record["cost_per_finished_lb"], 4
+            )
+        else:
+            record["total_cost_per_finished_lb"] = None
     else:
         record["protein_cost_per_finished_lb"] = None
         record["yield_loss_cost_per_lb"] = None
-
-    if record.get("protein_cost_per_finished_lb") and record.get("cost_per_finished_lb"):
-        record["total_cost_per_finished_lb"] = round(
-            record["protein_cost_per_finished_lb"] + record["cost_per_finished_lb"], 4
-        )
-    else:
         record["total_cost_per_finished_lb"] = None
 
     return record
