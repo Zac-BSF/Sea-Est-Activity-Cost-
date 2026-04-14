@@ -56,7 +56,12 @@ function populateFilters() {
 
     fillSelect('filter-classification', classifications);
     fillSelect('filter-activity', activities);
-    buildProductMultiSelect(products);
+    buildProductMultiSelect([
+        { value: 'stripped', label: 'Stripped Product' },
+        { value: 'skinless', label: 'Skinless Salmon' },
+        { value: 'skinon', label: 'Skin-On Salmon' },
+        { value: 'abf_skinless', label: 'ABF Skinless Salmon' }
+    ]);
     fillSelect('filter-supplier', suppliers);
 
     if (dates.length) {
@@ -80,13 +85,13 @@ function buildProductMultiSelect(products) {
         const lbl = document.createElement('label');
         const cb = document.createElement('input');
         cb.type = 'checkbox';
-        cb.value = p;
+        cb.value = p.value;
         cb.addEventListener('change', () => {
             updateProductDisplay();
             applyFilters();
         });
         lbl.appendChild(cb);
-        lbl.appendChild(document.createTextNode(p));
+        lbl.appendChild(document.createTextNode(p.label));
         dropdown.appendChild(lbl);
     });
 
@@ -101,25 +106,32 @@ function buildProductMultiSelect(products) {
 
 function updateProductDisplay() {
     const checked = getSelectedProducts();
+    const checkedLabels = [...document.querySelectorAll('#filter-product-dropdown input[type="checkbox"]:checked')]
+        .map(cb => cb.parentElement.textContent.trim());
     const display = document.getElementById('filter-product-display');
     if (checked.length === 0) {
         display.textContent = 'All Formats';
     } else if (checked.length === 1) {
-        display.textContent = checked[0];
+        display.textContent = checkedLabels[0];
     } else {
         display.textContent = checked.length + ' formats selected';
     }
 }
 
-function matchProductBin(productFormat, bin) {
+function matchProductBin(productFormat, bin, activity) {
     const fmt = (productFormat || '');
+    const act = (activity || '');
+    if (bin === 'stripped') {
+        return act === 'Stripping';
+    }
     if (bin === 'skinless') {
-        // 2-4 lb conventional (non-ABF) - the main skinless product
-        return fmt === '2-4 lb Skin-On Atlantic Salmon Fillets';
+        return !fmt.includes('ABF') && act !== 'Stripping' &&
+            (act === 'Skinning' || act === 'Slicing - Skinless Salmon' ||
+             fmt === '2-4 lb Skin-On Atlantic Salmon Fillets');
     }
     if (bin === 'skinon') {
-        // Graded skin-on sliced products + any other non-ABF, non-2-4 formats
-        return (fmt.includes('2-3 lb') || fmt.includes('3-4 lb') || fmt.includes('Skin on'));
+        return act === 'Slicing - Skin-On Salmon' ||
+            fmt.includes('2-3 lb') || fmt.includes('3-4 lb');
     }
     if (bin === 'abf_skinless') {
         return fmt.includes('ABF');
@@ -170,7 +182,7 @@ function applyFilters() {
     filteredRecords = allData.records.filter(r => {
         if (classification !== 'all' && r.classification !== classification) return false;
         if (activity !== 'all' && r.activity !== activity) return false;
-        if (selectedProducts.length > 0 && !selectedProducts.includes(r.product_format)) return false;
+        if (selectedProducts.length > 0 && !selectedProducts.some(bin => matchProductBin(r.product_format, bin, r.activity))) return false;
         if (supplier !== 'all' && r.supplier !== supplier) return false;
         if (dateStart && r.date < dateStart) return false;
         if (dateEnd && r.date > dateEnd) return false;
@@ -396,7 +408,7 @@ function updateDailyBreakdownTable() {
 
     const recs = filteredRecords.filter(r => {
         if (dActivity !== 'all' && r.activity !== dActivity) return false;
-        if (dProduct !== 'all' && !matchProductBin(r.product_format, dProduct)) return false;
+        if (dProduct !== 'all' && !matchProductBin(r.product_format, dProduct, r.activity)) return false;
         if (dSupplier !== 'all' && r.supplier !== dSupplier) return false;
         if (dStart && r.date < dStart) return false;
         if (dEnd && r.date > dEnd) return false;
@@ -537,7 +549,7 @@ function updateWeeklyTable() {
 
     const weeklyRecs = filteredRecords.filter(r => {
         if (dActivity !== 'all' && r.activity !== dActivity) return false;
-        if (dProduct !== 'all' && !matchProductBin(r.product_format, dProduct)) return false;
+        if (dProduct !== 'all' && !matchProductBin(r.product_format, dProduct, r.activity)) return false;
         if (dSupplier !== 'all' && r.supplier !== dSupplier) return false;
         if (dStart && r.date < dStart) return false;
         if (dEnd && r.date > dEnd) return false;
