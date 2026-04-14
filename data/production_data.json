@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T08:52:24.282985",
+  "generated_at": "2026-04-14T11:06:40.150651",
   "labor_rate": 22.0,
   "protein_prices": {
     "2026-03-09": {
@@ -7,42 +7,48 @@
       "abf": 6.55,
       "coho": 5.45,
       "steelhead": 5.9,
-      "sockeye": 10.47
+      "sockeye": 10.47,
+      "grouper": 10.55
     },
     "2026-03-16": {
       "skin_on": 6.27,
       "abf": 6.55,
       "coho": 5.45,
       "steelhead": 5.9,
-      "sockeye": 10.47
+      "sockeye": 10.47,
+      "grouper": 10.55
     },
     "2026-03-23": {
       "skin_on": 6.37,
       "abf": 6.68,
       "coho": 5.45,
       "steelhead": 5.9,
-      "sockeye": 10.47
+      "sockeye": 10.47,
+      "grouper": 10.55
     },
     "2026-03-30": {
       "skin_on": 6.37,
       "abf": 6.68,
       "coho": 5.45,
       "steelhead": 5.9,
-      "sockeye": 10.47
+      "sockeye": 10.47,
+      "grouper": 10.55
     },
     "2026-04-06": {
       "skin_on": 6.37,
       "abf": 6.68,
       "coho": 5.45,
       "steelhead": 5.9,
-      "sockeye": 10.47
+      "sockeye": 10.47,
+      "grouper": 10.55
     },
     "2026-04-13": {
       "skin_on": 6.46,
       "abf": 6.74,
       "coho": 5.45,
       "steelhead": 5.9,
-      "sockeye": 10.47
+      "sockeye": 10.47,
+      "grouper": 10.55
     }
   },
   "source_file": "Fresh Fish Skinner - Slicer - Yield - Labor  March 09 2026.xlsx",
@@ -3905,10 +3911,10 @@
       "total_labor_hours": 3.4,
       "labor_cost": 74.8,
       "cost_per_finished_lb": 0.1496,
-      "raw_protein_cost_per_lb": null,
-      "protein_cost_per_finished_lb": null,
+      "raw_protein_cost_per_lb": 10.55,
+      "protein_cost_per_finished_lb": 10.55,
       "yield_loss_cost_per_lb": 0,
-      "total_cost_per_finished_lb": 0.1496,
+      "total_cost_per_finished_lb": 10.6996,
       "classification": "Previously Frozen",
       "target_cost": null,
       "production_spread_per_lb": null,
@@ -17318,7 +17324,7 @@
       "std_cost": 0,
       "avg_yield": null,
       "avg_yield_loss_cost": null,
-      "avg_total_cost": 0.1496,
+      "avg_total_cost": 10.6996,
       "total_finished_lbs": 500.0
     }
   }

@@ -26,12 +26,12 @@ OUTPUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # Weekly protein prices ($/lb) - weeks defined as Monday-Sunday
 # Key: Monday date of the week
 PROTEIN_PRICES = {
-    "2026-03-09": {"skin_on": 6.27, "abf": 6.55, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
-    "2026-03-16": {"skin_on": 6.27, "abf": 6.55, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
-    "2026-03-23": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
-    "2026-03-30": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
-    "2026-04-06": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
-    "2026-04-13": {"skin_on": 6.46, "abf": 6.74, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
+    "2026-03-09": {"skin_on": 6.27, "abf": 6.55, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47, "grouper": 10.55},
+    "2026-03-16": {"skin_on": 6.27, "abf": 6.55, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47, "grouper": 10.55},
+    "2026-03-23": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47, "grouper": 10.55},
+    "2026-03-30": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47, "grouper": 10.55},
+    "2026-04-06": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47, "grouper": 10.55},
+    "2026-04-13": {"skin_on": 6.46, "abf": 6.74, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47, "grouper": 10.55},
 }
 
 
@@ -75,9 +75,11 @@ def get_protein_price(dt, activity, product_format):
             return prices["steelhead"]
         if "sockeye" in fmt_lower:
             return prices["sockeye"]
+        if "grouper" in fmt_lower:
+            return prices["grouper"]
         if "salmon" in fmt_lower or "skin on" in fmt_lower:
             return prices["skin_on"]
-        return None  # Snapper, Grouper, etc. - no salmon price
+        return None  # Snapper, etc. - no price yet
 
     return None
 
