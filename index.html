@@ -221,12 +221,12 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="entry-incoming">Incoming Weight (lbs) *</label>
-                        <input type="number" id="entry-incoming" step="0.01" min="0" required placeholder="e.g. 1450.00">
+                        <label for="entry-incoming">Incoming Weight (lbs)</label>
+                        <input type="number" id="entry-incoming" step="0.01" min="0" placeholder="e.g. 1450.00 (can add later)">
                     </div>
                     <div class="form-group">
-                        <label for="entry-finished">Finished Weight (lbs) *</label>
-                        <input type="number" id="entry-finished" step="0.01" min="0" required placeholder="e.g. 1300.00">
+                        <label for="entry-finished">Finished Weight (lbs)</label>
+                        <input type="number" id="entry-finished" step="0.01" min="0" placeholder="e.g. 1300.00 (can add later)">
                     </div>
                 </div>
 
@@ -288,12 +288,34 @@
                                 <th>Yield</th>
                                 <th>Cost/Lb</th>
                                 <th></th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody></tbody>
                     </table>
                 </div>
             </section>
+
+            <div id="weight-modal" class="weight-modal" style="display:none">
+                <div class="weight-modal-content">
+                    <h4>Enter Weights</h4>
+                    <p id="weight-modal-info" class="entry-subtitle"></p>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="weight-incoming">Incoming Weight (lbs)</label>
+                            <input type="number" id="weight-incoming" step="0.01" min="0" placeholder="e.g. 1450.00">
+                        </div>
+                        <div class="form-group">
+                            <label for="weight-finished">Finished Weight (lbs)</label>
+                            <input type="number" id="weight-finished" step="0.01" min="0" placeholder="e.g. 1300.00">
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-primary" id="weight-save">Save Weights</button>
+                        <button type="button" class="btn-secondary" id="weight-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

@@ -382,6 +382,41 @@ footer {
     border-radius: 4px;
 }
 .btn-delete:hover { background: #fee2e2; }
+.btn-weight {
+    background: var(--primary-light);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-weight:hover { background: var(--primary); color: white; }
+.weight-pending { color: var(--warning); font-style: italic; font-size: 12px; }
+
+/* Weight modal */
+.weight-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.weight-modal-content {
+    background: white;
+    border-radius: var(--radius);
+    padding: 28px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.weight-modal-content h4 { font-size: 18px; margin-bottom: 4px; }
+.weight-modal-content .form-actions { margin-top: 20px; }
 
 /* RESPONSIVE - TABLET */
 @media (max-width: 1024px) {

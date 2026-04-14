@@ -691,6 +691,12 @@ function setupEntryForm() {
         updateEntryPreview();
     });
 
+    document.getElementById('weight-save').addEventListener('click', saveWeights);
+    document.getElementById('weight-cancel').addEventListener('click', closeWeightModal);
+    document.getElementById('weight-modal').addEventListener('click', (e) => {
+        if (e.target === e.currentTarget) closeWeightModal();
+    });
+
     renderRecentEntries();
 }
 
@@ -739,8 +745,8 @@ function saveEntry() {
     const product = document.getElementById('entry-product').value;
     const lot = document.getElementById('entry-lot').value || null;
     const pallet = document.getElementById('entry-pallet').value || null;
-    const incoming = parseFloat(document.getElementById('entry-incoming').value);
-    const finished = parseFloat(document.getElementById('entry-finished').value);
+    const incoming = parseFloat(document.getElementById('entry-incoming').value) || null;
+    const finished = parseFloat(document.getElementById('entry-finished').value) || null;
     const people = parseInt(document.getElementById('entry-people').value);
     const startTime = document.getElementById('entry-time-start').value;
     const endTime = document.getElementById('entry-time-end').value;
@@ -748,8 +754,8 @@ function saveEntry() {
     const hours = calcHoursFromTimeInputs(startTime, endTime);
     const totalLaborHours = people * hours;
     const laborCost = totalLaborHours * LABOR_RATE;
-    const costPerLb = laborCost / finished;
-    const yieldPct = activity === 'Stripping' ? null : (finished / incoming * 100);
+    const costPerLb = finished ? laborCost / finished : null;
+    const yieldPct = (activity === 'Stripping' || !incoming || !finished) ? null : (finished / incoming * 100);
 
     const dt = new Date(date);
     const iso = dt.getUTCDay() === 0
@@ -764,16 +770,17 @@ function saveEntry() {
         lot,
         pallet,
         product_format: product,
-        incoming_lbs: Math.round(incoming * 100) / 100,
-        finished_lbs: Math.round(finished * 100) / 100,
+        incoming_lbs: incoming ? Math.round(incoming * 100) / 100 : null,
+        finished_lbs: finished ? Math.round(finished * 100) / 100 : null,
         yield_pct: yieldPct ? Math.round(yieldPct * 100) / 100 : null,
         people,
         hours_worked: Math.round(hours * 10000) / 10000,
         total_labor_hours: Math.round(totalLaborHours * 10000) / 10000,
         labor_cost: Math.round(laborCost * 100) / 100,
-        cost_per_finished_lb: Math.round(costPerLb * 10000) / 10000,
+        cost_per_finished_lb: costPerLb ? Math.round(costPerLb * 10000) / 10000 : null,
         _manual: true,
-        _entered_at: new Date().toISOString()
+        _entered_at: new Date().toISOString(),
+        _weights_pending: !incoming || !finished
     };
 
     manualRecords.push(record);
@@ -798,18 +805,25 @@ function renderRecentEntries() {
     const recent = [...manualRecords].reverse().slice(0, 20);
 
     recent.forEach((r, idx) => {
+        const realIdx = manualRecords.length - 1 - idx;
+        const needsWeight = r._weights_pending || !r.incoming_lbs || !r.finished_lbs;
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${formatDate(r.date)}</td>
             <td>${r.activity}</td>
             <td>${r.product_format}</td>
-            <td class="text-right">${r.incoming_lbs?.toFixed(1)}</td>
-            <td class="text-right">${r.finished_lbs?.toFixed(1)}</td>
-            <td class="text-right">${r.yield_pct?.toFixed(1) || '--'}%</td>
-            <td class="text-right">$${r.cost_per_finished_lb?.toFixed(4)}</td>
-            <td><button class="btn-delete" data-idx="${manualRecords.length - 1 - idx}" title="Delete">&#x2715;</button></td>
+            <td class="text-right">${r.incoming_lbs ? r.incoming_lbs.toFixed(1) : '<span class="weight-pending">pending</span>'}</td>
+            <td class="text-right">${r.finished_lbs ? r.finished_lbs.toFixed(1) : '<span class="weight-pending">pending</span>'}</td>
+            <td class="text-right">${r.yield_pct ? r.yield_pct.toFixed(1) + '%' : '--'}</td>
+            <td class="text-right">${r.cost_per_finished_lb ? '$' + r.cost_per_finished_lb.toFixed(4) : '--'}</td>
+            <td><button class="btn-weight" data-idx="${realIdx}">${needsWeight ? 'Enter Weight' : 'Edit Weight'}</button></td>
+            <td><button class="btn-delete" data-idx="${realIdx}" title="Delete">&#x2715;</button></td>
         `;
         tbody.appendChild(tr);
+    });
+
+    tbody.querySelectorAll('.btn-weight').forEach(btn => {
+        btn.addEventListener('click', () => openWeightModal(parseInt(btn.dataset.idx)));
     });
 
     tbody.querySelectorAll('.btn-delete').forEach(btn => {
@@ -823,6 +837,53 @@ function renderRecentEntries() {
             applyFilters();
         });
     });
+}
+
+let weightEditIdx = null;
+
+function openWeightModal(idx) {
+    weightEditIdx = idx;
+    const r = manualRecords[idx];
+    const modal = document.getElementById('weight-modal');
+    document.getElementById('weight-modal-info').textContent =
+        `${r.date} | ${r.activity} | ${r.product_format} | ${r.people} people`;
+    document.getElementById('weight-incoming').value = r.incoming_lbs || '';
+    document.getElementById('weight-finished').value = r.finished_lbs || '';
+    modal.style.display = 'flex';
+}
+
+function closeWeightModal() {
+    document.getElementById('weight-modal').style.display = 'none';
+    weightEditIdx = null;
+}
+
+function saveWeights() {
+    if (weightEditIdx === null) return;
+    const r = manualRecords[weightEditIdx];
+    const incoming = parseFloat(document.getElementById('weight-incoming').value) || null;
+    const finished = parseFloat(document.getElementById('weight-finished').value) || null;
+
+    r.incoming_lbs = incoming ? Math.round(incoming * 100) / 100 : null;
+    r.finished_lbs = finished ? Math.round(finished * 100) / 100 : null;
+    r._weights_pending = !incoming || !finished;
+
+    if (incoming && finished) {
+        r.yield_pct = r.activity === 'Stripping' ? null : Math.round((finished / incoming * 100) * 100) / 100;
+        r.cost_per_finished_lb = finished > 0 ? Math.round((r.labor_cost / finished) * 10000) / 10000 : null;
+    } else {
+        r.yield_pct = null;
+        r.cost_per_finished_lb = null;
+    }
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(manualRecords));
+
+    // Update in allData too
+    const ai = allData.records.findIndex(x => x._entered_at === r._entered_at && x._manual);
+    if (ai >= 0) Object.assign(allData.records[ai], r);
+
+    closeWeightModal();
+    renderRecentEntries();
+    applyFilters();
 }
 
 // ---- HELPERS ----
