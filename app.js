@@ -6,6 +6,7 @@ let manualRecords = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
 let filteredRecords = [];
 let dailyCostChart = null;
 let dailyYieldChart = null;
+let totalCostChart = null;
 let currentSort = { field: 'date', dir: 'desc' };
 
 // ---- INITIALIZATION ----
@@ -108,6 +109,7 @@ function applyFilters() {
     });
 
     updateKPIs();
+    updateTotalCostChart();
     updateDailyCostChart();
     updateDailyYieldChart();
     updateSummaryTable();
@@ -117,16 +119,76 @@ function applyFilters() {
 
 // ---- KPIs ----
 function updateKPIs() {
-    const costs = filteredRecords.map(r => r.cost_per_finished_lb).filter(c => c && c > 0);
+    const laborCosts = filteredRecords.map(r => r.cost_per_finished_lb).filter(c => c && c > 0);
+    const totalCosts = filteredRecords.map(r => r.total_cost_per_finished_lb).filter(c => c && c > 0);
+    const yieldLossCosts = filteredRecords.map(r => r.yield_loss_cost_per_lb).filter(c => c && c > 0);
     const yields = filteredRecords.map(r => r.yield_pct).filter(y => y && y > 0);
     const totalLbs = filteredRecords.reduce((s, r) => s + (r.finished_lbs || 0), 0);
 
-    document.getElementById('kpi-avg-cost').textContent = costs.length ? '$' + avg(costs).toFixed(4) : '--';
-    document.getElementById('kpi-cost-range').textContent = costs.length
-        ? '$' + Math.min(...costs).toFixed(4) + ' - $' + Math.max(...costs).toFixed(4) : '--';
+    document.getElementById('kpi-total-cost').textContent = totalCosts.length ? '$' + avg(totalCosts).toFixed(4) : '--';
+    document.getElementById('kpi-yield-loss-cost').textContent = yieldLossCosts.length ? '$' + avg(yieldLossCosts).toFixed(4) : '--';
+    document.getElementById('kpi-avg-cost').textContent = laborCosts.length ? '$' + avg(laborCosts).toFixed(4) : '--';
     document.getElementById('kpi-avg-yield').textContent = yields.length ? avg(yields).toFixed(1) + '%' : '--';
     document.getElementById('kpi-total-lbs').textContent = totalLbs > 0 ? numberFmt(totalLbs.toFixed(0)) : '--';
     document.getElementById('kpi-count').textContent = filteredRecords.length || '--';
+}
+
+// ---- TOTAL COST STACKED BAR CHART ----
+function updateTotalCostChart() {
+    const recsWithCost = filteredRecords.filter(r => r.total_cost_per_finished_lb && r.total_cost_per_finished_lb > 0);
+    const grouped = groupBy(recsWithCost, 'date');
+    const dates = Object.keys(grouped).sort();
+
+    const rawProtein = dates.map(d => {
+        const vals = grouped[d].map(r => r.raw_protein_cost_per_lb).filter(Boolean);
+        return vals.length ? avg(vals) : 0;
+    });
+    const yieldLoss = dates.map(d => {
+        const vals = grouped[d].map(r => r.yield_loss_cost_per_lb).filter(Boolean);
+        return vals.length ? avg(vals) : 0;
+    });
+    const labor = dates.map(d => {
+        const vals = grouped[d].map(r => r.cost_per_finished_lb).filter(Boolean);
+        return vals.length ? avg(vals) : 0;
+    });
+
+    if (totalCostChart) totalCostChart.destroy();
+    totalCostChart = new Chart(document.getElementById('chart-total-cost'), {
+        type: 'bar',
+        data: {
+            labels: dates.map(d => formatDate(d)),
+            datasets: [
+                { label: 'Raw Protein', data: rawProtein, backgroundColor: '#1a56db', stack: 'total' },
+                { label: 'Yield Loss', data: yieldLoss, backgroundColor: '#d97706', stack: 'total' },
+                { label: 'Labor', data: labor, backgroundColor: '#059669', stack: 'total' }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 2.5,
+            interaction: { mode: 'index', intersect: false },
+            scales: {
+                y: {
+                    stacked: true,
+                    title: { display: true, text: '$ / Finished Lb' },
+                    ticks: { callback: v => '$' + v.toFixed(2) }
+                },
+                x: { stacked: true, ticks: { maxRotation: 45 } }
+            },
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: ctx => ctx.dataset.label + ': $' + (ctx.parsed.y?.toFixed(4) || '0'),
+                        afterBody: (items) => {
+                            const total = items.reduce((s, i) => s + (i.parsed.y || 0), 0);
+                            return 'Total: $' + total.toFixed(4);
+                        }
+                    }
+                }
+            }
+        }
+    });
 }
 
 // ---- DAILY COST CHART ----
@@ -260,24 +322,25 @@ function updateSummaryTable() {
     Object.keys(groups).sort().forEach(key => {
         const [activity, product] = key.split('|');
         const recs = groups[key];
-        const costs = recs.map(r => r.cost_per_finished_lb).filter(c => c && c > 0).sort((a, b) => a - b);
+        const laborCosts = recs.map(r => r.cost_per_finished_lb).filter(c => c && c > 0).sort((a, b) => a - b);
+        const totalCosts = recs.map(r => r.total_cost_per_finished_lb).filter(c => c && c > 0);
+        const yieldLossCosts = recs.map(r => r.yield_loss_cost_per_lb).filter(c => c && c > 0);
         const yields = recs.map(r => r.yield_pct).filter(y => y && y > 0);
         const totalLbs = recs.reduce((s, r) => s + (r.finished_lbs || 0), 0);
 
-        if (!costs.length) return;
+        if (!laborCosts.length) return;
 
-        const n = costs.length;
+        const n = laborCosts.length;
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${activity}</td>
             <td>${product}</td>
             <td>${n}</td>
-            <td class="text-right">$${avg(costs).toFixed(4)}</td>
-            <td class="text-right">$${median(costs).toFixed(4)}</td>
-            <td class="text-right">$${costs[0].toFixed(4)}</td>
-            <td class="text-right">$${costs[n - 1].toFixed(4)}</td>
-            <td class="text-right">$${percentile(costs, 25).toFixed(4)}</td>
-            <td class="text-right">$${percentile(costs, 75).toFixed(4)}</td>
+            <td class="text-right">${totalCosts.length ? '$' + avg(totalCosts).toFixed(4) : '--'}</td>
+            <td class="text-right">${yieldLossCosts.length ? '$' + avg(yieldLossCosts).toFixed(4) : '--'}</td>
+            <td class="text-right">$${avg(laborCosts).toFixed(4)}</td>
+            <td class="text-right">$${laborCosts[0].toFixed(4)}</td>
+            <td class="text-right">$${laborCosts[n - 1].toFixed(4)}</td>
             <td class="text-right">${yields.length ? avg(yields).toFixed(1) + '%' : '--'}</td>
             <td class="text-right">${numberFmt(totalLbs.toFixed(0))}</td>
         `;
@@ -300,20 +363,24 @@ function updateWeeklyTable() {
     Object.keys(groups).sort().forEach(key => {
         const [week, activity, product] = key.split('|');
         const recs = groups[key];
-        const costs = recs.map(r => r.cost_per_finished_lb).filter(c => c && c > 0);
+        const laborCosts = recs.map(r => r.cost_per_finished_lb).filter(c => c && c > 0);
+        const totalCosts = recs.map(r => r.total_cost_per_finished_lb).filter(c => c && c > 0);
+        const yieldLossCosts = recs.map(r => r.yield_loss_cost_per_lb).filter(c => c && c > 0);
+        const rawPrices = recs.map(r => r.raw_protein_cost_per_lb).filter(Boolean);
         const yields = recs.map(r => r.yield_pct).filter(y => y && y > 0);
         const totalLbs = recs.reduce((s, r) => s + (r.finished_lbs || 0), 0);
 
-        if (!costs.length) return;
+        if (!laborCosts.length) return;
 
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${week}</td>
             <td>${activity}</td>
             <td>${product}</td>
-            <td class="text-right">$${avg(costs).toFixed(4)}</td>
-            <td class="text-right">$${Math.min(...costs).toFixed(4)}</td>
-            <td class="text-right">$${Math.max(...costs).toFixed(4)}</td>
+            <td class="text-right">${rawPrices.length ? '$' + avg(rawPrices).toFixed(2) : '--'}</td>
+            <td class="text-right">${totalCosts.length ? '$' + avg(totalCosts).toFixed(4) : '--'}</td>
+            <td class="text-right">${yieldLossCosts.length ? '$' + avg(yieldLossCosts).toFixed(4) : '--'}</td>
+            <td class="text-right">$${avg(laborCosts).toFixed(4)}</td>
             <td class="text-right">${yields.length ? avg(yields).toFixed(1) + '%' : '--'}</td>
             <td class="text-right">${numberFmt(totalLbs.toFixed(0))}</td>
             <td class="text-right">${recs.length}</td>
@@ -350,7 +417,6 @@ function updateDetailTable() {
 
     tbody.innerHTML = '';
     recs.slice(0, 500).forEach(r => {
-        const costClass = r.cost_per_finished_lb > 0.20 ? 'cost-high' : 'cost-normal';
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${formatDate(r.date)}</td>
@@ -361,9 +427,10 @@ function updateDetailTable() {
             <td class="text-right">${r.incoming_lbs?.toFixed(1) || '--'}</td>
             <td class="text-right">${r.finished_lbs?.toFixed(1) || '--'}</td>
             <td class="text-right">${r.yield_pct?.toFixed(1) || '--'}%</td>
-            <td class="text-right">${r.people || '--'}</td>
-            <td class="text-right">${r.hours_worked?.toFixed(2) || '--'}</td>
-            <td class="text-right ${costClass}">$${r.cost_per_finished_lb?.toFixed(4) || '--'}</td>
+            <td class="text-right">${r.raw_protein_cost_per_lb ? '$' + r.raw_protein_cost_per_lb.toFixed(2) : '--'}</td>
+            <td class="text-right">${r.yield_loss_cost_per_lb ? '$' + r.yield_loss_cost_per_lb.toFixed(4) : '--'}</td>
+            <td class="text-right">$${r.cost_per_finished_lb?.toFixed(4) || '--'}</td>
+            <td class="text-right" style="font-weight:600">${r.total_cost_per_finished_lb ? '$' + r.total_cost_per_finished_lb.toFixed(4) : '--'}</td>
         `;
         tbody.appendChild(tr);
     });
@@ -388,10 +455,12 @@ function setupDetailControls() {
 }
 
 function exportCSV() {
-    const headers = ['Date', 'Activity', 'Supplier', 'Lot', 'Product', 'Incoming Lbs', 'Finished Lbs', 'Yield %', 'People', 'Hours', 'Cost/Lb'];
+    const headers = ['Date', 'Activity', 'Supplier', 'Lot', 'Product', 'Incoming Lbs', 'Finished Lbs', 'Yield %', 'People', 'Hours', 'Raw Protein $/Lb', 'Protein Cost/Finished Lb', 'Yield Loss $/Lb', 'Labor $/Lb', 'Total $/Lb'];
     const rows = filteredRecords.map(r => [
         r.date, r.activity, r.supplier || '', r.lot || '', r.product_format,
-        r.incoming_lbs, r.finished_lbs, r.yield_pct, r.people, r.hours_worked, r.cost_per_finished_lb
+        r.incoming_lbs, r.finished_lbs, r.yield_pct, r.people, r.hours_worked,
+        r.raw_protein_cost_per_lb, r.protein_cost_per_finished_lb, r.yield_loss_cost_per_lb,
+        r.cost_per_finished_lb, r.total_cost_per_finished_lb
     ]);
 
     let csv = headers.join(',') + '\n';

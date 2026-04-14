@@ -23,6 +23,89 @@ from openpyxl.cell.cell import MergedCell
 LABOR_RATE = 22.00
 OUTPUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "production_data.json")
 
+# Weekly protein prices ($/lb) - weeks defined as Monday-Sunday
+# Key: Monday date of the week
+PROTEIN_PRICES = {
+    "2026-03-09": {"skin_on": 6.27, "abf": 6.55, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
+    "2026-03-16": {"skin_on": 6.27, "abf": 6.55, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
+    "2026-03-23": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
+    "2026-03-30": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
+    "2026-04-06": {"skin_on": 6.37, "abf": 6.68, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
+    "2026-04-13": {"skin_on": 6.46, "abf": 6.74, "coho": 5.45, "steelhead": 5.90, "sockeye": 10.47},
+}
+
+
+def get_week_monday(dt):
+    """Get the Monday of the week containing dt (Mon-Sun week)."""
+    days_since_monday = dt.weekday()  # Monday=0, Sunday=6
+    monday = dt - timedelta(days=days_since_monday)
+    return monday.strftime('%Y-%m-%d')
+
+
+def get_protein_price(dt, activity, product_format):
+    """Look up the raw protein price for a record based on its date and product."""
+    monday = get_week_monday(dt)
+    prices = PROTEIN_PRICES.get(monday)
+    if not prices:
+        return None
+
+    fmt_lower = product_format.lower() if product_format else ""
+
+    # Skinner
+    if activity == "Skinner":
+        if "abf" in fmt_lower:
+            return prices["abf"]
+        return prices["skin_on"]  # Conventional
+
+    # Slicer Skin-on - all are conventional salmon being sliced
+    if activity == "Slicer Skin-on":
+        return prices["skin_on"]
+
+    # Slicer Skinless
+    if activity == "Slicer Skinless":
+        if "abf" in fmt_lower:
+            return prices["abf"]
+        return prices["skin_on"]
+
+    # Stripping - map by species
+    if activity == "Stripping":
+        if "coho" in fmt_lower:
+            return prices["coho"]
+        if "steelhead" in fmt_lower:
+            return prices["steelhead"]
+        if "sockeye" in fmt_lower:
+            return prices["sockeye"]
+        if "salmon" in fmt_lower or "skin on" in fmt_lower:
+            return prices["skin_on"]
+        return None  # Snapper, Grouper, etc. - no salmon price
+
+    return None
+
+
+def enrich_with_protein_cost(record):
+    """Add protein cost, yield loss cost, and total cost fields to a record."""
+    dt = datetime.strptime(record["date"], '%Y-%m-%d')
+    price = get_protein_price(dt, record["activity"], record["product_format"])
+    record["raw_protein_cost_per_lb"] = price
+
+    if price and record["yield_pct"] and record["yield_pct"] > 0:
+        protein_cost_per_finished = price / (record["yield_pct"] / 100.0)
+        yield_loss_cost = protein_cost_per_finished - price
+        record["protein_cost_per_finished_lb"] = round(protein_cost_per_finished, 4)
+        record["yield_loss_cost_per_lb"] = round(yield_loss_cost, 4)
+    else:
+        record["protein_cost_per_finished_lb"] = None
+        record["yield_loss_cost_per_lb"] = None
+
+    if record.get("protein_cost_per_finished_lb") and record.get("cost_per_finished_lb"):
+        record["total_cost_per_finished_lb"] = round(
+            record["protein_cost_per_finished_lb"] + record["cost_per_finished_lb"], 4
+        )
+    else:
+        record["total_cost_per_finished_lb"] = None
+
+    return record
+
 
 def parse_time(t_str):
     """Parse a time string like '6:00 AM' or '6:00AM' into hours since midnight."""
@@ -424,6 +507,10 @@ def compute_summary(records):
             n = len(sorted_costs)
             p25_idx = int(n * 0.25)
             p75_idx = int(n * 0.75)
+
+            total_costs = [r['total_cost_per_finished_lb'] for r in recs if r.get('total_cost_per_finished_lb')]
+            yield_loss_costs = [r['yield_loss_cost_per_lb'] for r in recs if r.get('yield_loss_cost_per_lb')]
+
             summary[key] = {
                 "count": len(recs),
                 "avg_cost": round(mean(costs), 4),
@@ -434,6 +521,8 @@ def compute_summary(records):
                 "p75_cost": round(sorted_costs[min(p75_idx, n - 1)], 4),
                 "std_cost": round(stdev(costs), 4) if len(costs) > 1 else 0,
                 "avg_yield": round(mean(yields), 2) if yields else None,
+                "avg_yield_loss_cost": round(mean(yield_loss_costs), 4) if yield_loss_costs else None,
+                "avg_total_cost": round(mean(total_costs), 4) if total_costs else None,
                 "total_finished_lbs": round(total_finished, 2)
             }
 
@@ -479,6 +568,9 @@ def main():
 
     wb.close()
 
+    # Enrich all records with protein cost data
+    all_records = [enrich_with_protein_cost(r) for r in all_records]
+
     if append_mode and os.path.exists(OUTPUT_PATH):
         with open(OUTPUT_PATH, 'r') as f:
             existing = json.load(f)
@@ -500,6 +592,7 @@ def main():
     output = {
         "generated_at": datetime.now().isoformat(),
         "labor_rate": LABOR_RATE,
+        "protein_prices": PROTEIN_PRICES,
         "source_file": os.path.basename(excel_path),
         "total_records": len(all_records),
         "records": sorted(all_records, key=lambda r: (r['date'], r['activity'])),

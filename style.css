@@ -159,6 +159,7 @@ nav { display: flex; gap: 4px; }
     box-shadow: var(--shadow);
 }
 .chart-container h3 { font-size: 14px; font-weight: 600; color: var(--gray-700); margin-bottom: 12px; }
+.chart-container.full-width { grid-column: 1 / -1; }
 
 /* TABLES */
 .summary-section, .weekly-section, .detail-container, .recent-entries {

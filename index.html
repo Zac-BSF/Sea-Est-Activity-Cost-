@@ -47,12 +47,16 @@
 
         <section class="kpi-cards">
             <div class="kpi-card">
-                <span class="kpi-label">Avg Cost / Finished Lb</span>
-                <span class="kpi-value" id="kpi-avg-cost">--</span>
+                <span class="kpi-label">Avg Total Cost / Finished Lb</span>
+                <span class="kpi-value" id="kpi-total-cost">--</span>
             </div>
             <div class="kpi-card">
-                <span class="kpi-label">Cost Range</span>
-                <span class="kpi-value" id="kpi-cost-range">--</span>
+                <span class="kpi-label">Avg Yield Loss Cost / Lb</span>
+                <span class="kpi-value" id="kpi-yield-loss-cost">--</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">Avg Labor Cost / Lb</span>
+                <span class="kpi-value" id="kpi-avg-cost">--</span>
             </div>
             <div class="kpi-card">
                 <span class="kpi-label">Avg Yield</span>
@@ -69,8 +73,15 @@
         </section>
 
         <section class="charts-row">
+            <div class="chart-container full-width">
+                <h3>Daily Total Cost per Finished Lb (Protein + Yield Loss + Labor)</h3>
+                <canvas id="chart-total-cost"></canvas>
+            </div>
+        </section>
+
+        <section class="charts-row">
             <div class="chart-container">
-                <h3>Daily Cost per Finished Lb</h3>
+                <h3>Daily Labor Cost per Finished Lb</h3>
                 <canvas id="chart-daily-cost"></canvas>
             </div>
             <div class="chart-container">
@@ -88,12 +99,11 @@
                             <th>Activity</th>
                             <th>Product</th>
                             <th>Count</th>
-                            <th>Avg $/Lb</th>
-                            <th>Median $/Lb</th>
-                            <th>Min</th>
-                            <th>Max</th>
-                            <th>P25</th>
-                            <th>P75</th>
+                            <th>Avg Total $/Lb</th>
+                            <th>Avg Yield Loss $/Lb</th>
+                            <th>Avg Labor $/Lb</th>
+                            <th>Min Labor</th>
+                            <th>Max Labor</th>
                             <th>Avg Yield</th>
                             <th>Total Lbs</th>
                         </tr>
@@ -112,9 +122,10 @@
                             <th>Week</th>
                             <th>Activity</th>
                             <th>Product</th>
-                            <th>Avg $/Lb</th>
-                            <th>Min</th>
-                            <th>Max</th>
+                            <th>Raw $/Lb</th>
+                            <th>Avg Total $/Lb</th>
+                            <th>Avg Yield Loss</th>
+                            <th>Avg Labor</th>
                             <th>Avg Yield</th>
                             <th>Total Lbs</th>
                             <th>Records</th>
@@ -275,12 +286,13 @@
                             <th data-sort="supplier">Supplier</th>
                             <th data-sort="lot">Lot #</th>
                             <th data-sort="product_format">Product</th>
-                            <th data-sort="incoming_lbs">Incoming Lbs</th>
-                            <th data-sort="finished_lbs">Finished Lbs</th>
-                            <th data-sort="yield_pct">Yield %</th>
-                            <th data-sort="people">People</th>
-                            <th data-sort="hours_worked">Hours</th>
-                            <th data-sort="cost_per_finished_lb">$/Lb</th>
+                            <th data-sort="incoming_lbs">In Lbs</th>
+                            <th data-sort="finished_lbs">Out Lbs</th>
+                            <th data-sort="yield_pct">Yield</th>
+                            <th data-sort="raw_protein_cost_per_lb">Raw $/Lb</th>
+                            <th data-sort="yield_loss_cost_per_lb">Yield Loss</th>
+                            <th data-sort="cost_per_finished_lb">Labor</th>
+                            <th data-sort="total_cost_per_finished_lb">Total $/Lb</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
