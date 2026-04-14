@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T07:30:45.584562",
+  "generated_at": "2026-04-14T08:05:22.007835",
   "labor_rate": 22.0,
   "protein_prices": {
     "2026-03-09": {
@@ -49,7 +49,7 @@
   "total_records": 660,
   "records": [
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "Cermaq",
@@ -76,7 +76,7 @@
       "extended_production_spread": 281.94
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "Cermaq",
@@ -103,7 +103,7 @@
       "extended_production_spread": 535.22
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -130,7 +130,7 @@
       "extended_production_spread": 391.66
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -155,7 +155,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -180,7 +180,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -205,7 +205,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -230,7 +230,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -255,7 +255,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -280,7 +280,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "Cermaq",
@@ -306,7 +306,7 @@
       "extended_production_spread": 218.14
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -332,7 +332,7 @@
       "extended_production_spread": 134.62
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -358,7 +358,7 @@
       "extended_production_spread": 566.51
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-11",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -384,7 +384,7 @@
       "extended_production_spread": 690.46
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -411,7 +411,7 @@
       "extended_production_spread": 626.73
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -438,7 +438,7 @@
       "extended_production_spread": 225.51
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -465,7 +465,7 @@
       "extended_production_spread": 579.92
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -492,7 +492,7 @@
       "extended_production_spread": 793.87
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -519,7 +519,7 @@
       "extended_production_spread": 514.75
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -546,7 +546,7 @@
       "extended_production_spread": 818.89
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -573,7 +573,7 @@
       "extended_production_spread": -171.94
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -600,7 +600,7 @@
       "extended_production_spread": -88.29
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -627,7 +627,7 @@
       "extended_production_spread": 489.6
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -654,7 +654,7 @@
       "extended_production_spread": -393.39
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -679,7 +679,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -704,7 +704,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -729,7 +729,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -754,7 +754,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -779,7 +779,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -804,7 +804,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -829,7 +829,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -854,7 +854,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -879,7 +879,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -904,7 +904,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -929,7 +929,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -954,7 +954,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -979,7 +979,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-12",
       "week": "2026-W11",
       "supplier": "AquaChile",
@@ -1004,7 +1004,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1031,7 +1031,7 @@
       "extended_production_spread": 622.41
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1058,7 +1058,7 @@
       "extended_production_spread": 552.35
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1085,7 +1085,7 @@
       "extended_production_spread": 715.99
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1112,7 +1112,7 @@
       "extended_production_spread": 553.91
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1139,7 +1139,7 @@
       "extended_production_spread": 814.79
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1166,7 +1166,7 @@
       "extended_production_spread": 316.2
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1193,7 +1193,7 @@
       "extended_production_spread": 1245.93
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1218,7 +1218,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1243,7 +1243,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1268,7 +1268,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1293,7 +1293,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1318,7 +1318,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Cermaq",
@@ -1343,7 +1343,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1369,7 +1369,7 @@
       "extended_production_spread": 192.05
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-13",
       "week": "2026-W11",
       "supplier": "Multi-X",
@@ -1395,7 +1395,7 @@
       "extended_production_spread": 57.5
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1422,7 +1422,7 @@
       "extended_production_spread": 244.23
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1449,7 +1449,7 @@
       "extended_production_spread": 381.26
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -1476,7 +1476,7 @@
       "extended_production_spread": 222.8
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1503,7 +1503,7 @@
       "extended_production_spread": 501.45
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -1530,7 +1530,7 @@
       "extended_production_spread": 436.92
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1555,7 +1555,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1580,7 +1580,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1605,7 +1605,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1630,7 +1630,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -1655,7 +1655,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -1680,7 +1680,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1705,7 +1705,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1730,7 +1730,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1755,7 +1755,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1780,7 +1780,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1805,7 +1805,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -1830,7 +1830,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -1855,7 +1855,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -1880,7 +1880,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -1905,7 +1905,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -1930,7 +1930,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -1955,7 +1955,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -1980,7 +1980,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -2005,7 +2005,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -2030,7 +2030,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -2056,7 +2056,7 @@
       "extended_production_spread": -55.03
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -2082,7 +2082,7 @@
       "extended_production_spread": -43.51
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2108,7 +2108,7 @@
       "extended_production_spread": -503.88
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-16",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -2134,7 +2134,7 @@
       "extended_production_spread": -236.69
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2161,7 +2161,7 @@
       "extended_production_spread": 622.29
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2188,7 +2188,7 @@
       "extended_production_spread": 946.68
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2215,7 +2215,7 @@
       "extended_production_spread": 535.49
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2242,7 +2242,7 @@
       "extended_production_spread": 444.59
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2269,7 +2269,7 @@
       "extended_production_spread": 335.65
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2296,7 +2296,7 @@
       "extended_production_spread": 375.18
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2323,7 +2323,7 @@
       "extended_production_spread": 369.46
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2350,7 +2350,7 @@
       "extended_production_spread": 417.68
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2377,7 +2377,7 @@
       "extended_production_spread": 532.5
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2404,7 +2404,7 @@
       "extended_production_spread": 357.21
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -2429,7 +2429,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2454,7 +2454,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2479,7 +2479,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2504,7 +2504,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2529,7 +2529,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2555,7 +2555,7 @@
       "extended_production_spread": 126.9
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2581,7 +2581,7 @@
       "extended_production_spread": -710.73
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2607,7 +2607,7 @@
       "extended_production_spread": -9.49
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2633,7 +2633,7 @@
       "extended_production_spread": -286.13
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2659,7 +2659,7 @@
       "extended_production_spread": -108.82
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2685,7 +2685,7 @@
       "extended_production_spread": -1184.38
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2711,7 +2711,7 @@
       "extended_production_spread": 202.28
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2737,7 +2737,7 @@
       "extended_production_spread": -221.37
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2763,7 +2763,7 @@
       "extended_production_spread": 127.63
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-17",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -2839,7 +2839,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -2866,7 +2866,7 @@
       "extended_production_spread": 566.39
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -2893,7 +2893,7 @@
       "extended_production_spread": 566.64
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -2920,7 +2920,7 @@
       "extended_production_spread": 559.99
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -2947,7 +2947,7 @@
       "extended_production_spread": 679.82
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -2974,7 +2974,7 @@
       "extended_production_spread": 370.63
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -3001,7 +3001,7 @@
       "extended_production_spread": -189.1
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -3028,7 +3028,7 @@
       "extended_production_spread": 458.51
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -3055,7 +3055,7 @@
       "extended_production_spread": 67.16
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3082,7 +3082,7 @@
       "extended_production_spread": 348.64
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3109,7 +3109,7 @@
       "extended_production_spread": 418.99
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3136,7 +3136,7 @@
       "extended_production_spread": 504.0
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3163,7 +3163,7 @@
       "extended_production_spread": 449.88
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3190,7 +3190,7 @@
       "extended_production_spread": 627.48
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -3217,7 +3217,7 @@
       "extended_production_spread": 615.02
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -3244,7 +3244,7 @@
       "extended_production_spread": 6.46
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -3271,7 +3271,7 @@
       "extended_production_spread": 447.16
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -3298,7 +3298,7 @@
       "extended_production_spread": 331.9
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3325,7 +3325,7 @@
       "extended_production_spread": 495.54
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3352,7 +3352,7 @@
       "extended_production_spread": 477.18
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3379,7 +3379,7 @@
       "extended_production_spread": 553.53
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -3406,7 +3406,7 @@
       "extended_production_spread": 133.31
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3433,7 +3433,7 @@
       "extended_production_spread": 189.09
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3460,7 +3460,7 @@
       "extended_production_spread": 142.22
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3485,7 +3485,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3510,7 +3510,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3535,7 +3535,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3560,7 +3560,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3585,7 +3585,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3610,7 +3610,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3635,7 +3635,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -3660,7 +3660,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3686,7 +3686,7 @@
       "extended_production_spread": 186.83
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3712,7 +3712,7 @@
       "extended_production_spread": 979.84
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3738,7 +3738,7 @@
       "extended_production_spread": -909.05
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3764,7 +3764,7 @@
       "extended_production_spread": -89.64
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-18",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -3915,7 +3915,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -3940,7 +3940,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -3965,7 +3965,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -3990,7 +3990,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4015,7 +4015,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4040,7 +4040,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4065,7 +4065,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4090,7 +4090,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4115,7 +4115,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4140,7 +4140,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4165,7 +4165,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4190,7 +4190,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4215,7 +4215,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4240,7 +4240,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4265,7 +4265,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4290,7 +4290,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4315,7 +4315,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4340,7 +4340,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4365,7 +4365,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4390,7 +4390,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4415,7 +4415,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4440,7 +4440,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4465,7 +4465,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4490,7 +4490,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4515,7 +4515,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4540,7 +4540,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4565,7 +4565,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4590,7 +4590,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4615,7 +4615,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4640,7 +4640,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4665,7 +4665,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4690,7 +4690,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4715,7 +4715,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4740,7 +4740,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4765,7 +4765,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -4790,7 +4790,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4815,7 +4815,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4840,7 +4840,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4865,7 +4865,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4891,7 +4891,7 @@
       "extended_production_spread": 969.04
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4917,7 +4917,7 @@
       "extended_production_spread": -282.17
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4943,7 +4943,7 @@
       "extended_production_spread": 175.6
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -4969,7 +4969,7 @@
       "extended_production_spread": -189.6
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -4995,7 +4995,7 @@
       "extended_production_spread": 751.88
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5021,7 +5021,7 @@
       "extended_production_spread": 269.81
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5047,7 +5047,7 @@
       "extended_production_spread": 308.25
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5073,7 +5073,7 @@
       "extended_production_spread": 343.11
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5099,7 +5099,7 @@
       "extended_production_spread": 130.98
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -5125,7 +5125,7 @@
       "extended_production_spread": 11.33
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -5151,7 +5151,7 @@
       "extended_production_spread": 48.52
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "AquaChile",
@@ -5177,7 +5177,7 @@
       "extended_production_spread": 216.45
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -5203,7 +5203,7 @@
       "extended_production_spread": 238.34
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5229,7 +5229,7 @@
       "extended_production_spread": -71.09
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5255,7 +5255,7 @@
       "extended_production_spread": 21.3
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5281,7 +5281,7 @@
       "extended_production_spread": 123.09
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -5307,7 +5307,7 @@
       "extended_production_spread": -649.18
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5333,7 +5333,7 @@
       "extended_production_spread": 444.35
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-19",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5384,7 +5384,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5411,7 +5411,7 @@
       "extended_production_spread": 320.32
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5438,7 +5438,7 @@
       "extended_production_spread": 583.48
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5465,7 +5465,7 @@
       "extended_production_spread": 688.38
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5492,7 +5492,7 @@
       "extended_production_spread": 458.3
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5519,7 +5519,7 @@
       "extended_production_spread": 560.03
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5546,7 +5546,7 @@
       "extended_production_spread": 386.63
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -5573,7 +5573,7 @@
       "extended_production_spread": 127.35
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -5600,7 +5600,7 @@
       "extended_production_spread": 79.33
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5627,7 +5627,7 @@
       "extended_production_spread": 320.42
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5654,7 +5654,7 @@
       "extended_production_spread": 182.21
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5681,7 +5681,7 @@
       "extended_production_spread": 229.67
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5707,7 +5707,7 @@
       "extended_production_spread": -956.21
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5733,7 +5733,7 @@
       "extended_production_spread": 1200.07
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5759,7 +5759,7 @@
       "extended_production_spread": 1668.83
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5785,7 +5785,7 @@
       "extended_production_spread": 1382.83
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5811,7 +5811,7 @@
       "extended_production_spread": 994.84
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5837,7 +5837,7 @@
       "extended_production_spread": 1263.11
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -5863,7 +5863,7 @@
       "extended_production_spread": 1476.66
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Cermaq",
@@ -5889,7 +5889,7 @@
       "extended_production_spread": 1443.35
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5915,7 +5915,7 @@
       "extended_production_spread": -244.78
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5941,7 +5941,7 @@
       "extended_production_spread": 656.35
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5967,7 +5967,7 @@
       "extended_production_spread": 113.78
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-20",
       "week": "2026-W12",
       "supplier": "Multi-X",
@@ -5993,7 +5993,7 @@
       "extended_production_spread": 339.32
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6020,7 +6020,7 @@
       "extended_production_spread": 427.11
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6047,7 +6047,7 @@
       "extended_production_spread": 473.84
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6074,7 +6074,7 @@
       "extended_production_spread": 2280.62
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6101,7 +6101,7 @@
       "extended_production_spread": -856.81
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6128,7 +6128,7 @@
       "extended_production_spread": 601.73
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6155,7 +6155,7 @@
       "extended_production_spread": 391.06
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6182,7 +6182,7 @@
       "extended_production_spread": 532.1
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6209,7 +6209,7 @@
       "extended_production_spread": 653.21
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6236,7 +6236,7 @@
       "extended_production_spread": 506.8
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -6263,7 +6263,7 @@
       "extended_production_spread": 722.44
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6290,7 +6290,7 @@
       "extended_production_spread": 180.45
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -6317,7 +6317,7 @@
       "extended_production_spread": 473.66
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -6344,7 +6344,7 @@
       "extended_production_spread": 447.1
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -6371,7 +6371,7 @@
       "extended_production_spread": 292.39
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6396,7 +6396,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6421,7 +6421,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6447,7 +6447,7 @@
       "extended_production_spread": 441.04
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6473,7 +6473,7 @@
       "extended_production_spread": 600.73
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6499,7 +6499,7 @@
       "extended_production_spread": -1169.38
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6525,7 +6525,7 @@
       "extended_production_spread": 417.48
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6551,7 +6551,7 @@
       "extended_production_spread": 430.11
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6577,7 +6577,7 @@
       "extended_production_spread": 151.39
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6603,7 +6603,7 @@
       "extended_production_spread": 111.31
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6629,7 +6629,7 @@
       "extended_production_spread": 437.49
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6655,7 +6655,7 @@
       "extended_production_spread": 236.11
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-24",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6681,7 +6681,7 @@
       "extended_production_spread": 329.32
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -6708,7 +6708,7 @@
       "extended_production_spread": 397.28
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6735,7 +6735,7 @@
       "extended_production_spread": 459.63
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -6762,7 +6762,7 @@
       "extended_production_spread": 1358.7
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -6789,7 +6789,7 @@
       "extended_production_spread": 975.15
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -6816,7 +6816,7 @@
       "extended_production_spread": 377.96
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6843,7 +6843,7 @@
       "extended_production_spread": 498.66
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6870,7 +6870,7 @@
       "extended_production_spread": 493.07
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6897,7 +6897,7 @@
       "extended_production_spread": 1333.88
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -6924,7 +6924,7 @@
       "extended_production_spread": 605.97
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -6951,7 +6951,7 @@
       "extended_production_spread": 900.49
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -6978,7 +6978,7 @@
       "extended_production_spread": 746.04
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7005,7 +7005,7 @@
       "extended_production_spread": 413.95
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -7032,7 +7032,7 @@
       "extended_production_spread": 102.31
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -7059,7 +7059,7 @@
       "extended_production_spread": 26.41
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -7086,7 +7086,7 @@
       "extended_production_spread": -52.4
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7113,7 +7113,7 @@
       "extended_production_spread": 621.27
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7140,7 +7140,7 @@
       "extended_production_spread": 643.65
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7167,7 +7167,7 @@
       "extended_production_spread": 168.4
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7192,7 +7192,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7217,7 +7217,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7242,7 +7242,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7267,7 +7267,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7292,7 +7292,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7317,7 +7317,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7342,7 +7342,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7367,7 +7367,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7392,7 +7392,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7417,7 +7417,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7442,7 +7442,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7467,7 +7467,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7492,7 +7492,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7517,7 +7517,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7542,7 +7542,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7567,7 +7567,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7592,7 +7592,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7618,7 +7618,7 @@
       "extended_production_spread": 313.1
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -7644,7 +7644,7 @@
       "extended_production_spread": 330.4
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7670,7 +7670,7 @@
       "extended_production_spread": 274.48
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7696,7 +7696,7 @@
       "extended_production_spread": 283.97
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7722,7 +7722,7 @@
       "extended_production_spread": 311.19
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7748,7 +7748,7 @@
       "extended_production_spread": 289.15
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -7774,7 +7774,7 @@
       "extended_production_spread": 434.76
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -7800,7 +7800,7 @@
       "extended_production_spread": 386.67
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7826,7 +7826,7 @@
       "extended_production_spread": -10.75
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-25",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7852,7 +7852,7 @@
       "extended_production_spread": 443.35
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7877,7 +7877,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -7902,7 +7902,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7927,7 +7927,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7952,7 +7952,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -7977,7 +7977,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8002,7 +8002,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8027,7 +8027,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8052,7 +8052,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -8077,7 +8077,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8102,7 +8102,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8127,7 +8127,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8152,7 +8152,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8177,7 +8177,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8202,7 +8202,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8227,7 +8227,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8252,7 +8252,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8277,7 +8277,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8302,7 +8302,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8327,7 +8327,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8352,7 +8352,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8377,7 +8377,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8402,7 +8402,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8428,7 +8428,7 @@
       "extended_production_spread": 14.19
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8454,7 +8454,7 @@
       "extended_production_spread": 209.44
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8480,7 +8480,7 @@
       "extended_production_spread": 259.76
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -8506,7 +8506,7 @@
       "extended_production_spread": 368.3
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -8532,7 +8532,7 @@
       "extended_production_spread": 541.61
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8558,7 +8558,7 @@
       "extended_production_spread": 338.6
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8584,7 +8584,7 @@
       "extended_production_spread": 230.74
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8610,7 +8610,7 @@
       "extended_production_spread": 88.22
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8636,7 +8636,7 @@
       "extended_production_spread": -853.98
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Cermaq",
@@ -8662,7 +8662,7 @@
       "extended_production_spread": 51.59
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -8688,7 +8688,7 @@
       "extended_production_spread": 201.51
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8714,7 +8714,7 @@
       "extended_production_spread": 137.73
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-26",
       "week": "2026-W13",
       "supplier": "AquaChile",
@@ -8740,7 +8740,7 @@
       "extended_production_spread": 202.97
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-27",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -8765,7 +8765,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-27",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -8790,7 +8790,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-27",
       "week": "2026-W13",
       "supplier": "Multi-X",
@@ -8815,7 +8815,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -8842,7 +8842,7 @@
       "extended_production_spread": 791.76
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -8869,7 +8869,7 @@
       "extended_production_spread": 590.72
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -8896,7 +8896,7 @@
       "extended_production_spread": 639.97
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -8923,7 +8923,7 @@
       "extended_production_spread": 284.06
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -8950,7 +8950,7 @@
       "extended_production_spread": 260.13
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -8977,7 +8977,7 @@
       "extended_production_spread": 616.46
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9004,7 +9004,7 @@
       "extended_production_spread": 871.67
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9031,7 +9031,7 @@
       "extended_production_spread": 744.41
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9058,7 +9058,7 @@
       "extended_production_spread": 687.39
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9085,7 +9085,7 @@
       "extended_production_spread": 987.28
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9112,7 +9112,7 @@
       "extended_production_spread": 709.14
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9137,7 +9137,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9162,7 +9162,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9187,7 +9187,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9212,7 +9212,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9237,7 +9237,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9262,7 +9262,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9287,7 +9287,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9312,7 +9312,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9337,7 +9337,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9362,7 +9362,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9387,7 +9387,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9412,7 +9412,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9437,7 +9437,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9462,7 +9462,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9487,7 +9487,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9512,7 +9512,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9537,7 +9537,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9562,7 +9562,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9587,7 +9587,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9613,7 +9613,7 @@
       "extended_production_spread": 263.52
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9639,7 +9639,7 @@
       "extended_production_spread": 202.42
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9665,7 +9665,7 @@
       "extended_production_spread": 205.93
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9691,7 +9691,7 @@
       "extended_production_spread": 148.47
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9717,7 +9717,7 @@
       "extended_production_spread": 171.07
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9743,7 +9743,7 @@
       "extended_production_spread": 185.15
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9769,7 +9769,7 @@
       "extended_production_spread": 228.84
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9795,7 +9795,7 @@
       "extended_production_spread": 275.91
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9821,7 +9821,7 @@
       "extended_production_spread": 209.48
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-30",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9847,7 +9847,7 @@
       "extended_production_spread": 222.99
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9874,7 +9874,7 @@
       "extended_production_spread": 748.1
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9901,7 +9901,7 @@
       "extended_production_spread": 717.22
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9928,7 +9928,7 @@
       "extended_production_spread": 563.55
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -9955,7 +9955,7 @@
       "extended_production_spread": 337.02
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -9982,7 +9982,7 @@
       "extended_production_spread": 874.46
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10009,7 +10009,7 @@
       "extended_production_spread": 898.48
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10034,7 +10034,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10059,7 +10059,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10084,7 +10084,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10109,7 +10109,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10134,7 +10134,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10159,7 +10159,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10184,7 +10184,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10209,7 +10209,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10234,7 +10234,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10259,7 +10259,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10284,7 +10284,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10310,7 +10310,7 @@
       "extended_production_spread": 235.21
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10336,7 +10336,7 @@
       "extended_production_spread": 123.81
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -10362,7 +10362,7 @@
       "extended_production_spread": 217.25
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -10388,7 +10388,7 @@
       "extended_production_spread": 138.39
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -10414,7 +10414,7 @@
       "extended_production_spread": 63.7
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10440,7 +10440,7 @@
       "extended_production_spread": 254.46
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-03-31",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10466,7 +10466,7 @@
       "extended_production_spread": 487.49
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10493,7 +10493,7 @@
       "extended_production_spread": 32.99
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -10520,7 +10520,7 @@
       "extended_production_spread": 359.63
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -10547,7 +10547,7 @@
       "extended_production_spread": 513.27
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -10574,7 +10574,7 @@
       "extended_production_spread": 835.28
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10601,7 +10601,7 @@
       "extended_production_spread": 426.9
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10628,7 +10628,7 @@
       "extended_production_spread": 513.73
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10655,7 +10655,7 @@
       "extended_production_spread": 567.94
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10682,7 +10682,7 @@
       "extended_production_spread": 518.56
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10709,7 +10709,7 @@
       "extended_production_spread": 430.99
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10736,7 +10736,7 @@
       "extended_production_spread": 451.22
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -10763,7 +10763,7 @@
       "extended_production_spread": 662.36
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -10790,7 +10790,7 @@
       "extended_production_spread": -434.61
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10817,7 +10817,7 @@
       "extended_production_spread": -452.13
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10842,7 +10842,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10867,7 +10867,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10892,7 +10892,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10917,7 +10917,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10942,7 +10942,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -10967,7 +10967,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -10992,7 +10992,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11017,7 +11017,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11042,7 +11042,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11067,7 +11067,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11092,7 +11092,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11117,7 +11117,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11142,7 +11142,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11167,7 +11167,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11192,7 +11192,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11217,7 +11217,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11242,7 +11242,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11267,7 +11267,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11292,7 +11292,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -11317,7 +11317,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11342,7 +11342,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11367,7 +11367,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -11393,7 +11393,7 @@
       "extended_production_spread": -46.44
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11419,7 +11419,7 @@
       "extended_production_spread": -298.23
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11445,7 +11445,7 @@
       "extended_production_spread": 91.47
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11471,7 +11471,7 @@
       "extended_production_spread": -218.94
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11497,7 +11497,7 @@
       "extended_production_spread": 185.11
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11523,7 +11523,7 @@
       "extended_production_spread": 55.32
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11549,7 +11549,7 @@
       "extended_production_spread": 251.25
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11575,7 +11575,7 @@
       "extended_production_spread": 186.77
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11601,7 +11601,7 @@
       "extended_production_spread": 170.07
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11627,7 +11627,7 @@
       "extended_production_spread": 53.86
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11653,7 +11653,7 @@
       "extended_production_spread": 127.17
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-01",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11679,7 +11679,7 @@
       "extended_production_spread": 365.0
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -11706,7 +11706,7 @@
       "extended_production_spread": -66.77
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11733,7 +11733,7 @@
       "extended_production_spread": 343.61
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11760,7 +11760,7 @@
       "extended_production_spread": 448.39
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11787,7 +11787,7 @@
       "extended_production_spread": 798.59
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11814,7 +11814,7 @@
       "extended_production_spread": 147.54
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -11841,7 +11841,7 @@
       "extended_production_spread": 626.24
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11868,7 +11868,7 @@
       "extended_production_spread": 340.91
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11895,7 +11895,7 @@
       "extended_production_spread": 304.39
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -11922,7 +11922,7 @@
       "extended_production_spread": -253.0
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -11949,7 +11949,7 @@
       "extended_production_spread": 1226.9
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -11976,7 +11976,7 @@
       "extended_production_spread": 567.04
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12003,7 +12003,7 @@
       "extended_production_spread": 169.72
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12028,7 +12028,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12053,7 +12053,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12078,7 +12078,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12103,7 +12103,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12128,7 +12128,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12153,7 +12153,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12178,7 +12178,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12203,7 +12203,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12228,7 +12228,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12253,7 +12253,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12278,7 +12278,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12303,7 +12303,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12328,7 +12328,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12353,7 +12353,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12379,7 +12379,7 @@
       "extended_production_spread": 213.43
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12405,7 +12405,7 @@
       "extended_production_spread": 348.32
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12431,7 +12431,7 @@
       "extended_production_spread": -7.3
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12457,7 +12457,7 @@
       "extended_production_spread": 239.11
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -12483,7 +12483,7 @@
       "extended_production_spread": 109.32
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12509,7 +12509,7 @@
       "extended_production_spread": 259.44
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12535,7 +12535,7 @@
       "extended_production_spread": 88.75
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12561,7 +12561,7 @@
       "extended_production_spread": 85.33
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -12587,7 +12587,7 @@
       "extended_production_spread": 790.77
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12613,7 +12613,7 @@
       "extended_production_spread": -474.76
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12639,7 +12639,7 @@
       "extended_production_spread": -386.37
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-02",
       "week": "2026-W14",
       "supplier": "Cermaq",
@@ -12665,7 +12665,7 @@
       "extended_production_spread": 87.64
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12692,7 +12692,7 @@
       "extended_production_spread": 289.2
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -12719,7 +12719,7 @@
       "extended_production_spread": 619.29
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12746,7 +12746,7 @@
       "extended_production_spread": -426.82
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12773,7 +12773,7 @@
       "extended_production_spread": 98.06
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12800,7 +12800,7 @@
       "extended_production_spread": 234.42
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12825,7 +12825,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12850,7 +12850,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12875,7 +12875,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12900,7 +12900,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12925,7 +12925,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -12951,7 +12951,7 @@
       "extended_production_spread": -167.88
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "Multi-X",
@@ -12977,7 +12977,7 @@
       "extended_production_spread": 111.09
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -13003,7 +13003,7 @@
       "extended_production_spread": 209.63
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -13029,7 +13029,7 @@
       "extended_production_spread": 182.13
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-03",
       "week": "2026-W14",
       "supplier": "AquaChile",
@@ -13055,7 +13055,7 @@
       "extended_production_spread": 118.84
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13082,7 +13082,7 @@
       "extended_production_spread": 980.91
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13109,7 +13109,7 @@
       "extended_production_spread": 431.66
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -13136,7 +13136,7 @@
       "extended_production_spread": -587.22
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -13163,7 +13163,7 @@
       "extended_production_spread": 86.7
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13190,7 +13190,7 @@
       "extended_production_spread": 423.43
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -13217,7 +13217,7 @@
       "extended_production_spread": 918.64
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13242,7 +13242,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13267,7 +13267,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13292,7 +13292,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13317,7 +13317,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13342,7 +13342,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13367,7 +13367,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13392,7 +13392,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13417,7 +13417,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -13442,7 +13442,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -13467,7 +13467,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13492,7 +13492,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13517,7 +13517,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13542,7 +13542,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13567,7 +13567,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13592,7 +13592,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13617,7 +13617,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13642,7 +13642,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13667,7 +13667,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13692,7 +13692,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13718,7 +13718,7 @@
       "extended_production_spread": -248.67
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13744,7 +13744,7 @@
       "extended_production_spread": 39.6
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -13770,7 +13770,7 @@
       "extended_production_spread": 639.74
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -13796,7 +13796,7 @@
       "extended_production_spread": -31.23
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -13822,7 +13822,7 @@
       "extended_production_spread": 60.99
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-06",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -13848,7 +13848,7 @@
       "extended_production_spread": -323.54
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13875,7 +13875,7 @@
       "extended_production_spread": 1035.32
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13902,7 +13902,7 @@
       "extended_production_spread": 211.74
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13929,7 +13929,7 @@
       "extended_production_spread": 239.83
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13956,7 +13956,7 @@
       "extended_production_spread": 560.4
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -13983,7 +13983,7 @@
       "extended_production_spread": 812.14
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -14010,7 +14010,7 @@
       "extended_production_spread": -171.7
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14037,7 +14037,7 @@
       "extended_production_spread": 246.21
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14064,7 +14064,7 @@
       "extended_production_spread": 152.9
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14091,7 +14091,7 @@
       "extended_production_spread": 449.66
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14118,7 +14118,7 @@
       "extended_production_spread": 611.48
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14145,7 +14145,7 @@
       "extended_production_spread": 916.71
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14172,7 +14172,7 @@
       "extended_production_spread": 108.1
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14199,7 +14199,7 @@
       "extended_production_spread": 197.35
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14226,7 +14226,7 @@
       "extended_production_spread": -186.28
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14253,7 +14253,7 @@
       "extended_production_spread": -14.89
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14280,7 +14280,7 @@
       "extended_production_spread": 791.34
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14305,7 +14305,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14330,7 +14330,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14355,7 +14355,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14380,7 +14380,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14405,7 +14405,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14430,7 +14430,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14456,7 +14456,7 @@
       "extended_production_spread": -94.68
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14482,7 +14482,7 @@
       "extended_production_spread": 151.3
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14508,7 +14508,7 @@
       "extended_production_spread": -2619.07
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14534,7 +14534,7 @@
       "extended_production_spread": 176.86
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14560,7 +14560,7 @@
       "extended_production_spread": 66.87
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -14586,7 +14586,7 @@
       "extended_production_spread": 101.19
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14612,7 +14612,7 @@
       "extended_production_spread": 184.24
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14638,7 +14638,7 @@
       "extended_production_spread": 230.06
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14664,7 +14664,7 @@
       "extended_production_spread": 201.96
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14690,7 +14690,7 @@
       "extended_production_spread": 80.38
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14716,7 +14716,7 @@
       "extended_production_spread": 191.8
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14742,7 +14742,7 @@
       "extended_production_spread": 214.98
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14768,7 +14768,7 @@
       "extended_production_spread": 182.47
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14794,7 +14794,7 @@
       "extended_production_spread": -127.47
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-07",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14820,7 +14820,7 @@
       "extended_production_spread": 120.42
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14847,7 +14847,7 @@
       "extended_production_spread": 425.5
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14874,7 +14874,7 @@
       "extended_production_spread": 586.01
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14901,7 +14901,7 @@
       "extended_production_spread": 1533.43
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14928,7 +14928,7 @@
       "extended_production_spread": 400.97
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -14955,7 +14955,7 @@
       "extended_production_spread": 509.9
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -14982,7 +14982,7 @@
       "extended_production_spread": 241.25
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15009,7 +15009,7 @@
       "extended_production_spread": 400.83
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15036,7 +15036,7 @@
       "extended_production_spread": 446.8
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15063,7 +15063,7 @@
       "extended_production_spread": 827.29
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15090,7 +15090,7 @@
       "extended_production_spread": 215.17
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15117,7 +15117,7 @@
       "extended_production_spread": 369.24
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15144,7 +15144,7 @@
       "extended_production_spread": 445.72
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15171,7 +15171,7 @@
       "extended_production_spread": 307.48
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15196,7 +15196,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15221,7 +15221,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15246,7 +15246,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15271,7 +15271,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15296,7 +15296,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15321,7 +15321,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15346,7 +15346,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15371,7 +15371,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15396,7 +15396,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15421,7 +15421,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15446,7 +15446,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -15471,7 +15471,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15496,7 +15496,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15521,7 +15521,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15547,7 +15547,7 @@
       "extended_production_spread": 171.68
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15573,7 +15573,7 @@
       "extended_production_spread": 280.42
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15599,7 +15599,7 @@
       "extended_production_spread": -248.99
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15625,7 +15625,7 @@
       "extended_production_spread": 115.68
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15651,7 +15651,7 @@
       "extended_production_spread": 82.57
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15677,7 +15677,7 @@
       "extended_production_spread": 263.5
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15703,7 +15703,7 @@
       "extended_production_spread": 252.0
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15729,7 +15729,7 @@
       "extended_production_spread": 320.56
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15755,7 +15755,7 @@
       "extended_production_spread": -1019.05
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15781,7 +15781,7 @@
       "extended_production_spread": 179.1
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15807,7 +15807,7 @@
       "extended_production_spread": 179.33
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15833,7 +15833,7 @@
       "extended_production_spread": 272.13
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-08",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15859,7 +15859,7 @@
       "extended_production_spread": 207.07
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15886,7 +15886,7 @@
       "extended_production_spread": 606.64
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15913,7 +15913,7 @@
       "extended_production_spread": 276.99
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15940,7 +15940,7 @@
       "extended_production_spread": 470.39
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -15967,7 +15967,7 @@
       "extended_production_spread": 401.38
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -15994,7 +15994,7 @@
       "extended_production_spread": 692.7
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16021,7 +16021,7 @@
       "extended_production_spread": 560.03
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16048,7 +16048,7 @@
       "extended_production_spread": 672.62
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16075,7 +16075,7 @@
       "extended_production_spread": 389.35
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16102,7 +16102,7 @@
       "extended_production_spread": 204.35
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16129,7 +16129,7 @@
       "extended_production_spread": 123.68
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16156,7 +16156,7 @@
       "extended_production_spread": 544.2
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16183,7 +16183,7 @@
       "extended_production_spread": 166.52
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16210,7 +16210,7 @@
       "extended_production_spread": 535.39
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16237,7 +16237,7 @@
       "extended_production_spread": 5.04
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16264,7 +16264,7 @@
       "extended_production_spread": -381.19
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16289,7 +16289,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16314,7 +16314,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16339,7 +16339,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16364,7 +16364,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16389,7 +16389,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16414,7 +16414,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16439,7 +16439,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16464,7 +16464,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16489,7 +16489,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16514,7 +16514,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16539,7 +16539,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16564,7 +16564,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skin-on",
+      "activity": "Slicing - Skin-On Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16589,7 +16589,7 @@
       "extended_production_spread": null
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16615,7 +16615,7 @@
       "extended_production_spread": 93.82
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16641,7 +16641,7 @@
       "extended_production_spread": 144.88
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16667,7 +16667,7 @@
       "extended_production_spread": 182.34
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16693,7 +16693,7 @@
       "extended_production_spread": -34.79
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16719,7 +16719,7 @@
       "extended_production_spread": 82.5
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16745,7 +16745,7 @@
       "extended_production_spread": 38.82
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16771,7 +16771,7 @@
       "extended_production_spread": -244.45
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16797,7 +16797,7 @@
       "extended_production_spread": 239.68
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "AquaChile",
@@ -16823,7 +16823,7 @@
       "extended_production_spread": -52.4
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16849,7 +16849,7 @@
       "extended_production_spread": -62.18
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16875,7 +16875,7 @@
       "extended_production_spread": 232.92
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16901,7 +16901,7 @@
       "extended_production_spread": 331.9
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16927,7 +16927,7 @@
       "extended_production_spread": 62.44
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Cermaq",
@@ -16953,7 +16953,7 @@
       "extended_production_spread": 408.92
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-09",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -16979,7 +16979,7 @@
       "extended_production_spread": 219.87
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-10",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -17006,7 +17006,7 @@
       "extended_production_spread": 294.8
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-10",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -17033,7 +17033,7 @@
       "extended_production_spread": 2.3
     },
     {
-      "activity": "Skinner",
+      "activity": "Skinning",
       "date": "2026-04-10",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -17060,7 +17060,7 @@
       "extended_production_spread": -330.73
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-10",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -17086,7 +17086,7 @@
       "extended_production_spread": 99.6
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-10",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -17112,7 +17112,7 @@
       "extended_production_spread": -1417.16
     },
     {
-      "activity": "Slicer Skinless",
+      "activity": "Slicing - Skinless Salmon",
       "date": "2026-04-10",
       "week": "2026-W15",
       "supplier": "Multi-X",
@@ -17139,7 +17139,7 @@
     }
   ],
   "summary": {
-    "Skinner|2-4 lb Skin-On ABF Atlantic Salmon Fillets": {
+    "Skinning|2-4 lb Skin-On ABF Atlantic Salmon Fillets": {
       "count": 13,
       "avg_cost": 0.1056,
       "median_cost": 0.0629,
@@ -17153,7 +17153,7 @@
       "avg_total_cost": 7.624,
       "total_finished_lbs": 14509.47
     },
-    "Skinner|2-4 lb Skin-On Atlantic Salmon Fillets": {
+    "Skinning|2-4 lb Skin-On Atlantic Salmon Fillets": {
       "count": 188,
       "avg_cost": 0.0607,
       "median_cost": 0.0534,
@@ -17167,7 +17167,7 @@
       "avg_total_cost": 7.1766,
       "total_finished_lbs": 239817.03
     },
-    "Slicer Skin-on|2-3 lb Skin-On Atlantic Salmon Fillets": {
+    "Slicing - Skin-On Salmon|2-3 lb Skin-On Atlantic Salmon Fillets": {
       "count": 10,
       "avg_cost": 0.1583,
       "median_cost": 0.0515,
@@ -17181,7 +17181,7 @@
       "avg_total_cost": 6.4509,
       "total_finished_lbs": 14407.48
     },
-    "Slicer Skin-on|3-4 lb Skin-On Atlantic Salmon Fillets": {
+    "Slicing - Skin-On Salmon|3-4 lb Skin-On Atlantic Salmon Fillets": {
       "count": 17,
       "avg_cost": 0.0603,
       "median_cost": 0.0563,
@@ -17195,7 +17195,7 @@
       "avg_total_cost": 6.4398,
       "total_finished_lbs": 25047.08
     },
-    "Slicer Skin-on|2-4 lb Skin-On Atlantic Salmon Fillets": {
+    "Slicing - Skin-On Salmon|2-4 lb Skin-On Atlantic Salmon Fillets": {
       "count": 237,
       "avg_cost": 0.0683,
       "median_cost": 0.0506,
@@ -17209,7 +17209,7 @@
       "avg_total_cost": 6.4934,
       "total_finished_lbs": 338389.73
     },
-    "Slicer Skinless|2-4 lb Skin-On ABF Atlantic Salmon Fillets": {
+    "Slicing - Skinless Salmon|2-4 lb Skin-On ABF Atlantic Salmon Fillets": {
       "count": 5,
       "avg_cost": 0.0647,
       "median_cost": 0.0693,
@@ -17223,7 +17223,7 @@
       "avg_total_cost": 7.7953,
       "total_finished_lbs": 5919.21
     },
-    "Slicer Skinless|2-4 lb Skin-On Atlantic Salmon Fillets": {
+    "Slicing - Skinless Salmon|2-4 lb Skin-On Atlantic Salmon Fillets": {
       "count": 182,
       "avg_cost": 0.0693,
       "median_cost": 0.0554,

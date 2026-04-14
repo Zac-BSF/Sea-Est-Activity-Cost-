@@ -755,6 +755,16 @@ def main():
     # Compute chained costs: stripping → skinning → slicing
     all_records = compute_chained_costs(all_records)
 
+    # Rename activities for display
+    ACTIVITY_NAMES = {
+        "Skinner": "Skinning",
+        "Slicer Skin-on": "Slicing - Skin-On Salmon",
+        "Slicer Skinless": "Slicing - Skinless Salmon",
+        "Stripping": "Stripping",
+    }
+    for r in all_records:
+        r["activity"] = ACTIVITY_NAMES.get(r["activity"], r["activity"])
+
     if append_mode and os.path.exists(OUTPUT_PATH):
         with open(OUTPUT_PATH, 'r') as f:
             existing = json.load(f)
