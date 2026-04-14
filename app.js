@@ -335,19 +335,24 @@ function updateSummaryTable() {
 
         if (!laborCosts.length) return;
 
+        const spreads = recs.map(r => r.production_spread_per_lb).filter(s => s != null);
+        const extSpreads = recs.map(r => r.extended_production_spread).filter(s => s != null);
+        const kpi = recs.find(r => r.sell_kpi)?.sell_kpi;
+        const totalExtSpread = extSpreads.reduce((s, v) => s + v, 0);
+
         const n = laborCosts.length;
+        const spreadClass = spreads.length && avg(spreads) >= 0 ? 'cost-normal' : 'cost-high';
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${activity}</td>
             <td>${product}</td>
             <td>${n}</td>
             <td class="text-right">${totalCosts.length ? '$' + avg(totalCosts).toFixed(4) : '--'}</td>
-            <td class="text-right">${yieldLossCosts.length ? '$' + avg(yieldLossCosts).toFixed(4) : '--'}</td>
-            <td class="text-right">$${avg(laborCosts).toFixed(4)}</td>
-            <td class="text-right">$${laborCosts[0].toFixed(4)}</td>
-            <td class="text-right">$${laborCosts[n - 1].toFixed(4)}</td>
+            <td class="text-right">${kpi ? '$' + kpi.toFixed(2) : '--'}</td>
+            <td class="text-right ${spreadClass}">${spreads.length ? '$' + avg(spreads).toFixed(4) : '--'}</td>
             <td class="text-right">${yields.length ? avg(yields).toFixed(1) + '%' : '--'}</td>
             <td class="text-right">${numberFmt(totalLbs.toFixed(0))}</td>
+            <td class="text-right" style="font-weight:600">${extSpreads.length ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
         `;
         tbody.appendChild(tr);
     });
@@ -368,27 +373,30 @@ function updateWeeklyTable() {
     Object.keys(groups).sort().forEach(key => {
         const [week, activity, product] = key.split('|');
         const recs = groups[key];
-        const laborCosts = recs.map(r => r.cost_per_finished_lb).filter(c => c && c > 0);
         const totalCosts = recs.map(r => r.total_cost_per_finished_lb).filter(c => c && c > 0);
-        const yieldLossCosts = recs.map(r => r.yield_loss_cost_per_lb).filter(c => c && c > 0);
-        const rawPrices = recs.map(r => r.raw_protein_cost_per_lb).filter(Boolean);
+        const inputCosts = recs.map(r => r.input_cost_per_lb || r.raw_protein_cost_per_lb).filter(Boolean);
+        const spreads = recs.map(r => r.production_spread_per_lb).filter(s => s != null);
+        const extSpreads = recs.map(r => r.extended_production_spread).filter(s => s != null);
+        const kpi = recs.find(r => r.sell_kpi)?.sell_kpi;
         const yields = recs.map(r => r.yield_pct).filter(y => y && y > 0);
         const totalLbs = recs.reduce((s, r) => s + (r.finished_lbs || 0), 0);
+        const totalExtSpread = extSpreads.reduce((s, v) => s + v, 0);
 
-        if (!laborCosts.length) return;
+        if (!totalCosts.length) return;
 
+        const spreadClass = spreads.length && avg(spreads) >= 0 ? 'cost-normal' : 'cost-high';
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${week}</td>
             <td>${activity}</td>
             <td>${product}</td>
-            <td class="text-right">${rawPrices.length ? '$' + avg(rawPrices).toFixed(2) : '--'}</td>
+            <td class="text-right">${inputCosts.length ? '$' + avg(inputCosts).toFixed(2) : '--'}</td>
             <td class="text-right">${totalCosts.length ? '$' + avg(totalCosts).toFixed(4) : '--'}</td>
-            <td class="text-right">${yieldLossCosts.length ? '$' + avg(yieldLossCosts).toFixed(4) : '--'}</td>
-            <td class="text-right">$${avg(laborCosts).toFixed(4)}</td>
+            <td class="text-right">${kpi ? '$' + kpi.toFixed(2) : '--'}</td>
+            <td class="text-right ${spreadClass}">${spreads.length ? '$' + avg(spreads).toFixed(4) : '--'}</td>
             <td class="text-right">${yields.length ? avg(yields).toFixed(1) + '%' : '--'}</td>
             <td class="text-right">${numberFmt(totalLbs.toFixed(0))}</td>
-            <td class="text-right">${recs.length}</td>
+            <td class="text-right" style="font-weight:600">${extSpreads.length ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
         `;
         tbody.appendChild(tr);
     });

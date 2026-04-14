@@ -156,6 +156,132 @@ def enrich_with_protein_cost(record):
     return record
 
 
+SELL_KPIS = {
+    "2-4 lb Skin-On Atlantic Salmon Fillets": 7.52,       # Skinless conventional
+    "2-4 lb Skin-On ABF Atlantic Salmon Fillets": 7.84,   # Skinless ABF
+}
+
+
+def compute_chained_costs(records):
+    """
+    Recompute costs with upstream activities flowing downstream:
+      Stripping labor → Skinner input cost → Skinner output cost → Slicer Skinless input cost
+
+    Also computes Production Spread = Sell KPI - total output cost.
+    """
+    # --- Step 1: Weekly avg stripping labor for Fresh Atlantic salmon ---
+    strip_labor_by_week = {}
+    for r in records:
+        if r["activity"] != "Stripping" or r["classification"] != "Fresh":
+            continue
+        if not r.get("cost_per_finished_lb"):
+            continue
+        w = r["week"]
+        strip_labor_by_week.setdefault(w, []).append(r["cost_per_finished_lb"])
+
+    avg_strip_labor = {w: mean(vals) for w, vals in strip_labor_by_week.items()}
+
+    # --- Step 2: Recompute Skinner records with upstream stripping cost ---
+    skinner_output_by_week_product = {}
+
+    for r in records:
+        if r["activity"] != "Skinner":
+            continue
+        if not r.get("raw_protein_cost_per_lb") or not r.get("yield_pct"):
+            continue
+
+        raw_price = r["raw_protein_cost_per_lb"]
+        strip_labor = avg_strip_labor.get(r["week"], 0)
+        input_cost = raw_price + strip_labor
+
+        yield_frac = r["yield_pct"] / 100.0
+        yielded_input_cost = input_cost / yield_frac  # protein + strip through yield loss
+        labor = r["cost_per_finished_lb"] or 0
+        output_cost = yielded_input_cost + labor
+
+        # Update the record
+        r["upstream_strip_labor"] = round(strip_labor, 4)
+        r["input_cost_per_lb"] = round(input_cost, 4)
+        r["total_cost_per_finished_lb"] = round(output_cost, 4)
+        r["yield_loss_cost_per_lb"] = round(yielded_input_cost - input_cost, 4)
+        r["protein_cost_per_finished_lb"] = round(yielded_input_cost, 4)
+
+        # KPI and Production Spread
+        kpi = SELL_KPIS.get(r["product_format"])
+        if kpi:
+            spread = kpi - output_cost
+            r["sell_kpi"] = kpi
+            r["production_spread_per_lb"] = round(spread, 4)
+            r["extended_production_spread"] = round(spread * r["finished_lbs"], 2)
+        else:
+            r["sell_kpi"] = None
+            r["production_spread_per_lb"] = None
+            r["extended_production_spread"] = None
+
+        # Track weekly skinner output cost by product for downstream use
+        key = (r["week"], r["product_format"])
+        skinner_output_by_week_product.setdefault(key, []).append(output_cost)
+
+    avg_skinner_output = {k: mean(v) for k, v in skinner_output_by_week_product.items()}
+
+    # --- Step 3: Recompute Slicer Skinless with Skinner output as input cost ---
+    for r in records:
+        if r["activity"] != "Slicer Skinless":
+            continue
+        if not r.get("yield_pct"):
+            continue
+
+        # Find the matching skinner output cost (same week, same product type)
+        upstream_cost = avg_skinner_output.get((r["week"], r["product_format"]))
+        if not upstream_cost:
+            # Try matching by base product (ABF or conventional)
+            fmt = r["product_format"]
+            for key, val in avg_skinner_output.items():
+                if key[0] == r["week"] and key[1] == fmt:
+                    upstream_cost = val
+                    break
+            if not upstream_cost:
+                # Fallback: use any skinner output for that week
+                week_costs = [v for k, v in avg_skinner_output.items() if k[0] == r["week"]]
+                if week_costs:
+                    upstream_cost = mean(week_costs)
+
+        if not upstream_cost:
+            continue
+
+        yield_frac = r["yield_pct"] / 100.0
+        yielded_input_cost = upstream_cost / yield_frac
+        labor = r["cost_per_finished_lb"] or 0
+        output_cost = yielded_input_cost + labor
+
+        r["input_cost_per_lb"] = round(upstream_cost, 4)
+        r["total_cost_per_finished_lb"] = round(output_cost, 4)
+        r["yield_loss_cost_per_lb"] = round(yielded_input_cost - upstream_cost, 4)
+        r["protein_cost_per_finished_lb"] = round(yielded_input_cost, 4)
+        r["raw_protein_cost_per_lb"] = round(upstream_cost, 4)  # Override: input is skinner output
+
+        kpi = SELL_KPIS.get(r["product_format"])
+        if kpi:
+            spread = kpi - output_cost
+            r["sell_kpi"] = kpi
+            r["production_spread_per_lb"] = round(spread, 4)
+            r["extended_production_spread"] = round(spread * r["finished_lbs"], 2)
+
+    # --- Step 4: Add KPI/spread to Slicer Skin-on records too (no upstream recompute needed) ---
+    for r in records:
+        if r["activity"] == "Slicer Skin-on":
+            if not r.get("sell_kpi"):
+                r["sell_kpi"] = None
+                r["production_spread_per_lb"] = None
+                r["extended_production_spread"] = None
+        if r["activity"] == "Stripping":
+            r["sell_kpi"] = None
+            r["production_spread_per_lb"] = None
+            r["extended_production_spread"] = None
+
+    return records
+
+
 def parse_time(t_str):
     """Parse a time string like '6:00 AM' or '6:00AM' into hours since midnight."""
     t_str = t_str.strip().upper()
@@ -625,6 +751,9 @@ def main():
     # Enrich with protein cost first (needs original format names), then classify/rename
     all_records = [enrich_with_protein_cost(r) for r in all_records]
     all_records = [classify_record(r) for r in all_records]
+
+    # Compute chained costs: stripping → skinning → slicing
+    all_records = compute_chained_costs(all_records)
 
     if append_mode and os.path.exists(OUTPUT_PATH):
         with open(OUTPUT_PATH, 'r') as f:
