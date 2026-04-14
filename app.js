@@ -4,7 +4,6 @@ const STORAGE_KEY = 'sea_est_manual_records';
 let allData = { records: [], summary: {} };
 let manualRecords = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
 let filteredRecords = [];
-let dailyCostChart = null;
 let dailyYieldChart = null;
 let totalCostChart = null;
 let currentSort = { field: 'date', dir: 'desc' };
@@ -164,7 +163,6 @@ function applyFilters() {
 
     updateKPIs();
     updateTotalCostChart();
-    updateDailyCostChart();
     updateDailyYieldChart();
     populateDailyFilters();
     updateDailyBreakdownTable();
@@ -281,65 +279,6 @@ function updateTotalCostChart() {
 }
 
 // ---- DAILY COST CHART ----
-function updateDailyCostChart() {
-    const grouped = groupBy(filteredRecords, 'date');
-    const dates = Object.keys(grouped).sort();
-    const avgCosts = dates.map(d => {
-        const costs = grouped[d].map(r => r.cost_per_finished_lb).filter(c => c && c > 0);
-        return costs.length ? avg(costs) : null;
-    });
-
-    const productGroups = {};
-    filteredRecords.forEach(r => {
-        if (!r.cost_per_finished_lb || r.cost_per_finished_lb <= 0) return;
-        const key = r.product_format || 'Unknown';
-        if (!productGroups[key]) productGroups[key] = {};
-        if (!productGroups[key][r.date]) productGroups[key][r.date] = [];
-        productGroups[key][r.date].push(r.cost_per_finished_lb);
-    });
-
-    const colors = ['#1a56db', '#059669', '#d97706', '#dc2626', '#7c3aed', '#0891b2', '#be185d'];
-    const datasets = Object.keys(productGroups).sort().map((prod, i) => ({
-        label: prod,
-        data: dates.map(d => {
-            const vals = productGroups[prod][d];
-            return vals ? avg(vals) : null;
-        }),
-        backgroundColor: colors[i % colors.length] + '80',
-        borderColor: colors[i % colors.length],
-        borderWidth: 1,
-        barPercentage: 0.8,
-    }));
-
-    if (dailyCostChart) dailyCostChart.destroy();
-    dailyCostChart = new Chart(document.getElementById('chart-daily-cost'), {
-        type: 'bar',
-        data: { labels: dates.map(d => formatDate(d)), datasets },
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            aspectRatio: 2,
-            interaction: { mode: 'index', intersect: false },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    title: { display: true, text: '$ / Finished Lb' },
-                    ticks: { callback: v => '$' + v.toFixed(3) }
-                },
-                x: { ticks: { maxRotation: 45 } }
-            },
-            plugins: {
-                tooltip: {
-                    callbacks: {
-                        label: ctx => ctx.dataset.label + ': $' + (ctx.parsed.y?.toFixed(4) || 'N/A')
-                    }
-                },
-                legend: { position: 'top' }
-            }
-        }
-    });
-}
-
 // ---- DAILY YIELD CHART ----
 function updateDailyYieldChart() {
     const grouped = groupBy(filteredRecords.filter(r => r.yield_pct && r.yield_pct > 0), 'date');
