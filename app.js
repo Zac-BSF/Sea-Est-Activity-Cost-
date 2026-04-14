@@ -487,6 +487,13 @@ function setupDailySortHeaders() {
     document.querySelectorAll('#table-daily th[data-sort-daily]').forEach(th => {
         if (th.dataset.sortBound) return;
         th.dataset.sortBound = '1';
+        // Add sort icon span if not already there
+        if (!th.querySelector('.sort-icon')) {
+            const span = document.createElement('span');
+            span.className = 'sort-icon';
+            span.textContent = ' ↕';
+            th.appendChild(span);
+        }
         th.addEventListener('click', () => {
             const field = th.dataset.sortDaily;
             if (dailySort.field === field) {
@@ -496,8 +503,12 @@ function setupDailySortHeaders() {
             }
             document.querySelectorAll('#table-daily th[data-sort-daily]').forEach(h => {
                 h.classList.remove('sort-asc', 'sort-desc');
+                const icon = h.querySelector('.sort-icon');
+                if (icon) icon.textContent = ' ↕';
             });
             th.classList.add(dailySort.dir === 'asc' ? 'sort-asc' : 'sort-desc');
+            const icon = th.querySelector('.sort-icon');
+            if (icon) icon.textContent = dailySort.dir === 'asc' ? ' ▲' : ' ▼';
             renderDailyRows();
         });
     });
