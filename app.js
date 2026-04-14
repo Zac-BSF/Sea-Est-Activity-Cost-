@@ -479,7 +479,9 @@ function renderDailyRows() {
     const totalExtSpread = rows.filter(r => r.ext_spread != null).reduce((s, r) => s + r.ext_spread, 0);
     const weightedCost = totalLbs > 0 ? rows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / totalLbs : null;
     const weightedSpread = totalLbs > 0 ? totalExtSpread / totalLbs : null;
-    const weightedYield = totalLbs > 0 ? rows.filter(r => r.yield != null).reduce((s, r) => s + r.yield * r.lbs, 0) / totalLbs : null;
+    const yieldRows = rows.filter(r => r.yield != null);
+    const yieldLbs = yieldRows.reduce((s, r) => s + r.lbs, 0);
+    const weightedYield = yieldRows.length > 0 && yieldLbs > 0 ? yieldRows.reduce((s, r) => s + r.yield * r.lbs, 0) / yieldLbs : null;
     const hasSpread = rows.some(r => r.ext_spread != null);
 
     const tfoot = document.querySelector('#table-daily tfoot') || document.createElement('tfoot');
@@ -597,7 +599,9 @@ function updateWeeklyTable() {
     const wTotalExtSpread = weeklyRows.filter(r => r.ext_spread != null).reduce((s, r) => s + r.ext_spread, 0);
     const wWeightedCost = wTotalLbs > 0 ? weeklyRows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / wTotalLbs : null;
     const wWeightedSpread = wTotalLbs > 0 ? wTotalExtSpread / wTotalLbs : null;
-    const wWeightedYield = wTotalLbs > 0 ? weeklyRows.filter(r => r.yield != null).reduce((s, r) => s + r.yield * r.lbs, 0) / wTotalLbs : null;
+    const wYieldRows = weeklyRows.filter(r => r.yield != null);
+    const wYieldLbs = wYieldRows.reduce((s, r) => s + r.lbs, 0);
+    const wWeightedYield = wYieldRows.length > 0 && wYieldLbs > 0 ? wYieldRows.reduce((s, r) => s + r.yield * r.lbs, 0) / wYieldLbs : null;
     const wHasSpread = weeklyRows.some(r => r.ext_spread != null);
 
     let tfoot = document.querySelector('#table-weekly tfoot');
