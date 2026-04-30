@@ -21,7 +21,7 @@ import openpyxl
 from openpyxl.cell.cell import MergedCell
 
 LABOR_RATE = 22.00
-OUTPUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "production_data.json")
+OUTPUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "production_data_v2.json")
 
 # Weekly protein prices ($/lb) - weeks defined as Monday-Sunday
 # Key: Monday date of the week
