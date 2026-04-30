@@ -64,7 +64,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadData() {
     try {
-        const resp = await fetch('data/production_data_v2.json?v=' + Date.now());
+        let resp;
+        try {
+            // Primary: fetch from GitHub to avoid Vercel edge cache issues
+            resp = await fetch('https://raw.githubusercontent.com/Zac-BSF/Sea-Est-Activity-Cost-/main/data/production_data_v2.json?v=' + Date.now());
+            if (!resp.ok) throw new Error('GitHub fetch failed');
+        } catch {
+            // Fallback to local file
+            resp = await fetch('data/production_data_v2.json?v=' + Date.now());
+        }
         allData = await resp.json();
     } catch (e) {
         allData = { records: [], summary: {}, labor_rate: LABOR_RATE };
