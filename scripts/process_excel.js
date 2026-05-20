@@ -158,6 +158,8 @@ function normalizeSupplier(s) {
   if (s === 'CERMAQ') return 'Cermaq';
   if (s === 'BLUGLACIER') return 'BluGlacier';
   if (s === 'TRAPANANDA') return 'Trapananda';
+  if (s === 'BLUEHOUSE') return 'BluHouse';
+  if (s === 'ATLANTIC SAPPHIRE') return 'Atlantic Sapphire';
   return s;
 }
 
@@ -186,6 +188,27 @@ function cellVal(ws, r, c) {
   return cell ? cell.v : null;
 }
 
+/**
+ * Compute labor hours from either:
+ *   (a) a text time range string in laborCol ("6:00 AM - 6:30 AM"), or
+ *   (b) two Excel serial-time decimals in laborCol & laborCol+1 (0.611, 0.665).
+ * Returns hours worked, or null.
+ */
+function getLaborHours(ws, row, laborCol) {
+  const val = cellVal(ws, row, laborCol);
+  // Case (b): decimal serial times in two adjacent columns
+  if (typeof val === 'number' && val > 0 && val < 1) {
+    const endVal = cellVal(ws, row, laborCol + 1);
+    if (typeof endVal === 'number' && endVal > 0 && endVal < 1 && endVal > val) {
+      const hours = (endVal - val) * 24;
+      return hours > 0 ? hours : null;
+    }
+    return null;
+  }
+  // Case (a): text time range
+  return parseLaborTime(val != null ? String(val) : null);
+}
+
 // ---- Tab Parsers ----
 
 function processSkinner(ws) {
@@ -204,8 +227,6 @@ function processSkinner(ws) {
     const outgoing = safeFloat(cellVal(ws, row, 7));
     const productFormat = cellVal(ws, row, 9);
     const peopleVal = cellVal(ws, row, 11);
-    const laborVal = cellVal(ws, row, 12);
-
     if (isDateValue(dateVal)) {
       currentDate = toDate(dateVal);
       currentPeople = null;
@@ -222,7 +243,7 @@ function processSkinner(ws) {
     if (incoming <= 0 || outgoing <= 0) continue;
     if (!currentDate) continue;
 
-    const hours = parseLaborTime(laborVal != null ? String(laborVal) : null);
+    const hours = getLaborHours(ws, row, 12);
     if (hours == null || currentPeople == null) continue;
 
     let fmt = productFormat ? String(productFormat).trim() : '';
@@ -273,7 +294,6 @@ function processSlicerSkinOn(ws) {
     const pieces = safeFloat(cellVal(ws, row, 10)) || 0;
     const productFormat = cellVal(ws, row, 12);
     const peopleVal = cellVal(ws, row, 14);
-    const laborVal = cellVal(ws, row, 15);
 
     if (isDateValue(dateVal)) {
       currentDate = toDate(dateVal);
@@ -293,7 +313,7 @@ function processSlicerSkinOn(ws) {
     const totalOutput = sides + portions + pesto + pieces;
     if (totalOutput <= 0) continue;
 
-    const hours = parseLaborTime(laborVal != null ? String(laborVal) : null);
+    const hours = getLaborHours(ws, row, 15);
     if (hours == null || currentPeople == null) continue;
 
     let fmt = productFormat ? String(productFormat).trim() : '';
@@ -342,7 +362,6 @@ function processSlicerSkinless(ws) {
     const piecesOut = safeFloat(cellVal(ws, row, 7)) || 0;
     const productFormat = cellVal(ws, row, 9);
     const peopleVal = cellVal(ws, row, 11);
-    const laborVal = cellVal(ws, row, 12);
 
     if (isDateValue(dateVal)) {
       currentDate = toDate(dateVal);
@@ -369,7 +388,7 @@ function processSlicerSkinless(ws) {
     if (totalOutput <= 0) continue;
     if (!currentDate) continue;
 
-    const hours = parseLaborTime(laborVal != null ? String(laborVal) : null);
+    const hours = getLaborHours(ws, row, 12);
     if (hours == null || currentPeople == null) continue;
 
     let fmt = productFormat ? String(productFormat).trim().replace(/\s+/g, ' ') : '';
