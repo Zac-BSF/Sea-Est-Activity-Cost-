@@ -310,8 +310,9 @@ function processSlicerSkinOn(ws) {
     if (incoming == null || incoming <= 0) continue;
     if (!currentDate) continue;
 
-    const totalOutput = sides + portions + pesto + pieces;
-    if (totalOutput <= 0) continue;
+    const finishedOutput = sides + portions + pesto;
+    const byproductLbs = pieces;
+    if (finishedOutput <= 0) continue;
 
     const hours = getLaborHours(ws, row, 15);
     if (hours == null || currentPeople == null) continue;
@@ -321,8 +322,8 @@ function processSlicerSkinOn(ws) {
 
     const totalLaborHours = currentPeople * hours;
     const laborCost = totalLaborHours * LABOR_RATE;
-    const costPerLb = totalOutput > 0 ? laborCost / totalOutput : null;
-    const yieldPct = incoming > 0 ? (totalOutput / incoming * 100) : null;
+    const costPerLb = finishedOutput > 0 ? laborCost / finishedOutput : null;
+    const yieldPct = incoming > 0 ? (finishedOutput / incoming * 100) : null;
 
     records.push({
       activity: 'Slicer Skin-on',
@@ -333,7 +334,8 @@ function processSlicerSkinOn(ws) {
       pallet: palletVal != null ? String(palletVal).trim() : null,
       product_format: fmt,
       incoming_lbs: round(incoming, 2),
-      finished_lbs: round(totalOutput, 2),
+      finished_lbs: round(finishedOutput, 2),
+      byproduct_lbs: round(byproductLbs, 2),
       yield_pct: yieldPct != null ? round(yieldPct, 2) : null,
       people: currentPeople,
       hours_worked: round(hours, 4),
@@ -384,8 +386,9 @@ function processSlicerSkinless(ws) {
     }
 
     if (incoming == null || incoming <= 0) continue;
-    const totalOutput = skinlessOut + piecesOut;
-    if (totalOutput <= 0) continue;
+    const finishedOutput = skinlessOut;
+    const byproductLbs = piecesOut;
+    if (finishedOutput <= 0) continue;
     if (!currentDate) continue;
 
     const hours = getLaborHours(ws, row, 12);
@@ -398,8 +401,8 @@ function processSlicerSkinless(ws) {
 
     const totalLaborHours = currentPeople * hours;
     const laborCost = totalLaborHours * LABOR_RATE;
-    const costPerLb = totalOutput > 0 ? laborCost / totalOutput : null;
-    const yieldPct = incoming > 0 ? (totalOutput / incoming * 100) : null;
+    const costPerLb = finishedOutput > 0 ? laborCost / finishedOutput : null;
+    const yieldPct = incoming > 0 ? (finishedOutput / incoming * 100) : null;
 
     records.push({
       activity: 'Slicer Skinless',
@@ -410,7 +413,8 @@ function processSlicerSkinless(ws) {
       pallet: palletVal != null ? String(palletVal).trim() : null,
       product_format: fmt,
       incoming_lbs: round(incoming, 2),
-      finished_lbs: round(totalOutput, 2),
+      finished_lbs: round(finishedOutput, 2),
+      byproduct_lbs: round(byproductLbs, 2),
       yield_pct: yieldPct != null ? round(yieldPct, 2) : null,
       people: currentPeople,
       hours_worked: round(hours, 4),
