@@ -435,11 +435,11 @@ function updateDailyBreakdownTable() {
         const totalByproduct = grp.reduce((s, r) => s + (r.byproduct_lbs || 0), 0);
         const totalExtSpread = extSpreads.reduce((s, v) => s + v, 0);
 
-        if (!totalCosts.length) return;
+        if (!totalCosts.length && totalLbs === 0) return;
 
         dailyRowData.push({
             date, activity, product, supplier,
-            avgTotal: avg(totalCosts),
+            avgTotal: totalCosts.length ? avg(totalCosts) : null,
             kpi,
             spread: spreads.length ? avg(spreads) : null,
             yield: yields.length ? avg(yields) : null,
@@ -476,7 +476,7 @@ function renderDailyRows() {
             <td>${r.activity}</td>
             <td>${r.product}</td>
             <td>${r.supplier}</td>
-            <td class="text-right">$${r.avgTotal.toFixed(4)}</td>
+            <td class="text-right">${r.avgTotal != null ? '$' + r.avgTotal.toFixed(4) : '--'}</td>
             <td class="text-right">${r.kpi ? '$' + r.kpi.toFixed(2) : '--'}</td>
             <td class="text-right ${spreadClass}">${r.spread != null ? '$' + r.spread.toFixed(4) : '--'}</td>
             <td class="text-right">${r.yield != null ? r.yield.toFixed(1) + '%' : '--'}</td>
@@ -491,7 +491,9 @@ function renderDailyRows() {
     const totalLbs = rows.reduce((s, r) => s + r.lbs, 0);
     const totalByproductLbs = rows.reduce((s, r) => s + (r.byproduct || 0), 0);
     const totalExtSpread = rows.filter(r => r.ext_spread != null).reduce((s, r) => s + r.ext_spread, 0);
-    const weightedCost = totalLbs > 0 ? rows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / totalLbs : null;
+    const costRows = rows.filter(r => r.avgTotal != null);
+    const costLbs = costRows.reduce((s, r) => s + r.lbs, 0);
+    const weightedCost = costLbs > 0 ? costRows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / costLbs : null;
     const weightedSpread = totalLbs > 0 ? totalExtSpread / totalLbs : null;
     const yieldRows = rows.filter(r => r.yield != null);
     const yieldLbs = yieldRows.reduce((s, r) => s + r.lbs, 0);
@@ -587,9 +589,9 @@ function updateWeeklyTable() {
         const totalByproductLbs = recs.reduce((s, r) => s + (r.byproduct_lbs || 0), 0);
         const totalExtSpread = extSpreads.reduce((s, v) => s + v, 0);
 
-        if (!totalCosts.length) return;
+        if (!totalCosts.length && totalLbs === 0) return;
 
-        const avgTotalCost = avg(totalCosts);
+        const avgTotalCost = totalCosts.length ? avg(totalCosts) : null;
         const avgYield = yields.length ? avg(yields) : null;
         weeklyRows.push({ lbs: totalLbs, byproduct: totalByproductLbs, avgTotal: avgTotalCost, yield: avgYield, ext_spread: extSpreads.length ? totalExtSpread : null });
 
@@ -600,7 +602,7 @@ function updateWeeklyTable() {
             <td>${activity}</td>
             <td>${product}</td>
             <td class="text-right">${inputCosts.length ? '$' + avg(inputCosts).toFixed(2) : '--'}</td>
-            <td class="text-right">$${avgTotalCost.toFixed(4)}</td>
+            <td class="text-right">${avgTotalCost != null ? '$' + avgTotalCost.toFixed(4) : '--'}</td>
             <td class="text-right">${kpi ? '$' + kpi.toFixed(2) : '--'}</td>
             <td class="text-right ${spreadClass}">${spreads.length ? '$' + avg(spreads).toFixed(4) : '--'}</td>
             <td class="text-right">${avgYield != null ? avgYield.toFixed(1) + '%' : '--'}</td>
@@ -615,7 +617,9 @@ function updateWeeklyTable() {
     const wTotalLbs = weeklyRows.reduce((s, r) => s + r.lbs, 0);
     const wTotalByproductLbs = weeklyRows.reduce((s, r) => s + (r.byproduct || 0), 0);
     const wTotalExtSpread = weeklyRows.filter(r => r.ext_spread != null).reduce((s, r) => s + r.ext_spread, 0);
-    const wWeightedCost = wTotalLbs > 0 ? weeklyRows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / wTotalLbs : null;
+    const wCostRows = weeklyRows.filter(r => r.avgTotal != null);
+    const wCostLbs = wCostRows.reduce((s, r) => s + r.lbs, 0);
+    const wWeightedCost = wCostLbs > 0 ? wCostRows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / wCostLbs : null;
     const wWeightedSpread = wTotalLbs > 0 ? wTotalExtSpread / wTotalLbs : null;
     const wYieldRows = weeklyRows.filter(r => r.yield != null);
     const wYieldLbs = wYieldRows.reduce((s, r) => s + r.lbs, 0);
