@@ -203,14 +203,17 @@ function updateKPIs() {
     const totalIncoming = filteredRecords.reduce((s, r) => s + (r.incoming_lbs || 0), 0);
     const totalLbs = filteredRecords.reduce((s, r) => s + (r.finished_lbs || 0), 0);
     const totalByproduct = filteredRecords.reduce((s, r) => s + (r.byproduct_lbs || 0), 0);
+    const totalYieldLoss = totalIncoming - totalLbs - totalByproduct;
     const aggregateYield = totalIncoming > 0 ? (totalLbs / totalIncoming * 100) : null;
 
     document.getElementById('kpi-total-cost').textContent = totalCosts.length ? '$' + avg(totalCosts).toFixed(4) : '--';
     document.getElementById('kpi-yield-loss-cost').textContent = yieldLossCosts.length ? '$' + avg(yieldLossCosts).toFixed(4) : '--';
     document.getElementById('kpi-avg-cost').textContent = laborCosts.length ? '$' + avg(laborCosts).toFixed(4) : '--';
     document.getElementById('kpi-avg-yield').textContent = aggregateYield != null ? aggregateYield.toFixed(1) + '%' : '--';
+    document.getElementById('kpi-incoming-lbs').textContent = totalIncoming > 0 ? numberFmt(totalIncoming.toFixed(0)) : '--';
     document.getElementById('kpi-total-lbs').textContent = totalLbs > 0 ? numberFmt(totalLbs.toFixed(0)) : '--';
     document.getElementById('kpi-byproduct-lbs').textContent = totalByproduct > 0 ? numberFmt(totalByproduct.toFixed(0)) : '--';
+    document.getElementById('kpi-yield-loss-lbs').textContent = totalIncoming > 0 ? numberFmt(totalYieldLoss.toFixed(0)) : '--';
     document.getElementById('kpi-count').textContent = filteredRecords.length || '--';
 }
 
@@ -448,9 +451,10 @@ function updateDailyBreakdownTable() {
             kpi,
             spread: spreads.length ? avg(spreads) : null,
             yield: groupYield,
-            lbs: totalLbs,
             incoming: totalIncoming,
+            lbs: totalLbs,
             byproduct: totalByproduct,
+            yieldLoss: totalIncoming - totalLbs - totalByproduct,
             ext_spread: extSpreads.length ? totalExtSpread : null
         });
     });
@@ -486,22 +490,25 @@ function renderDailyRows() {
             <td class="text-right">${r.kpi ? '$' + r.kpi.toFixed(2) : '--'}</td>
             <td class="text-right ${spreadClass}">${r.spread != null ? '$' + r.spread.toFixed(4) : '--'}</td>
             <td class="text-right">${r.yield != null ? r.yield.toFixed(1) + '%' : '--'}</td>
+            <td class="text-right">${r.incoming > 0 ? numberFmt(r.incoming.toFixed(0)) : '--'}</td>
             <td class="text-right">${numberFmt(r.lbs.toFixed(0))}</td>
             <td class="text-right">${r.byproduct > 0 ? numberFmt(r.byproduct.toFixed(0)) : '--'}</td>
+            <td class="text-right">${r.yieldLoss != null ? numberFmt(r.yieldLoss.toFixed(0)) : '--'}</td>
             <td class="text-right ${r.ext_spread != null ? (r.ext_spread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:600">${r.ext_spread != null ? '$' + numberFmt(r.ext_spread.toFixed(0)) : '--'}</td>
         `;
         tbody.appendChild(tr);
     });
 
     // Totals row (weighted averages)
+    const totalIncoming = rows.reduce((s, r) => s + (r.incoming || 0), 0);
     const totalLbs = rows.reduce((s, r) => s + r.lbs, 0);
     const totalByproductLbs = rows.reduce((s, r) => s + (r.byproduct || 0), 0);
+    const totalYieldLoss = totalIncoming - totalLbs - totalByproductLbs;
     const totalExtSpread = rows.filter(r => r.ext_spread != null).reduce((s, r) => s + r.ext_spread, 0);
     const costRows = rows.filter(r => r.avgTotal != null);
     const costLbs = costRows.reduce((s, r) => s + r.lbs, 0);
     const weightedCost = costLbs > 0 ? costRows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / costLbs : null;
     const weightedSpread = totalLbs > 0 ? totalExtSpread / totalLbs : null;
-    const totalIncoming = rows.reduce((s, r) => s + (r.incoming || 0), 0);
     const aggregateYield = totalIncoming > 0 ? (totalLbs / totalIncoming * 100) : null;
     const hasSpread = rows.some(r => r.ext_spread != null);
 
@@ -513,8 +520,10 @@ function renderDailyRows() {
             <td></td>
             <td class="text-right ${hasSpread ? (weightedSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:700">${hasSpread ? '$' + weightedSpread.toFixed(4) : '--'}</td>
             <td class="text-right" style="font-weight:700">${aggregateYield != null ? aggregateYield.toFixed(1) + '%' : '--'}</td>
+            <td class="text-right" style="font-weight:700">${numberFmt(totalIncoming.toFixed(0))}</td>
             <td class="text-right" style="font-weight:700">${numberFmt(totalLbs.toFixed(0))}</td>
             <td class="text-right" style="font-weight:700">${totalByproductLbs > 0 ? numberFmt(totalByproductLbs.toFixed(0)) : '--'}</td>
+            <td class="text-right" style="font-weight:700">${numberFmt(totalYieldLoss.toFixed(0))}</td>
             <td class="text-right ${hasSpread ? (totalExtSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:700">${hasSpread ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
         </tr>
     `;
@@ -598,7 +607,8 @@ function updateWeeklyTable() {
         if (!totalCosts.length && totalLbs === 0) return;
 
         const avgTotalCost = totalCosts.length ? avg(totalCosts) : null;
-        weeklyRows.push({ lbs: totalLbs, incoming: totalIncoming, byproduct: totalByproductLbs, avgTotal: avgTotalCost, yield: groupYield, ext_spread: extSpreads.length ? totalExtSpread : null });
+        const groupYieldLoss = totalIncoming - totalLbs - totalByproductLbs;
+        weeklyRows.push({ lbs: totalLbs, incoming: totalIncoming, byproduct: totalByproductLbs, yieldLoss: groupYieldLoss, avgTotal: avgTotalCost, yield: groupYield, ext_spread: extSpreads.length ? totalExtSpread : null });
 
         const spreadClass = spreads.length && avg(spreads) >= 0 ? 'cost-normal' : 'cost-high';
         const tr = document.createElement('tr');
@@ -611,22 +621,25 @@ function updateWeeklyTable() {
             <td class="text-right">${kpi ? '$' + kpi.toFixed(2) : '--'}</td>
             <td class="text-right ${spreadClass}">${spreads.length ? '$' + avg(spreads).toFixed(4) : '--'}</td>
             <td class="text-right">${groupYield != null ? groupYield.toFixed(1) + '%' : '--'}</td>
+            <td class="text-right">${numberFmt(totalIncoming.toFixed(0))}</td>
             <td class="text-right">${numberFmt(totalLbs.toFixed(0))}</td>
             <td class="text-right">${totalByproductLbs > 0 ? numberFmt(totalByproductLbs.toFixed(0)) : '--'}</td>
+            <td class="text-right">${numberFmt(groupYieldLoss.toFixed(0))}</td>
             <td class="text-right ${extSpreads.length ? (totalExtSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:600">${extSpreads.length ? '$' + numberFmt(totalExtSpread.toFixed(0)) : '--'}</td>
         `;
         tbody.appendChild(tr);
     });
 
     // Totals row (weighted averages)
+    const wTotalIncoming = weeklyRows.reduce((s, r) => s + (r.incoming || 0), 0);
     const wTotalLbs = weeklyRows.reduce((s, r) => s + r.lbs, 0);
     const wTotalByproductLbs = weeklyRows.reduce((s, r) => s + (r.byproduct || 0), 0);
+    const wTotalYieldLoss = wTotalIncoming - wTotalLbs - wTotalByproductLbs;
     const wTotalExtSpread = weeklyRows.filter(r => r.ext_spread != null).reduce((s, r) => s + r.ext_spread, 0);
     const wCostRows = weeklyRows.filter(r => r.avgTotal != null);
     const wCostLbs = wCostRows.reduce((s, r) => s + r.lbs, 0);
     const wWeightedCost = wCostLbs > 0 ? wCostRows.reduce((s, r) => s + r.avgTotal * r.lbs, 0) / wCostLbs : null;
     const wWeightedSpread = wTotalLbs > 0 ? wTotalExtSpread / wTotalLbs : null;
-    const wTotalIncoming = weeklyRows.reduce((s, r) => s + (r.incoming || 0), 0);
     const wAggregateYield = wTotalIncoming > 0 ? (wTotalLbs / wTotalIncoming * 100) : null;
     const wHasSpread = weeklyRows.some(r => r.ext_spread != null);
 
@@ -639,8 +652,10 @@ function updateWeeklyTable() {
             <td></td>
             <td class="text-right ${wHasSpread ? (wWeightedSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:700">${wHasSpread ? '$' + wWeightedSpread.toFixed(4) : '--'}</td>
             <td class="text-right" style="font-weight:700">${wAggregateYield != null ? wAggregateYield.toFixed(1) + '%' : '--'}</td>
+            <td class="text-right" style="font-weight:700">${numberFmt(wTotalIncoming.toFixed(0))}</td>
             <td class="text-right" style="font-weight:700">${numberFmt(wTotalLbs.toFixed(0))}</td>
             <td class="text-right" style="font-weight:700">${wTotalByproductLbs > 0 ? numberFmt(wTotalByproductLbs.toFixed(0)) : '--'}</td>
+            <td class="text-right" style="font-weight:700">${numberFmt(wTotalYieldLoss.toFixed(0))}</td>
             <td class="text-right ${wHasSpread ? (wTotalExtSpread >= 0 ? 'cost-normal' : 'cost-high') : ''}" style="font-weight:700">${wHasSpread ? '$' + numberFmt(wTotalExtSpread.toFixed(0)) : '--'}</td>
         </tr>
     `;
@@ -684,6 +699,7 @@ function updateDetailTable() {
             <td class="text-right">${r.incoming_lbs?.toFixed(1) || '--'}</td>
             <td class="text-right">${r.finished_lbs?.toFixed(1) || '--'}</td>
             <td class="text-right">${r.byproduct_lbs ? r.byproduct_lbs.toFixed(1) : '--'}</td>
+            <td class="text-right">${r.incoming_lbs && r.finished_lbs != null ? (r.incoming_lbs - r.finished_lbs - (r.byproduct_lbs || 0)).toFixed(1) : '--'}</td>
             <td class="text-right">${r.yield_pct?.toFixed(1) || '--'}%</td>
             <td class="text-right">${r.raw_protein_cost_per_lb ? '$' + r.raw_protein_cost_per_lb.toFixed(2) : '--'}</td>
             <td class="text-right">${r.yield_loss_cost_per_lb ? '$' + r.yield_loss_cost_per_lb.toFixed(4) : '--'}</td>
@@ -713,13 +729,16 @@ function setupDetailControls() {
 }
 
 function exportCSV() {
-    const headers = ['Date', 'Activity', 'Supplier', 'Lot', 'Product', 'Incoming Lbs', 'Finished Lbs', 'Byproduct Lbs', 'Yield %', 'People', 'Hours', 'Raw Protein $/Lb', 'Protein Cost/Finished Lb', 'Yield Loss $/Lb', 'Labor $/Lb', 'Total $/Lb'];
-    const rows = filteredRecords.map(r => [
-        r.date, r.activity, r.supplier || '', r.lot || '', r.product_format,
-        r.incoming_lbs, r.finished_lbs, r.byproduct_lbs || '', r.yield_pct, r.people, r.hours_worked,
-        r.raw_protein_cost_per_lb, r.protein_cost_per_finished_lb, r.yield_loss_cost_per_lb,
-        r.cost_per_finished_lb, r.total_cost_per_finished_lb
-    ]);
+    const headers = ['Date', 'Activity', 'Supplier', 'Lot', 'Product', 'Incoming Lbs', 'Finished Lbs', 'Byproduct Lbs', 'Yield Loss Lbs', 'Yield %', 'People', 'Hours', 'Raw Protein $/Lb', 'Protein Cost/Finished Lb', 'Yield Loss $/Lb', 'Labor $/Lb', 'Total $/Lb'];
+    const rows = filteredRecords.map(r => {
+        const yieldLoss = r.incoming_lbs && r.finished_lbs != null ? r.incoming_lbs - r.finished_lbs - (r.byproduct_lbs || 0) : '';
+        return [
+            r.date, r.activity, r.supplier || '', r.lot || '', r.product_format,
+            r.incoming_lbs, r.finished_lbs, r.byproduct_lbs || '', yieldLoss, r.yield_pct, r.people, r.hours_worked,
+            r.raw_protein_cost_per_lb, r.protein_cost_per_finished_lb, r.yield_loss_cost_per_lb,
+            r.cost_per_finished_lb, r.total_cost_per_finished_lb
+        ];
+    });
 
     let csv = headers.join(',') + '\n';
     rows.forEach(row => {

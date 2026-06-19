@@ -87,12 +87,20 @@
                 <span class="kpi-value" id="kpi-avg-yield">--</span>
             </div>
             <div class="kpi-card">
+                <span class="kpi-label">Total Incoming Lbs</span>
+                <span class="kpi-value" id="kpi-incoming-lbs">--</span>
+            </div>
+            <div class="kpi-card">
                 <span class="kpi-label">Total Finished Lbs</span>
                 <span class="kpi-value" id="kpi-total-lbs">--</span>
             </div>
             <div class="kpi-card">
                 <span class="kpi-label">Total Byproduct Lbs</span>
                 <span class="kpi-value" id="kpi-byproduct-lbs">--</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-label">Yield Loss Lbs</span>
+                <span class="kpi-value" id="kpi-yield-loss-lbs">--</span>
             </div>
             <div class="kpi-card">
                 <span class="kpi-label">Records</span>
@@ -142,9 +150,11 @@
                             <th>Avg Total $/Lb</th>
                             <th>Target Cost</th>
                             <th class="sortable" data-sort-daily="spread">Avg Spread</th>
-                            <th class="sortable" data-sort-daily="yield">Avg Yield</th>
-                            <th class="sortable" data-sort-daily="lbs">Total Lbs</th>
+                            <th class="sortable" data-sort-daily="yield">Yield %</th>
+                            <th class="sortable" data-sort-daily="incoming">Incoming Lbs</th>
+                            <th class="sortable" data-sort-daily="lbs">Finished Lbs</th>
                             <th class="sortable" data-sort-daily="byproduct">Byproduct Lbs</th>
+                            <th class="sortable" data-sort-daily="yieldLoss">Yield Loss Lbs</th>
                             <th class="sortable" data-sort-daily="ext_spread">Ext. Spread</th>
                         </tr>
                     </thead>
@@ -167,9 +177,11 @@
                             <th>Avg Total $/Lb</th>
                             <th>Target Cost</th>
                             <th>Avg Spread</th>
-                            <th>Avg Yield</th>
-                            <th>Total Lbs</th>
+                            <th>Yield %</th>
+                            <th>Incoming Lbs</th>
+                            <th>Finished Lbs</th>
                             <th>Byproduct Lbs</th>
+                            <th>Yield Loss Lbs</th>
                             <th>Ext. Spread</th>
                         </tr>
                     </thead>
@@ -355,9 +367,10 @@
                             <th data-sort="supplier">Supplier</th>
                             <th data-sort="lot">Lot #</th>
                             <th data-sort="product_format">Product</th>
-                            <th data-sort="incoming_lbs">In Lbs</th>
-                            <th data-sort="finished_lbs">Out Lbs</th>
+                            <th data-sort="incoming_lbs">Incoming</th>
+                            <th data-sort="finished_lbs">Finished</th>
                             <th data-sort="byproduct_lbs">Byproduct</th>
+                            <th data-sort="yield_loss_lbs">Loss</th>
                             <th data-sort="yield_pct">Yield</th>
                             <th data-sort="raw_protein_cost_per_lb">Raw $/Lb</th>
                             <th data-sort="yield_loss_cost_per_lb">Yield Loss</th>
