@@ -97,6 +97,59 @@ function setupNavigation() {
     });
 }
 
+// ---- MULTI-SELECT DROPDOWN ----
+function buildMultiSelect(containerId, values, onChange) {
+    const container = document.getElementById(containerId);
+    const display = container.querySelector('.multi-select-display');
+    const dropdown = container.querySelector('.multi-select-dropdown');
+    dropdown.innerHTML = '';
+    values.forEach(v => {
+        const lbl = document.createElement('label');
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.value = v;
+        cb.checked = true;
+        cb.addEventListener('change', () => { updateMultiDisplay(containerId); onChange(); });
+        lbl.appendChild(cb);
+        lbl.appendChild(document.createTextNode(' ' + v));
+        dropdown.appendChild(lbl);
+    });
+    display.addEventListener('click', (e) => {
+        e.stopPropagation();
+        document.querySelectorAll('.multi-select.open').forEach(ms => { if (ms !== container) ms.classList.remove('open'); });
+        container.classList.toggle('open');
+    });
+    updateMultiDisplay(containerId);
+}
+
+function getMultiSelectValues(containerId) {
+    const container = document.getElementById(containerId);
+    const boxes = container.querySelectorAll('input[type="checkbox"]');
+    const checked = [...boxes].filter(cb => cb.checked).map(cb => cb.value);
+    return checked.length === boxes.length ? null : checked;
+}
+
+function updateMultiDisplay(containerId) {
+    const container = document.getElementById(containerId);
+    const display = container.querySelector('.multi-select-display');
+    const boxes = container.querySelectorAll('input[type="checkbox"]');
+    const checked = [...boxes].filter(cb => cb.checked);
+    if (checked.length === 0) display.textContent = 'None';
+    else if (checked.length === boxes.length) display.textContent = 'All Suppliers';
+    else if (checked.length <= 2) display.textContent = checked.map(cb => cb.value).join(', ');
+    else display.textContent = checked.length + ' selected';
+}
+
+function resetMultiSelect(containerId) {
+    const container = document.getElementById(containerId);
+    container.querySelectorAll('input[type="checkbox"]').forEach(cb => { cb.checked = true; });
+    updateMultiDisplay(containerId);
+}
+
+document.addEventListener('click', () => {
+    document.querySelectorAll('.multi-select.open').forEach(ms => ms.classList.remove('open'));
+});
+
 // ---- FILTERS ----
 function populateFilters() {
     const classifications = [...new Set(allData.records.map(r => r.classification).filter(Boolean))].sort();
@@ -108,14 +161,14 @@ function populateFilters() {
     fillSelect('filter-classification', classifications);
     fillSelect('filter-activity', activities);
     // filter-product is hardcoded in HTML with 4 output bins
-    fillSelect('filter-supplier', suppliers);
+    buildMultiSelect('filter-supplier', suppliers, applyFilters);
 
     if (dates.length) {
         document.getElementById('filter-date-start').value = dates[0];
         document.getElementById('filter-date-end').value = dates[dates.length - 1];
     }
 
-    ['filter-classification', 'filter-activity', 'filter-product', 'filter-supplier', 'filter-date-start', 'filter-date-end'].forEach(id => {
+    ['filter-classification', 'filter-activity', 'filter-product', 'filter-date-start', 'filter-date-end'].forEach(id => {
         document.getElementById(id).addEventListener('change', applyFilters);
     });
     document.getElementById('btn-reset-filters').addEventListener('click', resetFilters);
@@ -160,7 +213,7 @@ function resetFilters() {
     document.getElementById('filter-classification').value = 'all';
     document.getElementById('filter-activity').value = 'all';
     document.getElementById('filter-product').value = 'all';
-    document.getElementById('filter-supplier').value = 'all';
+    resetMultiSelect('filter-supplier');
     const dates = allData.records.map(r => r.date).sort();
     if (dates.length) {
         document.getElementById('filter-date-start').value = dates[0];
@@ -173,7 +226,7 @@ function applyFilters() {
     const classification = document.getElementById('filter-classification').value;
     const activity = document.getElementById('filter-activity').value;
     const selectedProduct = document.getElementById('filter-product').value;
-    const supplier = document.getElementById('filter-supplier').value;
+    const suppliers = getMultiSelectValues('filter-supplier');
     const dateStart = document.getElementById('filter-date-start').value;
     const dateEnd = document.getElementById('filter-date-end').value;
 
@@ -181,7 +234,7 @@ function applyFilters() {
         if (classification !== 'all' && r.classification !== classification) return false;
         if (activity !== 'all' && r.activity !== activity) return false;
         if (selectedProduct !== 'all' && !matchProductBin(r.product_format, selectedProduct, r.activity)) return false;
-        if (supplier !== 'all' && r.supplier !== supplier) return false;
+        if (suppliers && !suppliers.includes(r.supplier)) return false;
         if (dateStart && r.date < dateStart) return false;
         if (dateEnd && r.date > dateEnd) return false;
         return true;
@@ -379,7 +432,7 @@ function populateDailyFilters() {
 
     fillSelect('daily-filter-activity', activities);
     // daily-filter-product is hardcoded with 3 bins (Skinless, Skin-On, ABF Skinless)
-    fillSelect('daily-filter-supplier', suppliers);
+    buildMultiSelect('daily-filter-supplier', suppliers, updateDailyBreakdownTable);
 
     const startEl = document.getElementById('daily-filter-date-start');
     const endEl = document.getElementById('daily-filter-date-end');
@@ -388,13 +441,13 @@ function populateDailyFilters() {
 
     // Only bind listeners once
     if (!startEl.dataset.bound) {
-        ['daily-filter-activity', 'daily-filter-product', 'daily-filter-supplier', 'daily-filter-date-start', 'daily-filter-date-end'].forEach(id => {
+        ['daily-filter-activity', 'daily-filter-product', 'daily-filter-date-start', 'daily-filter-date-end'].forEach(id => {
             document.getElementById(id).addEventListener('change', updateDailyBreakdownTable);
         });
         document.getElementById('btn-reset-daily').addEventListener('click', () => {
             document.getElementById('daily-filter-activity').value = 'all';
             document.getElementById('daily-filter-product').value = 'all';
-            document.getElementById('daily-filter-supplier').value = 'all';
+            resetMultiSelect('daily-filter-supplier');
             const d = filteredRecords.map(r => r.date).sort();
             if (d.length) {
                 document.getElementById('daily-filter-date-start').value = d[0];
@@ -409,14 +462,14 @@ function populateDailyFilters() {
 function updateDailyBreakdownTable() {
     const dActivity = document.getElementById('daily-filter-activity').value;
     const dProduct = document.getElementById('daily-filter-product').value;
-    const dSupplier = document.getElementById('daily-filter-supplier').value;
+    const dSuppliers = getMultiSelectValues('daily-filter-supplier');
     const dStart = document.getElementById('daily-filter-date-start').value;
     const dEnd = document.getElementById('daily-filter-date-end').value;
 
     const recs = filteredRecords.filter(r => {
         if (dActivity !== 'all' && r.activity !== dActivity) return false;
         if (dProduct !== 'all' && !matchProductBin(r.product_format, dProduct, r.activity)) return false;
-        if (dSupplier !== 'all' && r.supplier !== dSupplier) return false;
+        if (dSuppliers && !dSuppliers.includes(r.supplier)) return false;
         if (dStart && r.date < dStart) return false;
         if (dEnd && r.date > dEnd) return false;
         return true;
@@ -566,14 +619,14 @@ function updateWeeklyTable() {
     // Apply same filters as daily breakdown
     const dActivity = document.getElementById('daily-filter-activity')?.value || 'all';
     const dProduct = document.getElementById('daily-filter-product')?.value || 'all';
-    const dSupplier = document.getElementById('daily-filter-supplier')?.value || 'all';
+    const dSuppliers = getMultiSelectValues('daily-filter-supplier');
     const dStart = document.getElementById('daily-filter-date-start')?.value || '';
     const dEnd = document.getElementById('daily-filter-date-end')?.value || '';
 
     const weeklyRecs = filteredRecords.filter(r => {
         if (dActivity !== 'all' && r.activity !== dActivity) return false;
         if (dProduct !== 'all' && !matchProductBin(r.product_format, dProduct, r.activity)) return false;
-        if (dSupplier !== 'all' && r.supplier !== dSupplier) return false;
+        if (dSuppliers && !dSuppliers.includes(r.supplier)) return false;
         if (dStart && r.date < dStart) return false;
         if (dEnd && r.date > dEnd) return false;
         return true;

@@ -55,8 +55,11 @@
                 </select>
             </div>
             <div class="filter-group">
-                <label for="filter-supplier">Supplier</label>
-                <select id="filter-supplier"><option value="all">All Suppliers</option></select>
+                <label>Supplier</label>
+                <div id="filter-supplier" class="multi-select">
+                    <div class="multi-select-display">All Suppliers</div>
+                    <div class="multi-select-dropdown"></div>
+                </div>
             </div>
             <div class="filter-group">
                 <label for="filter-date-start">From</label>
@@ -133,7 +136,10 @@
                     <option value="skinon">Skin-On Salmon</option>
                     <option value="abf_skinless">ABF Skinless Salmon</option>
                 </select>
-                <select id="daily-filter-supplier"><option value="all">All Suppliers</option></select>
+                <div id="daily-filter-supplier" class="multi-select" style="min-width:140px">
+                    <div class="multi-select-display">All Suppliers</div>
+                    <div class="multi-select-dropdown"></div>
+                </div>
                 <input type="date" id="daily-filter-date-start">
                 <span>to</span>
                 <input type="date" id="daily-filter-date-end">
