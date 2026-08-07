@@ -765,6 +765,12 @@ function main() {
   // Compute chained costs: stripping -> skinning -> slicing
   allRecords = computeChainedCosts(allRecords);
 
+  // Drop outliers: incoming weight < 1 lb is a data entry error
+  const beforeCount = allRecords.length;
+  allRecords = allRecords.filter(r => r.incoming_lbs >= 1);
+  const dropped = beforeCount - allRecords.length;
+  if (dropped) console.log(`  Dropped ${dropped} record(s) with incoming_lbs < 1 (data entry errors)`);
+
   // Rename activities for display
   for (const r of allRecords) {
     r.activity = ACTIVITY_NAMES[r.activity] || r.activity;

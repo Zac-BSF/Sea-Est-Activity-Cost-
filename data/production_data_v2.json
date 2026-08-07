@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T21:17:44.397Z",
+  "generated_at": "2026-08-07T21:19:19.393Z",
   "labor_rate": 22,
   "protein_prices": {
     "2026-03-09": {
@@ -58,7 +58,7 @@
     }
   },
   "source_file": "Fresh Fish Skinner - Slicer - Yield - Labor  March 09 2026 (version 1).xlsb.xlsx",
-  "total_records": 2823,
+  "total_records": 2822,
   "records": [
     {
       "activity": "Skinning",
@@ -61975,28 +61975,6 @@
       "classification": "Fresh"
     },
     {
-      "activity": "Skinning",
-      "date": "2026-07-22",
-      "week": "2026-W30",
-      "supplier": "Cermaq",
-      "lot": "6011693-2",
-      "pallet": "N/A",
-      "product_format": "2-4 lb Skin-On Atlantic Salmon Fillets",
-      "incoming_lbs": 0.32,
-      "finished_lbs": 0.36,
-      "yield_pct": 112.9,
-      "people": 5,
-      "hours_worked": 1,
-      "total_labor_hours": 5,
-      "labor_cost": 110,
-      "cost_per_finished_lb": 301.7143,
-      "raw_protein_cost_per_lb": null,
-      "protein_cost_per_finished_lb": null,
-      "yield_loss_cost_per_lb": null,
-      "total_cost_per_finished_lb": null,
-      "classification": "Fresh"
-    },
-    {
       "activity": "Slicing - Skin-On Salmon",
       "date": "2026-07-22",
       "week": "2026-W30",
@@ -69895,18 +69873,18 @@
       "total_finished_lbs": 14509.47
     },
     "Skinning|2-4 lb Skin-On Atlantic Salmon Fillets": {
-      "count": 799,
-      "avg_cost": 0.4547,
-      "median_cost": 0.0601,
+      "count": 798,
+      "avg_cost": 0.0772,
+      "median_cost": 0.06,
       "min_cost": 0.006,
-      "max_cost": 301.7143,
+      "max_cost": 1.7664,
       "p25_cost": 0.0517,
-      "p75_cost": 0.0718,
-      "std_cost": 10.6719,
-      "avg_yield": 89.58,
+      "p75_cost": 0.0717,
+      "std_cost": 0.1302,
+      "avg_yield": 89.55,
       "avg_yield_loss_cost": 0.7915,
       "avg_total_cost": 7.2359,
-      "total_finished_lbs": 987853.76
+      "total_finished_lbs": 987853.4
     },
     "Slicing - Skin-On Salmon|2-3 lb Skin-On Atlantic Salmon Fillets": {
       "count": 10,
